@@ -1,0 +1,10 @@
+6/3:
+	Create basic, super barebones, editor
+
+6/4:
+	Edward:
+		*Integrate rest of text fields
+		*Write back-end Python file for template-selector
+	Richard:
+		*Create templates in CSS
+		*Create front-end HTML for template-selector
