@@ -11,7 +11,7 @@ html {
 	background: -moz-linear-gradient(#CCCCCC, #FFFFFF); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(#CCCCCC, #FFFFFF); /* Standard syntax */
 }
-	
+
 input#title {
 	font-size: 24px;
 	height: 50px;
@@ -23,6 +23,7 @@ textarea{
 	resize: none;
 	height: 400px;
 	width: 200px;
+	resize: none;
 }
 
 #sB-text{

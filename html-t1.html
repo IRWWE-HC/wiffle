@@ -1,39 +1,41 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<link rel="stylesheet" href="css-t1.css">
-			<title> Website Editor </title>
-		</head>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/css-t1.css">
+        <title> Website Editor </title>
+    </head>
 
-		<body>
-			<form action="test.py" method="GET">
-			
-				<center>
-				<!--The title input is just the title.-->
-				<input type="text" name="title" id="title" placeholder="Title here">
-				</center>
-				
-				<!--Sidebar text. Every new line represents a new sidebar element. Check for those new lines in your python code-->
-				<textarea name="sB-text" id="sB-text" 
-				placeholder="Sidebar Names Here. 
-				New Line for Each Name."></textarea> 
-				
-				<!--Sidebar links. Each element of the sidebar should link to something, which is what the links will do. I suggest playing around with parallel lists, and checking if they match up-->
-				<textarea name="sB-link" id="sB-link" 
-				placeholder="Sidebar Links Here. 
-				New Line for Each Link. 
-				Links should correspond"></textarea>
-				
-				<!--Main body of the text. Plain text for now-->
-				<textarea name="m-text" id="m-text" 
-				placeholder="Main text here"></textarea>
-				<br>
-				
-				<center>
-				<input type="submit" value="Submit" id="submit">
-				</center>
-				
-			</form>
-		</body>
-	</html>
+    <body>
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/tab.js"></script>
+        <form id="form" action="test.py" method="GET">
+
+            <center>
+                <!--The title input is just the title.-->
+                <input type="text" name="title" id="title" placeholder="Title here">
+            </center>
+
+            <!--Sidebar text. Every new line represents a new sidebar element. Check for those new lines in your python code-->
+            <textarea name="sB-text" id="sB-text"
+                                     placeholder="Sidebar Names Here.
+                                     New Line for Each Name."></textarea>
+
+            <!--Sidebar links. Each element of the sidebar should link to something, which is what the links will do. I suggest playing around with parallel lists, and checking if they match up-->
+            <textarea name="sB-link" id="sB-link"
+                                     placeholder="Sidebar Links Here.
+                                     New Line for Each Link.
+                                     Links should correspond"></textarea>
+
+            <!--Main body of the text. Plain text for now-->
+            <textarea name="m-text" id="m-text"
+                                    placeholder="Main text here"></textarea>
+            <br>
+
+            <center>
+                <input type="submit" value="Submit" id="submit">
+            </center>
+
+        </form>
+    </body>
+</html>
 
