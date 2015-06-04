@@ -7,25 +7,23 @@
 
     <body>
         <script src="js/jquery-2.1.1.min.js"></script>
-        <script src="js/tab.js"></script>
-        <form id="form" action="test.py" method="GET">
+		
+        <form id="form" action="test.py" method="POST">
 
             <center>
                 <!--The title input is just the title.-->
                 <input type="text" name="title" id="title" placeholder="Title here">
             </center>
+			
+			<div id="insertInput">
+				<!--Sidebar text. Every new line represents a new sidebar element. Check for those new lines in your python code-->
+				<input type="text" name="sB-text" id="sB-text" class="sB"
+										 placeholder="Sidebar Names Here.">
 
-            <!--Sidebar text. Every new line represents a new sidebar element. Check for those new lines in your python code-->
-            <textarea name="sB-text" id="sB-text" class="sB"
-                                     placeholder="Sidebar Names Here.
-                                     New Line for Each Name."></textarea>
-
-            <!--Sidebar links. Each element of the sidebar should link to something, which is what the links will do. I suggest playing around with parallel lists, and checking if they match up-->
-            <textarea name="sB-link" id="sB-link" class="sB"
-                                     placeholder="Sidebar Links Here.
-                                     New Line for Each Link.
-                                     Links should correspond"></textarea>
-
+				<!--Sidebar links. Each element of the sidebar should link to something, which is what the links will do. I suggest playing around with parallel lists, and checking if they match up-->
+				<input type="text" name="sB-link" id="sB-link" class="sB"
+										 placeholder="Sidebar Links Here.">
+			</div>
             <!--Main body of the text. Plain text for now-->
             <textarea name="m-text" id="m-text"
                                     placeholder="Main text here"></textarea>
@@ -36,6 +34,9 @@
             </center>
 
         </form>
+		
     </body>
+	
+	<script src="js/tab.js"></script>
 </html>
 
