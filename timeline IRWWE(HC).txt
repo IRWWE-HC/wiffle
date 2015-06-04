@@ -2,4 +2,8 @@
 	Created html-t1, css-t1
 	Created test.py, compiles queries
 	Created sidebar, main body and title editing
+
+6/4:
+	Added tab functionality
+	
 	
