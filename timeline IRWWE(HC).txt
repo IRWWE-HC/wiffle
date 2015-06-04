@@ -1,5 +1,14 @@
 6/3: 
-	Created html-t1, css-t1
-	Created test.py, compiles queries
-	Created sidebar, main body and title editing
+	Both:
+		*Created html-t1, css-t1
+		*Created test.py, compiles queries
+		*Created sidebar, main body and title editing
+	
+	Late-Night Edward:
+		*Hastily made tab functionality
+
+6/4:
+	Richard:
+		*Fix tab functionality
+	
 	

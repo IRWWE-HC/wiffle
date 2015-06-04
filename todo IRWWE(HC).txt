@@ -1,5 +1,7 @@
 6/3:
-	Create basic, super barebones, editor
+	Both:
+		Create basic, super barebones, editor
+
 
 6/4:
 	Edward:
@@ -8,3 +10,4 @@
 	Richard:
 		*Create templates in CSS
 		*Create front-end HTML for template-selector
+		*Fix the tab functionality
