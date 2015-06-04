@@ -3,5 +3,6 @@ $(document).keydown(function(stuff){
     // Upon tab press, do this
     if(key == '9') {
        document.getElementById("form").innerHTML += "<textarea name='sB-text' id='sB-text' placeholder='Sidebar Names Here.  New Line for Each Name.'></textarea>"
+	   document.getElementById("form").innerHTML +="<textarea name='sB-link' id='sB-link' placeholder='Sidebar Links Here.  New line for each Link.  Links should correspond'></textarea> <br>"
     }
 });
