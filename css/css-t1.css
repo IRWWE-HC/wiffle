@@ -1,4 +1,4 @@
-html {
+html#t1{
   	height: 100%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -10,6 +10,62 @@ html {
 	background: -o-linear-gradient(#CCCCCC, #FFFFFF); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(#CCCCCC, #FFFFFF); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(#CCCCCC, #FFFFFF); /* Standard syntax */
+}
+
+html#2 {
+  	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background: #70bg32;
+	background-repeat:no-repeat;
+	background: -webkit-linear-gradient(#0066FF, #FFFFFF); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#0066FF, #FFFFFF); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#0066FF, #FFFFFF); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#0066FF, #FFFFFF); /* Standard syntax */
+}
+
+html#3 {
+  	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background: #70bg32;
+	background-repeat:no-repeat;
+	background: -webkit-linear-gradient(#FF0066, #FFFFFF); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#FF0066, #FFFFFF); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#FF0066, #FFFFFF); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#FF0066, #FFFFFF); /* Standard syntax */
+}
+
+html#4 {
+  	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background: #70bg32;
+	background-repeat:no-repeat;
+	background: -webkit-linear-gradient(#33CC33, #FFFFFF); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#33CC33, #FFFFFF); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#33CC33, #FFFFFF); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#33CC33, #FFFFFF); /* Standard syntax */
+}
+
+html#5 {
+  	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background: #70bg32;
+	background-repeat:no-repeat;
+	background: -webkit-linear-gradient(#FF3300, #FFFFFF); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#FF3300, #FFFFFF); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#FF3300, #FFFFFF); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#FF3300, #FFFFFF); /* Standard syntax */
 }
 
 input#title {
