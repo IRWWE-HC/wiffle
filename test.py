@@ -65,8 +65,9 @@ def sidebarify():
     return output
         
 sidebar += sidebarify()
+output = sidebar
 if 'm-text' in newDict.keys():
-    output = sidebar + newDict['m-text'] 
+    output += newDict['m-text'] 
 # sB-link
 
 # m-text
