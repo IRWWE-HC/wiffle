@@ -78,7 +78,7 @@ def html(x):
     output += "<title>" + newDict["title"] + "</title>" 
     output += "</head> <body>"
     #output += "<pre>" 
-    output += "<h1> <center> Testing! </center> </h1>" 
+    output += "<h1> <center>" +newDict["title"] + "</center> </h1>"" 
     output += str(x) 
     #output += "</pre>"
     output += "</body> </html>" 
