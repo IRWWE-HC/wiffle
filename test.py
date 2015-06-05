@@ -46,11 +46,13 @@ stor4 = fixstor(stor2)
 
 def sidebarify():
     output = ""
+    pos = 0
     if len(stor3) != len(stor4):
         output += "Double stuffed"
     else:
-        for i in stor3:
-            output += "<a href=" + i + ">" + stor4[stor3.index(i)] + "</a>" + "<br>"
+        while pos != len(stor3):
+            output += "<a href=" + stor4[pos] + ">" + stor3[pso] + "</a>" + "<br>"
+            pos += 1
         return output
         
 sidebar += sidebarify()
