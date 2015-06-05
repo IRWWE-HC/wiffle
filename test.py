@@ -18,8 +18,21 @@ for i in d.keys():
 
 # sB-text
 
-stor1 = newDict["sB-text"]
-stor2 = newDict["sB-link"]
+sB = {}
+
+def fix():
+    pos = 0
+    while True:
+        key = "sB-text" + str(pos)
+        keyd = "sB-link" + str(pos)
+        try:
+            sB[newDict[key]] = newDict[keyd]
+        except:
+            break
+        pos += 1
+                    
+fix()
+print sB
 '''
 print stor1
 print "<br>"
@@ -30,7 +43,6 @@ print "<br>"
 print newDict
 print "<br>"
 print newDict["title"]
-'''
 def fixstor(x):
     temp = x
     if temp.find("\r") != -1:
@@ -40,6 +52,7 @@ def fixstor(x):
 
 stor3 = fixstor(stor1)
 stor4 = fixstor(stor2)
+'''
 
 #print stor3
 #print stor4
@@ -47,13 +60,9 @@ stor4 = fixstor(stor2)
 def sidebarify():
     output = ""
     pos = 0
-    if len(stor3) != len(stor4):
-        output += "Double stuffed"
-    else:
-        while pos != len(stor3):
-            output += "<a href=" + stor4[pos] + ">" + stor3[pso] + "</a>" + "<br>"
-            pos += 1
-        return output
+    for i in sB.keys():
+        output += "<a href=" + sB[i] + ">" + i + "</a>" + "<br>"
+    return output
         
 sidebar += sidebarify()
 output = sidebar + newDict['m-text'] 
