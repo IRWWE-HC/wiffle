@@ -18,3 +18,6 @@
 	*Make selector.html prettier
 	*Make display screen prettier
 		*Delete the debug print stuff
+	*Fix test.py
+		*Used <center> tag. 
+		*Get rid of that, use CSS integration (goes into make display screen prettier). 

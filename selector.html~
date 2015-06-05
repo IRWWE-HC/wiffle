@@ -9,7 +9,7 @@
 		<h2> Choose a template! </h1>
 		<form 
 			name = "input"
-			method = "POST"
+			method = "get"
 			action = "selector.py"
 		>
 			<input type="radio" name="template" value = "t1"> Template 1 
