@@ -1,5 +1,25 @@
+#!/usr/bin/python
+print "Content-Type: text/html\n"
+print ""
+
+import cgi
+import cgitb
+
+cgitb.enable()
+d=cgi.FieldStorage()
+
+
+newDict = {}
+for i in d.keys():
+    newDict[i] = d[i].value
+
+print '''
 <!DOCTYPE html>
-<html id="t1">
+<html id=
+'''
+print newDict["template"]
+print '''
+"t1">
     <head>
         <link rel="stylesheet" href="css/css-t1.css">
         <title> Website Editor </title>
@@ -36,4 +56,4 @@
 		
     </body>
 </html>
-
+'''
