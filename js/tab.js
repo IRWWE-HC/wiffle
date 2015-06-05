@@ -16,13 +16,13 @@ $(document).ready(function(){
 			txtText.type = "text";
 			txtText.name = "sB-text" + ctr;
 			txtText.id = "sB-text";
-			txtText.className = "sB";
+			txtText.className = "s1";
 			txtText.placeholder = "Sidebar Names Here.";
 			frm.appendChild(txtText);
 			txtLink.type = "text";
 			txtLink.name = "sB-link" + ctr;
 			txtLink.id = "sB-link";
-			txtLink.className = "sB";
+			txtLink.className = "s1";
 			txtLink.placeholder = "Sidebar Links Here.";
 			frm.appendChild(txtLink);
 			frm.appendChild(document.createElement("br"))
