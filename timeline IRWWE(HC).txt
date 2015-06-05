@@ -10,5 +10,9 @@
 6/4:
 	Richard:
 		*Fix tab functionality
+		*Added css templates
+	Edward:
+		*Created selector.py
+		*Created selector.html
 	
 	

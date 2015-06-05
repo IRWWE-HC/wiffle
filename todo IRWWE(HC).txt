@@ -11,3 +11,10 @@
 		*Create templates in CSS
 		*Create front-end HTML for template-selector
 		*Fix the tab functionality
+		
+6/5:
+	*Fix selector.html
+		*Name the radio buttons
+	*Make selector.html prettier
+	*Make display screen prettier
+		*Delete the debug print stuff
