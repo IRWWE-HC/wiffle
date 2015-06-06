@@ -72,9 +72,14 @@ if 'm-text' in newDict.keys():
 
 # m-text
 
+if "title" not in newDict.keys():
+    newDict["title"] =  ""
+
 def html(x):
     output = ""
-    output += "<!DOCTYPE html> <html> <head>"
+    output += "<!DOCTYPE html> <html class="
+    output += newDict["template"] +">"
+    output += "> <head>"
     output += "<title>" + newDict["title"] + "</title>" 
     output += "</head> <body>"
     #output += "<pre>" 

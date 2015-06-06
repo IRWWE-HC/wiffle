@@ -10,8 +10,8 @@ $(document).ready(function(){
 		var frm = document.getElementById("insertInput");
 		var txtText = document.createElement("input"); 
 		var txtLink = document.createElement("input");
-		// Upon tab press, do this
-		if(key == '45') {
+		// Upon alt press, do this
+		if(key == '18') {
 			ctr += 1
 			txtText.type = "text";
 			txtText.name = "sB-text" + ctr;
