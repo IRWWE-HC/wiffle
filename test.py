@@ -32,7 +32,7 @@ def fix():
         pos += 1
                     
 fix()
-print sB
+print newDict
 '''
 print stor1
 print "<br>"
@@ -79,7 +79,7 @@ def html(x):
     output = ""
     output += "<!DOCTYPE html> <html class="
     output += newDict["template"] +">"
-    output += "> <head>"
+    output += "<head>"
     output += "<title>" + newDict["title"] + "</title>" 
     output += "</head> <body>"
     #output += "<pre>" 
