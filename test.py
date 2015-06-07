@@ -61,32 +61,68 @@ def sidebarify():
     output = ""
     pos = 0
     for i in sB.keys():
-        output += "<a href=" + sB[i] + ">" + i + "</a>" + "<br>"
+        output += "<li> <a href=" + sB[i] + ">" + i + "</a>" + "<br> </li>"
     return output
         
 sidebar += sidebarify()
-output = sidebar
+output = ""
 if 'm-text' in newDict.keys():
-    output += newDict['m-text'] 
-# sB-link
+    output += newDict['m-text']
 
-# m-text
+output.replace("\n", "<br>")
+
+
 
 if "title" not in newDict.keys():
     newDict["title"] =  ""
 
-def html(x):
-    output = ""
-    output += "<!DOCTYPE html> <html class="
-    output += newDict["template"] +">"
-    output += "<head>"
-    output += "<title>" + newDict["title"] + "</title>" 
-    output += "</head> <body>"
-    #output += "<pre>" 
-    output += "<h1> <center>" + newDict["title"] + "</center> </h1>" 
-    output += str(x) 
-    #output += "</pre>"
-    output += "</body> </html>" 
-    return output
 
-print html(output)
+
+
+
+
+
+
+
+
+
+
+
+
+
+print
+'''
+<!DOCTYPE html>
+<html class=
+'''
+print newDict["template"] + ">"
+print
+'''
+    <head>
+        <link rel="stylesheet" href="css/css-t1.css">
+        <title> Website (Fix later) </title>
+    </head>
+    <body>
+        <script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/tab.js"></script>
+            <center>
+                <span id="title" class="s1"> Text Here </span>
+            </center>
+			
+			<div id="sB" class="s1">
+			<ul>
+'''
+print sidebar
+print '''
+			</ul></div>
+            <!--Main body of the text. Plain text for now-->
+            <div id="m" class="s1">
+            '''
+print output
+print '''
+			Main Text Here. Edward You Figure Out How to Format
+			</div>
+            <br>		
+    </body>
+</html>
+'''
