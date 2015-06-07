@@ -52,21 +52,8 @@ print output
 
 
 
-if "title" not in newDict.keys():
-    newDict["title"] =  ""
-
-
-
-
-
-
-
-
-
-
-
-
-
+if "heading" not in newDict.keys():
+    newDict["heading"] =  ""
 
 
 print '''
@@ -81,11 +68,11 @@ print '''
     </head>
     <body>
         <script src="js/jquery-2.1.1.min.js"></script>
-		<script src="js/tab.js"></script>
+		<script src="js/newLink.js"></script>
             <center>
-                <span id="title" class="s1">
+                <span id="heading" class="s1">
 '''
-print newDict["title"]
+print newDict["heading"]
 print '''
                 </span>
             </center>

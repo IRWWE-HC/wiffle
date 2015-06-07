@@ -32,7 +32,7 @@ print '''
     </head>
     <body>
         <script src="js/jquery-2.1.1.min.js"></script>
-		<script src="js/tab.js"></script>
+		<script src="js/newLink.js"></script>
         <form id="form" action="test.py" method="POST">
             
             <input type="hidden" name ="template"  value =
@@ -42,7 +42,7 @@ print ">"
 print '''
             <center>
                 <!--The title input is just the title.-->
-                <input type="text" name="title" id="title" class="s1"placeholder="Title here">
+                <input type="text" name="heading" id="heading" class="s1"placeholder="Title here">
             </center>
 			
 			<div id="insertInput">
