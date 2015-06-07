@@ -33,29 +33,6 @@ def fix():
                     
 fix()
 
-'''
-print stor1
-print "<br>"
-print stor2
-print "<br>"
-#print d
-print "<br>"
-print newDict
-print "<br>"
-print newDict["title"]
-def fixstor(x):
-    temp = x
-    if temp.find("\r") != -1:
-        temp = temp.replace("\r", "")
-    temp = temp.split("\n")
-    return temp
-
-stor3 = fixstor(stor1)
-stor4 = fixstor(stor2)
-'''
-
-#print stor3
-#print stor4
 
 def sidebarify():
     output = ""
@@ -71,6 +48,7 @@ if 'm-text' in newDict.keys():
 
 output.replace("\n", "<br>")
 output.replace("\r","")
+print output
 
 
 
