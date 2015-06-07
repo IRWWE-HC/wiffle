@@ -46,8 +46,8 @@ output = ""
 if 'm-text' in newDict.keys():
     output += newDict['m-text']
 
-output.replace("\n", "<br>")
-output.replace("\r","")
+output = output.replace("\n", "<br>")
+output = output.replace("\r","")
 print output
 
 
