@@ -1,7 +1,10 @@
-//function tabFunc() {
-//	if(
+//Following function courtesy of https://css-tricks.com/dangers-stopping-event-propagation/
 
-
+$(document).on('click', function(event) {
+  if (!$(event.target).closest('#title').length) {
+    alert($('input#title').val())
+  }
+});
 
 $(document).ready(function(){
 	var ctr = 0
