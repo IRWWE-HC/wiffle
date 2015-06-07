@@ -32,7 +32,7 @@ def fix():
         pos += 1
                     
 fix()
-print newDict
+
 '''
 print stor1
 print "<br>"
@@ -70,6 +70,7 @@ if 'm-text' in newDict.keys():
     output += newDict['m-text']
 
 output.replace("\n", "<br>")
+output.replace("\r","")
 
 
 
@@ -90,14 +91,12 @@ if "title" not in newDict.keys():
 
 
 
-print
-'''
+print '''
 <!DOCTYPE html>
 <html class=
 '''
 print newDict["template"] + ">"
-print
-'''
+print '''
     <head>
         <link rel="stylesheet" href="css/css-t1.css">
         <title> Website (Fix later) </title>
@@ -120,7 +119,7 @@ print '''
             '''
 print output
 print '''
-			Main Text Here. Edward You Figure Out How to Format
+			
 			</div>
             <br>		
     </body>
