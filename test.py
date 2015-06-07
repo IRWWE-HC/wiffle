@@ -83,7 +83,11 @@ print '''
         <script src="js/jquery-2.1.1.min.js"></script>
 		<script src="js/tab.js"></script>
             <center>
-                <span id="title" class="s1"> Text Here </span>
+                <span id="title" class="s1">
+'''
+print newDict["title"]
+print '''
+                </span>
             </center>
 			
 			<div id="sB" class="s1">
