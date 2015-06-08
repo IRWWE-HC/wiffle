@@ -123,7 +123,7 @@ html.t5 {
 }
 
 #m-textText.s1{
-	margin-left: 300px;
+	margin-left: 200px;
 }
 
 #sB-text.s1{

@@ -9,9 +9,9 @@
 		<script src="js/newLink.js"></script>
         <form id="form" action="test.py" method="POST">
 
-            <center>
+            <center id="titleCenter">
                 <!--The title input is just the title.-->
-                <input type="text" name="heading" id="heading" class="s1"placeholder="Title here">
+                <input type="text" name="heading" id="heading" class="s1" placeholder="Title here">
             </center>
 			
 			<div id="insertInput">

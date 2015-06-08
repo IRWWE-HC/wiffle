@@ -1,19 +1,49 @@
 //Following function courtesy of https://css-tricks.com/dangers-stopping-event-propagation/
 
+function getInputValue() {
+	var inputValue = $('input#heading').val();
+	return inputValue;
+}
+
+function getTextareaValue() {
+	var textareaValue = $('textarea#m-text').val();
+	return textareaValue;
+}
+
+//Make the following part more modular
+
 $(document).on('click', function(event) {
-  if (!$(event.target).closest('#heading').length) {
-    	var inputValue = $('input#heading').val();
-	var textValue = document.createTextNode(inputValue);
-	alert(inputValue)	
-	alert(textValue)	
-	var parent = document.getElementById("titleCenter");
-	var oldChild = document.getElementById("heading");
-	parent.removeChild(oldChild);
-	var newChild = document.createElement("span");
-	newChild.id = "heading";
-	newChild.className = "s1";
-	newChild.appendChild(textValue);
-  }
+	if (document.getElementById('heading')) {
+		if (getInputValue() != '') {
+			if (!$(event.target).closest('#heading').length) {
+				var textValue = document.createTextNode(getInputValue());
+				console.log(textValue);	
+				var parent = document.getElementById('titleCenter');
+				var oldChild = document.getElementById("heading");
+				parent.removeChild(oldChild);
+				var newChild = document.createElement("span");
+				newChild.id = "headingText";
+				newChild.className = "s1";
+				newChild.appendChild(textValue);
+				parent.appendChild(newChild);
+  }}}
+});
+
+$(document).on('click', function(event) {
+	if (document.getElementById('m-text')) {
+		if (getInputValue() != '') {
+			if (!$(event.target).closest('#m-text').length) {
+				var textValue = document.createTextNode(getTextareaValue());
+				console.log(textValue);	
+				var parent = document.getElementById('formId');
+				var oldChild = document.getElementById("m-text");
+				parent.removeChild(oldChild);
+				var newChild = document.createElement("span");
+				newChild.id = "m-textText";
+				newChild.className = "s1";
+				newChild.appendChild(textValue);
+				parent.appendChild(newChild);
+  }}}
 });
 
 $(document).ready(function(){
