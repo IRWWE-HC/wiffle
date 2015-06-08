@@ -101,7 +101,7 @@ g = f.readlines()
 f.close()
 
 last = g[-1]
-new = "site" + str((int(last[last.find("e")+1:])) + 1) +".html"
+new = "site" + str((int(last[last.find("e")+1:last.find(".")])) + 1) +".html"
 
 f = open("sites/exist.txt", "a")
 f.write(new)
