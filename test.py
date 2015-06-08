@@ -55,13 +55,13 @@ print output
 if "heading" not in newDict.keys():
     newDict["heading"] =  ""
 
-
-print '''
+final = ''
+final += '''
 <!DOCTYPE html>
 <html class=
 '''
-print newDict["template"] + ">"
-print '''
+final += newDict["template"] + ">"
+final += '''
     <head>
         <link rel="stylesheet" href="css/css-t1.css">
         <title> Website (Fix later) </title>
@@ -72,25 +72,43 @@ print '''
             <center>
                 <span id="heading" class="s1">
 '''
-print newDict["heading"]
-print '''
+final += newDict["heading"]
+final += '''
                 </span>
             </center>
 			
 			<div id="sB" class="s1">
 			<ul>
 '''
-print sidebar
-print '''
+final += sidebar
+final += '''
 			</ul></div>
             <!--Main body of the text. Plain text for now-->
             <div id="m" class="s1">
             '''
-print output
-print '''
+final += output
+final += '''
 			
 			</div>
-            <br>		
+            <br>
+            <a href ="sites"> Sites </a>
     </body>
 </html>
 '''
+
+f = open("sites/exist.txt", "r'")
+g = f.readlines()
+f.close()
+
+last = g[-1]
+new = "site" + str((int(last[last.find("e")+1:])) + 1) +".html"
+
+f = open("sites/exist.txt", "a")
+f.write(new)
+f.close()
+
+y = open("sites/"+new,"w")
+y.write(final)
+y.close()
+
+print final
