@@ -38,7 +38,7 @@ fix()
 def sidebarify():
     output = ""
     pos = 0
-    for i in sB.keys():
+    for i in sB.keys()[::-1]:
         output += "<li> <a href=" + sB[i] + ">" + i + "</a>" + "<br> </li>"
     return output
         
