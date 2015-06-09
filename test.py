@@ -107,14 +107,14 @@ new = "site" + str((int(last[last.find("e")+1:])) + 1)
 
 
 f = open("sites/exist.txt", "a")
-fg = open("sites/exist.txt","r")
-if "site1" not in fg:
+
+if new == "site1":
     f.write("\n")
 f.write(new +"\n")
 f.close()
 
 os.mkdir("sites/"+new)
-y = open("sites/"+ new +"index.html","w")
+y = open("sites/"+ new +"/index.html","w")
 y.write(final)
 y.close()
 
