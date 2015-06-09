@@ -34,11 +34,21 @@ def fix():
                     
 fix()
 
+stor1 = sB.keys()
+stor2 = sB.keys()[::-1]
 
+print stor1,stor2
+for i in stor1:
+    print i
+print "====="
+
+for i in stor2:
+    print i
+    
 def sidebarify():
     output = ""
     pos = 0
-    for i in sB.keys()[::-1]:
+    for i in sB.keys():
         output += "<li> <a href=" + sB[i] + ">" + i + "</a>" + "<br> </li>"
     return output
         
@@ -64,7 +74,7 @@ final += '''
 final += newDict["template"] + ">"
 final += '''
     <head>
-        <link rel="stylesheet" href="../wiffle/css/css-t1.css">
+        <link rel="stylesheet" href="../../wiffle/css/css-t1.css">
         <title> Website (Fix later) </title>
     </head>
     <body>
