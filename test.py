@@ -64,7 +64,7 @@ final += '''
 final += newDict["template"] + ">"
 final += '''
     <head>
-        <link rel="stylesheet" href="wiffle/css/css-t1.css">
+        <link rel="stylesheet" href="../wiffle/css/css-t1.css">
         <title> Website (Fix later) </title>
     </head>
     <body>
@@ -97,6 +97,47 @@ final += '''
 </html>
 '''
 
+final2 = ''
+final2 += '''
+<!DOCTYPE html>
+<html class=
+'''
+final2 += newDict["template"] + ">"
+final2 += '''
+    <head>
+        <link rel="stylesheet" href="css/css-t1.css">
+        <title> Website (Fix later) </title>
+    </head>
+    <body>
+        <script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/newLink.js"></script>
+            <center>
+                <span id="heading" class="s1">
+'''
+final2 += newDict["heading"]
+final2 += '''
+                </span>
+            </center>
+			
+			<div id="sB" class="s1">
+			<ul>
+'''
+final2 += sidebar
+final2 += '''
+			</ul></div>
+            <!--Main body of the text. Plain text for now-->
+            <div id="m" class="s1">
+            '''
+final2 += output
+final2 += '''
+			
+			</div>
+            <br>
+            <a href ="../sites"> Sites </a>
+    </body>
+</html>
+'''
+
 f = open("../sites/exist.txt", "r'")
 g = f.readlines()
 f.close()
@@ -118,4 +159,4 @@ y = open("../sites/"+ new +"/index.html","w")
 y.write(final)
 y.close()
 
-print final
+print final2
