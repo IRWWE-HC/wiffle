@@ -104,7 +104,7 @@ last = g[-1]
 new = "site" + str((int(last[last.find("e")+1:last.find(".")])) + 1) +".html"
 
 f = open("sites/exist.txt", "a")
-f.write(new)
+f.write(new +"\n")
 f.close()
 
 y = open("sites/"+new,"w")
