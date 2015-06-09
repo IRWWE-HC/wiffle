@@ -33,7 +33,7 @@ def fix():
         pos += 1
                     
 fix()
-
+'''
 stor1 = sB.keys()
 stor2 = sB.keys()[::-1]
 
@@ -44,7 +44,7 @@ print "====="
 
 for i in stor2:
     print i
-    
+'''   
 def sidebarify():
     output = ""
     pos = 0
@@ -102,7 +102,6 @@ final += '''
 			
 			</div>
             <br>
-            <a href ="../sites"> Sites </a>
     </body>
 </html>
 '''
