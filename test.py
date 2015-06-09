@@ -104,7 +104,7 @@ f.close()
 last = g[-1]
 new = "site" + str((int(last[last.find("e")+1:])) + 1)
 
-if "site1" not in "sites/exist.txt"
+
 f = open("sites/exist.txt", "a")
 if "site1" not in f:
     f.write("\n")
