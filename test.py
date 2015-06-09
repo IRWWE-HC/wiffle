@@ -92,12 +92,12 @@ final += '''
 			
 			</div>
             <br>
-            <a href ="sites"> Sites </a>
+            <a href ="../sites"> Sites </a>
     </body>
 </html>
 '''
 
-f = open("sites/exist.txt", "r'")
+f = open("../sites/exist.txt", "r'")
 g = f.readlines()
 f.close()
 
@@ -106,15 +106,15 @@ new = "site" + str((int(last[last.find("e")+1:])) + 1)
 
 
 
-f = open("sites/exist.txt", "a")
+f = open("../sites/exist.txt", "a")
 
 if new == "site1":
     f.write("\n")
 f.write(new +"\n")
 f.close()
 
-os.mkdir("sites/"+new)
-y = open("sites/"+ new +"/index.html","w")
+os.mkdir("../sites/"+new)
+y = open("../sites/"+ new +"/index.html","w")
 y.write(final)
 y.close()
 
