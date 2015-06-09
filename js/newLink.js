@@ -6,7 +6,15 @@ function getInputValue() {
 }
 
 function getTextareaValue() {
-	var textareaValue = $('textarea#m-text').val();
+	var splitLines = $('textarea#m-text').val().split('/\n/');
+	var textareaValue = document.createElement('div');
+	textareaValue.appendChild(document.createTextNode(splitLines[0]));
+	var brVal = document.createElement('br');
+	textareaValue.appendChild(brVal);
+	for (var i=1; i < splitLines.length; i++) {
+		textareaValue.appendChild(document.createTextNode(splitLines[i]));
+		textareaValue.appendChild(brVal);
+	}
 	return textareaValue;
 }
 
@@ -31,17 +39,14 @@ $(document).on('click', function(event) {
 
 $(document).on('click', function(event) {
 	if (document.getElementById('m-text')) {
-		if (getTextareaValue() != '') {
+		if ($('textarea#m-text').val().length != 0) {
 			if (!$(event.target).closest('#m-text').length) {
-				var textValue = document.createTextNode(getTextareaValue());
-				console.log(textValue);	
 				var parent = document.getElementById('formId');
 				var oldChild = document.getElementById("m-text");
 				parent.removeChild(oldChild);
-				var newChild = document.createElement("span");
+				var newChild = getTextareaValue();
 				newChild.id = "m-textText";
 				newChild.className = "s1";
-				newChild.appendChild(textValue);
 				parent.appendChild(newChild);
   }}}
 });
