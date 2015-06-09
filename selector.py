@@ -15,7 +15,7 @@ for i in d.keys():
     newDict[i] = d[i].value
 
 if "template" not in newDict.keys():
-    newDict[template] = "t" + str(random.randrange(5) + 1)
+    newDict['template'] = "t" + str(random.randrange(5) + 1)
 
 print '''
 <!DOCTYPE html>
