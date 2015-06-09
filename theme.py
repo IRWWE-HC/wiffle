@@ -80,9 +80,9 @@ html = '''		<h1> Welcome to IRWWE-HC's Final Project! </h1>
 			<input type="radio" name="template" value = "t5"> Template 5
                         <input type="hidden" name="user" value='''
 html += "'"+form['user'].value+"'>"
-html += '<input type="hidden" name="magicnumber" value="'
+html += '<input type="hidden" name="magicnumber" value='
 html += "'"+form['magicnumber'].value+"'>"
-html += '''
+html += '''\
 			<input type="submit" value="To Next Process">
 		</form>
 '''
