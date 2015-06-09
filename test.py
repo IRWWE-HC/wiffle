@@ -64,7 +64,7 @@ final += '''
 final += newDict["template"] + ">"
 final += '''
     <head>
-        <link rel="stylesheet" href="css/css-t1.css">
+        <link rel="stylesheet" href="wiffle/css/css-t1.css">
         <title> Website (Fix later) </title>
     </head>
     <body>
