@@ -70,7 +70,7 @@ html = '''		<h1> Welcome to IRWWE-HC's Final Project! </h1>
 		<h2> Choose a template! </h1>
 		<form 
 			name = "input"
-			method = "POST"
+			method = "GET"
 			action = "selector.py"
 		>
 			<input type="radio" name="template" value = "t1"> Template 1 
