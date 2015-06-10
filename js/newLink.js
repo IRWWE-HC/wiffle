@@ -1,5 +1,6 @@
 //Following function courtesy of https://css-tricks.com/dangers-stopping-event-propagation/
 
+/*
 function getInputValue() {
 	var inputValue = $('input#heading').val();
 	return inputValue;
@@ -50,12 +51,13 @@ $(document).on('click', function(event) {
 				parent.appendChild(newChild);
   }}}
 });
+*/
 
 $(document).ready(function(){
 	var ctr = 0
 	$(document).keydown(function(press){
 		var key = press.which;
-		var frm = document.getElementById("insertInput");
+		var frm = document.getElementById("insertSB");
 		var txtText = document.createElement("input"); 
 		var txtLink = document.createElement("input");
 		// Upon alt press, do this
@@ -65,13 +67,13 @@ $(document).ready(function(){
 			txtText.name = "sB-text" + ctr;
 			txtText.id = "sB-text";
 			txtText.className = "s1";
-			txtText.placeholder = "Sidebar Names Here.";
+			txtText.placeholder = "Sidebar Text Here.";
 			frm.appendChild(txtText);
 			txtLink.type = "text";
 			txtLink.name = "sB-link" + ctr;
 			txtLink.id = "sB-link";
 			txtLink.className = "s1";
-			txtLink.placeholder = "Sidebar Links Here.";
+			txtLink.placeholder = "Sidebar Link Here.";
 			frm.appendChild(txtLink);
 			frm.appendChild(document.createElement("br"))
 		}

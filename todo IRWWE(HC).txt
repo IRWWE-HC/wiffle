@@ -21,3 +21,21 @@
 	*Fix test.py
 		*Used <center> tag. 
 		*Get rid of that, use CSS integration (goes into make display screen prettier). 
+
+6/7:
+	*Start semi-real time javascript updating on editing site
+	*Fix a lot of test.py bugs
+	*Add additional css
+	
+6/8:
+	*Debug semi-real time javascript updating
+	*Start implementing login system
+	
+6/9:
+	Richard:
+		*Add better looking css templates
+		*Bug fix the javascript semi-real time update
+	Edward:
+		*Fix up/complete login system
+	*Fix naming conventions
+	*Add comments

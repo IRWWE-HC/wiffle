@@ -6,14 +6,7 @@
 	*Created extra css templates
 	*Created selector.py, selector.html
 	
-6/5:
-	*Fixed selector.html
-		*Named the radio buttons
-	*Make display screen prettier
-		*Delete the debug print stuff
-	*Debugged tab functionality (now alt functionality)
-	*Added css to make it prettier
-	
 6/8:
-	*Added kinda-real timey fun
+	*tab.js is now newLink.js
+		*Additional javascript functionality
 	
