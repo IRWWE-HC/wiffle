@@ -83,16 +83,21 @@ final += '''
     <body>
         <script src="../js/jquery-2.1.1.min.js"></script>
 		<script src="../js/newLink.js"></script>
-            <center>
+                <nav class="navBar">
+			<a href="../selector.py" id="home"> Website Editor </a>
+			<ul class="navBarRight">
+				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
+				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
+			</ul>
+		</nav>
                 <span id="heading" class="s1">
 '''
 final += newDict["heading"]
 final += '''
                 </span>
-            </center>
 			
-			<div id="sB" class="s1">
-			<ul>
+			<div id="insertSB" class="s1">
+			<ul id="sB" class="s1">
 '''
 final += sidebar
 final += '''
