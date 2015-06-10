@@ -62,7 +62,6 @@ if 'm-text' in newDict.keys():
 
 output = output.replace("\n", "<br>")
 output = output.replace("\r","")
-print output
 
 
 

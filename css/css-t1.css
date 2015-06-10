@@ -126,8 +126,7 @@ html.t5 {
 	list-style-type: none;
 	margin: 1px;
 	background-color: transparent;
-	border-style: double;
-	border-width: 3px;
+	border-width: 0px;
 }
 
 #m-text.s1{
