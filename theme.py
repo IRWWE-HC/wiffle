@@ -26,21 +26,6 @@ def footer():
 </html>"""
 
 
-html = '''		<h1> Welcome to IRWWE-HC's Final Project! </h1>
-		<h2> Choose a template! </h1>
-		<form 
-			name = "input"
-			method = "POST"
-			action = "selector.py"
-		>
-			<input type="radio" name="template" value = "t1"> Template 1 
-			<input type="radio" name="template" value = "t2"> Template 2
-			<input type="radio" name="template" value = "t3"> Template 3 
-			<input type="radio" name="template" value = "t4"> Template 4 
-			<input type="radio" name="template" value = "t5"> Template 5
-			<input type="submit" value="To Next Process">
-		</form>
-'''
 
 def authenticate():
     if 'user' in form and 'magicnumber' in form:
@@ -81,6 +66,26 @@ def loggedIn():
 def notLoggedIn():
     return '''You need to login to see more. You can log in here: <a href="login/login.html">here</a>\n'''
 
+html = '''		<h1> Welcome to IRWWE-HC's Final Project! </h1>
+		<h2> Choose a template! </h1>
+		<form 
+			name = "input"
+			method = "POST"
+			action = "selector.py"
+		>
+			<input type="radio" name="template" value = "t1"> Template 1 
+			<input type="radio" name="template" value = "t2"> Template 2
+			<input type="radio" name="template" value = "t3"> Template 3 
+			<input type="radio" name="template" value = "t4"> Template 4 
+			<input type="radio" name="template" value = "t5"> Template 5
+                        <input type="hidden" name="user" value='''
+html += "'"+form['user'].value+"'>"
+html += '<input type="hidden" name="magicnumber" value="'
+html += "'"+form['magicnumber'].value+"'>"
+html += '''
+			<input type="submit" value="To Next Process">
+		</form>
+'''
 
 def main():
     body = ""
