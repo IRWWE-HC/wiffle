@@ -34,7 +34,7 @@ def authenticate():
         if 'REMOTE_ADDR' in os.environ:
             IP = os.environ["REMOTE_ADDR"]
         #compare with file
-        text = open('loggedin.txt').readlines()
+        text = open('login/loggedin.txt').readlines()
         for line in text:
             line = line.strip().split(",")
             if line[0]==user:#when you find the right user name
