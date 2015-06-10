@@ -77,14 +77,14 @@ final += '''
 final += newDict["template"] + ">"
 final += '''
     <head>
-        <link rel="stylesheet" href="../css/css-t1.css">
+        <link rel="stylesheet" href="../../css/css-t1.css">
         <title> Website (Fix later) </title>
     </head>
     <body>
-        <script src="../js/jquery-2.1.1.min.js"></script>
-		<script src="../js/newLink.js"></script>
+        <script src="../../js/jquery-2.1.1.min.js"></script>
+		<script src="../../js/newLink.js"></script>
                 <nav class="navBar">
-			<a href="../selector.py" id="home"> Website Editor </a>
+			<a href="../../selector.py" id="home"> Website Editor </a>
 			<ul class="navBarRight">
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
 				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
@@ -122,12 +122,12 @@ final2 += '''
 final2 += newDict["template"] + ">"
 final2 += '''
     <head>
-        <link rel="stylesheet" href="../css/css-t1.css">
+        <link rel="stylesheet" href="css/css-t1.css">
         <title> Website (Fix later) </title>
     </head>
     <body>
-        <script src="../js/jquery-2.1.1.min.js"></script>
-		<script src="../js/newLink.js"></script>
+        <script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/newLink.js"></script>
             <center>
                 <span id="heading" class="s1">
 '''
