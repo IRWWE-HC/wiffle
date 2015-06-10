@@ -70,30 +70,7 @@ def remove(user):
 #uses call to remove(user) that will remove them no matter what.
 def logInUser(username):
     magicNumber = str(random.randint(1000000,9999999))
-    remove(username)<!DOCTYPE html>
-<html>
-	<head> 
-		<title> Template Selector </title>
-	<head>
-	
-	<body>
-		<h1> Welcome to IRWWE-HC's Final Project! </h1>
-		<h2> Choose a template! </h1>
-		<form 
-			name = "input"
-			method = "POST"
-			action = "selector.py"
-		>
-			<input type="radio" name="template" value = "t1"> Template 1 
-			<input type="radio" name="template" value = "t2"> Template 2
-			<input type="radio" name="template" value = "t3"> Template 3 
-			<input type="radio" name="template" value = "t4"> Template 4 
-			<input type="radio" name="template" value = "t5"> Template 5
-			<input type="submit" value="To Next Process">
-		</form>
-	</body>
-</html>
-
+    remove(username)
     outfile = open('loggedin.txt','a')
     IP = "1.1.1.1"
     if "REMOTE_ADDR" in os.environ :
