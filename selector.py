@@ -66,7 +66,7 @@ My secret? I hate fleas... even at flea markets.<br>
 
 def notLoggedIn():
     return '''  </form>
-		You must login to submit. You can login <a href="login/login.py"> here </a>
+		You must login to submit. You can login <a href="login/login.py"> here </a>.
     </body>
 </html>
 '''
@@ -89,6 +89,13 @@ final += '''
     <body>
         <script src="js/jquery-2.1.1.min.js"></script>
 		<script src="js/newLink.js"></script>
+		  <nav class="navBar">
+			<a href="selector.py" id="home"> Website Editor </a>
+			<ul class="navBarRight">
+				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
+				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
+			</ul>
+		</nav>
         <form id="form" action="output.py" method="POST">
             
             <input type="hidden" name ="template"  value =
