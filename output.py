@@ -183,6 +183,7 @@ f.close()
 os.mkdir("sites/"+new)
 y = open("sites/"+ new +"/index.html","w")
 y.write(final)
+os.chmod("sites/"+ new, 0777)
 y.close()
 
 k = open("sites/"+new+"/users.txt","w")
