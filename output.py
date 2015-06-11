@@ -23,7 +23,7 @@ if 'user' in newDict.keys():
 # sB-text
 
 sBt = []
-sbl = []
+sBl = []
 
 def fix():
     pos = 0
