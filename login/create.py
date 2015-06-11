@@ -60,7 +60,6 @@ def createAccount(form):
             h = open('../users/'+user+'/sites/exist.txt',"w")
             os.chmod('../users/'+user+'/sites/exist.txt', 0777)
             h.write("site0")
-            g.close()
             h.close()
     else:
         result+="<h1>Invalid form submission, please fill in all fields</h1>"
