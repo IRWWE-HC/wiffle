@@ -164,7 +164,7 @@ final2 +='''
 </html>
 '''
 
-f = open("sites/exist.txt", "r'")
+f = open("users/" + key + "sites/exist.txt", "r'")
 g = f.readlines()
 f.close()
 
@@ -174,20 +174,20 @@ new = "site" + str((int(last[(last.find("e")+1):])) + 1)
 
 
 
-f = open("sites/exist.txt", "a")
+f = open("users/"+ key +"sites/exist.txt", "a")
 
 if new == "site1":
     f.write("\n")
 f.write(new +"\n")
 f.close()
 
-os.mkdir("sites/"+new)
-y = open("sites/"+ new +"/index.html","w")
+os.mkdir("users/"+ key +"sites/"+new)
+y = open("users/"+ key + "sites/"+ new +"/index.html","w")
 y.write(final)
-os.chmod("sites/"+ new, 0777)
+os.chmod("users/"+ key + "sites/"+ new, 0777)
 y.close()
 
-k = open("sites/"+new+"/users.txt","w")
+k = open("users/" + key + "sites/"+new+"/users.txt","w")
 k.write(key +"\n")
 k.close()
 
