@@ -190,7 +190,7 @@ listUsers.close()
 print userl
 
 if 0 == 0:
-    xl = open("dir","a")
+    xl = open("dir.txt","a")
     xl.write(key + "\n")
     xl.close()
     os.mkdir('users/'+key)
@@ -203,8 +203,8 @@ if 0 == 0:
     p.close()
 
 tyruf = open("users/" + key + "/sites/exist.txt", "r'")
-tyrug = tyruff.readlines()
-tyruff.close()
+tyrug = tyruf.readlines()
+tyruf.close()
 
 last = g[-1]
 print last
