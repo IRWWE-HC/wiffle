@@ -22,7 +22,8 @@ if 'user' in newDict.keys():
 
 # sB-text
 
-sB = {}
+sBt = []
+sbl = []
 
 def fix():
     pos = 0
@@ -30,7 +31,8 @@ def fix():
         key = "sB-text" + str(pos)
         keyd = "sB-link" + str(pos)
         try:
-            sB[newDict[key]] = newDict[keyd]
+            sBt += newDict[key]
+	    sBl += newDict[keyd]
         except:
             break
         pos += 1
@@ -51,8 +53,9 @@ for i in stor2:
 def sidebarify():
     output = ""
     pos = 0
-    for i in sB.keys():
-        output += "<li> <a href=" + sB[i] + ">" + i + "</a>" + "<br> </li>"
+    while pos != len(sBt):
+        output += "<pre> <li> <a href=" + sBl[pos] + ">" +  sBt[pos] + "</a>" + "<br> </li></pre>"
+    	pos += 1
     return output
         
 sidebar += sidebarify()
@@ -76,14 +79,14 @@ final += '''
 final += newDict["template"] + ">"
 final += '''
     <head>
-        <link rel="stylesheet" href="../../css/css-t1.css">
+        <link rel="stylesheet" href="../../../../css/css-t1.css">
         <title> Website (Fix later) </title>
     </head>
     <body>
-        <script src="../../js/jquery-2.1.1.min.js"></script>
-		<script src="../../js/newLink.js"></script>
+        <script src="../../../../js/jquery-2.1.1.min.js"></script>
+		<script src="../../../../js/newLink.js"></script>
                 <nav class="navBar">
-			<a href="../../selector.py" id="home"> Website Editor </a>
+			<a href="../../../../selector.py" id="home"> Website Editor </a>
 			<ul class="navBarRight">
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
 				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
@@ -104,7 +107,7 @@ final += '''
             <!--Main body of the text. Plain text for now-->
             <div id="m" class="s1">
             '''
-final += output
+final +="<pre>" +  output + "</pre>"
 final += '''
 			
 			</div>
@@ -155,10 +158,10 @@ final2 += '''
 			
 			</div>
             <br>
-            <a href ="sites"> Sites </a>
-            Created by:
+            Sites created by: <a href ="users/
 '''
-final2 += key
+final2 += key + "/sites"
+final2 += ">" + key + "</a>"
 final2 +='''
     </body>
 </html>
@@ -207,7 +210,7 @@ tyruf = open("users/" + key + "/sites/exist.txt", "r'")
 tyrug = tyruf.readlines()
 tyruf.close()
 
-last = g[-1]
+last = tyrug[-1]
 print last
 new = "site" + str((int(last[(last.find("e")+1):])) + 1)
     
