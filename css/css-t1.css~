@@ -1,58 +1,47 @@
-/*Background Templates*/
-/* Template 1*/
-html.t1{
-  	height: 100%;
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	background: #70bg32;
 	background-repeat:no-repeat;
-	background: -webkit-linear-gradient(#CCCCCC, #FFFFFF); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#CCCCCC, #FFFFFF); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#CCCCCC, #FFFFFF); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#CCCCCC, #FFFFFF); /* Standard syntax */
+}
+
+/*Background Templates*/
+/* Template 1*/
+html.t1{
+	background: -webkit-linear-gradient(#CCCCCC, #D6D6D6); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#CCCCCC, #D6D6D6); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#CCCCCC, #D6D6D6); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#CCCCCC, #D6D6D6); /* Standard syntax */
 }
 
 /* Template 2*/
 html.t2 {
-  	height: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background: #70bg32;
-	background-repeat:no-repeat;
-	background: -webkit-linear-gradient(#0066FF, #FFFFFF); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#0066FF, #FFFFFF); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#0066FF, #FFFFFF); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#0066FF, #FFFFFF); /* Standard syntax */
+	background: -webkit-linear-gradient(#19A3FF, #4DB8FF); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#19A3FF, #4DB8FF); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#19A3FF, #4DB8FF); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#19A3FF, #4DB8FF); /* Standard syntax */
 }
 
 /* Template 3*/
 html.t3 {
-  	height: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background: #70bg32;
 	background-repeat:no-repeat;
-	background: -webkit-linear-gradient(#FF0066, #FFFFFF); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#FF0066, #FFFFFF); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#FF0066, #FFFFFF); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#FF0066, #FFFFFF); /* Standard syntax */
+	background: -webkit-linear-gradient(#FF0066, #FF3385); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#FF0066, #FF3385); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#FF0066, #FF3385); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#FF0066, #FF3385); /* Standard syntax */
 }
 
+/*Fix the following gradients later */
 /* Template 4*/
 html.t4 {
-  	height: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background: #70bg32;
-	background-repeat:no-repeat;
 	background: -webkit-linear-gradient(#33CC33, #FFFFFF); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(#33CC33, #FFFFFF); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(#33CC33, #FFFFFF); /* For Firefox 3.6 to 15 */
@@ -61,53 +50,44 @@ html.t4 {
 
 /* Template 5*/
 html.t5 {
-  	height: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background: #70bg32;
-	background-repeat:no-repeat;
 	background: -webkit-linear-gradient(#FF3300, #FFFFFF); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(#FF3300, #FFFFFF); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(#FF3300, #FFFFFF); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(#FF3300, #FFFFFF); /* Standard syntax */
 }
-/*Styling PlaceholdeR Text */
+/*Styling Placeholder Text */
 /*Base code from http://coolestguidesontheplanet.com/styling-placeholder-text-input-fields-forms-css/ */
 ::-webkit-input-placeholder {
 	font-size: 14px;
-	color: #000000;
-	text-transform: uppercase;
-	text-transform: uppercase;
-	text-align: center;
+	color: rgb(0, 0, 0, 0.3);
+	text-align: left;
 	font-weight: bold;
 }
 :-moz-placeholder { /* older Firefox*/
-	font-size:14px;
-	color: #000000;
-	text-transform: uppercase;
-	text-align: center;
+	font-size: 14px;
+	color: rgb(0, 0, 0, 0.3);
+	text-align: left;
 	font-weight: bold;
 }
 ::-moz-placeholder { /* Firefox 19+ */ 
 	font-size: 14px;
-	color: #000000; 
-	text-transform: uppercase;
-	text-align: center;
+	color: rgb(0, 0, 0, 0.3);
+	text-align: left;
 	font-weight: bold;
 } 
 :-ms-input-placeholder { 
-	font-size: 14px; 
-	color: #000000;
-	text-transform: uppercase;
-	text-align: center;
-	 font-weight: bold;
+	font-size: 14px;
+	color: rgb(0, 0, 0, 0.3);
+	text-align: left;
+	font-weight: bold;
 }
 
-/*Format Styles*/
+/*Website Editor*/
 
 #heading.s1, #headingText.s1 {
+	position: absolute;
+	top: 10%;
+	left: 50%;
 	font-size: 24px;
 	height: 50px;
 	width: 300px;
@@ -116,66 +96,175 @@ html.t5 {
 	border: 0px;
 }
 
-#m-text.s1 {
-	resize: none;
-	height: 400px;
-	width: 200px;
-}
-
-#m-textText.s1{
-	margin-left: 200px;
+#insertSB {
+	position: absolute;
+	top: 15%;
+	left: 1%;
+	width: 30%;
 }
 
 #sB-text.s1{
-	position: absolute;
-	left: 20px;
+	position: relative;
+	width: 35%;
+	margin: 1px;
 	background-color: transparent;
 	border-style: double;
 	border-width: 3px;
 }
 
 #sB-link.s1{
-	position: absolute;
-	left: 200px;
+	position: relative;
+	width: 35%;
+	margin: 1px;
 	background-color: transparent;
 	border-style: double;
 	border-width: 3px;
 }
 
 #sB.s1{
-	position: absolute;
-	top: 100px;
-	left: 20px;
+	position: relative;
+	list-style-type: none;
+	margin: 1px;
 	background-color: transparent;
-	border-style: double;
-	border-width: 3px;
+	border-width: 0px;
 }
 
 #m-text.s1{
+	resize: none;
+	margin-left: .5vw;
 	position: absolute;
-	height: 400px;
-	width: 800px;
-	left: 437px;
-	top: 100px;
-	background-color: transparent;
-	border-style: solid;
-	border-width: 2px;
-	border-color: #000000;
+	left: 23%;
+	width: 75%;
+	height: 75%;
+	top: 15%;
+	background-color: #FFFFFF;
+	border-style: groove;
+	border-width: 5px;
+}
+
+#m-textText.s1{
+	top: 15%;
+	left: 23%;
+	width: 75%;
+	height: 75%;
 }
 
 #m.s1{
 	position: absolute;
-	width: 800px;
-	left: 437px;
-	top: 100px;
-	background-color: transparent;
+	left: 23%;
+	width: 75%;
+	height: 75%;
+	top: 15%;
+	background-color: #FFFFFF;
 	border-width: 2px;
-	border-style: solid;
-	border-color: #FFFFFF;
+	border-style: groove;
 }
 
 #submit.s1{
+	position: fixed;
+	bottom: 5%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+/* Navigation Bar */
+.navBar{
+	position: relative;
+	width: 100%;
+	padding: 10px;
+	background-color: #000029;
+	box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5); /* I use rgba here for transparency */
+}
+
+.navBar a{
+	position: relative;
+	text-decoration: none;
+	display: inline-block;
+	padding: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0px;
+	border-radius: 15px;
+	font-family: 'Trebuchet MS';
+}
+
+.navBarRight{
+	position: relative;
+	float: right;
+	list-style-type: none;
+	right: 4%;
+	display: -webkit-box;
+}
+
+.navBarRight > li {
+	display: inline;
+	margin: 0px;
+}
+
+.navBarRight a{
+	position: relative;
+	background-color: #3D5C99;
+}
+
+.navBarRight a:hover{
+	position: relative;
+	background-color: #334C80;
+}
+
+.navBar a:link{
+	color: white;
+}
+
+.navBar a:visited{
+	color: white;
+}
+
+#home{
+	background-color: #3D7A99;
+	left: 10%;
+	font-size: 25px; 
+	border-radius: 25px;
+}
+
+#home:hover{
+	background-color: #376E8A;
+}
+
+/* Modal Box */
+/* Lots of help from this website: http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/ */
+
+.modal{
+	position: fixed;
+	font-family: 'Times New Roman';
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 999999;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modal:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modal > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+	
+
+	
