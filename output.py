@@ -158,10 +158,10 @@ final2 += '''
 			
 			</div>
             <br>
-            Sites created by: <a href ="users/
+            Sites created by: <a href ='users/
 '''
 final2 += key + "/sites"
-final2 += ">" + key + "</a>"
+final2 += "'>" + key + "</a>"
 final2 +='''
     </body>
 </html>
