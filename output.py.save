@@ -31,15 +31,16 @@ def fix():
         key = "sB-text" + str(pos)
         keyd = "sB-link" + str(pos)
         try:
-            sBt.append(newDict[key])
-	    sBl.append(newDict[keyd])
+   
+         sBt += newDict[key]
+	    sBl += newDict[keyd]
         except:
             break
         pos += 1
                     
 fix()
-#print sBt
-#print sBl
+print sBt
+print sBl
 '''
 stor1 = sB.keys()
 stor2 = sB.keys()[::-1]
@@ -56,7 +57,7 @@ def sidebarify():
     output = ""
     pos = 0
     while pos != len(sBt):
-        output += "<li> <a href='" + sBl[pos] + "'>" +  sBt[pos] + "</a>" + "<br> </li>"
+        output += "<pre> <li> <a href='" + sBl[pos] + "'>" +  sBt[pos] + "</a>" + "<br> </li></pre>"
     	pos += 1
     return output
         
@@ -109,7 +110,7 @@ final += '''
             <!--Main body of the text. Plain text for now-->
             <div id="m" class="s1">
             '''
-final +="<pre>" +  output + "</pre>" #VERY BROKEN
+final +="<pre>" +  output + "</pre>"
 final += '''
 			
 			</div>
