@@ -188,21 +188,25 @@ for i in rp:
 '''
 
 listUsers = open("dir.txt", "r")
-listUsers = listUsers.readlines()
+print listUsers
+userl = listUsers.readlines()
+print userl
 listUsers.close()
 
-if key not in listUsers:
-    listUsers = open("dir","w")
-    listUsers.write(key + "\n")
-    listUsers.close()
+print userl
+
+if 0 == 0:
+    xl = open("dir","a")
+    xl.write(key + "\n")
+    xl.close()
     os.mkdir('../users/'+key)
     os.chmod('../users/'+key, 0777)
     os.mkdir('../users/'+key+'/sites')
     os.chmod('../users/'+key+'/sites', 0777)
-    h = open('../users/'+key+'/sites/exist.txt',"w")
+    p = open('../users/'+key+'/sites/exist.txt',"w")
     os.chmod('../users/'+key+'/sites/exist.txt', 0777)
-    h.write("site0")
-    h.close()
+    p.write("site0")
+    p.close()
     
     
 
