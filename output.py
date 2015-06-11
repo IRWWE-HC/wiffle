@@ -54,7 +54,7 @@ def sidebarify():
     output = ""
     pos = 0
     while pos != len(sBt):
-        output += "<pre> <li> <a href=" + sBl[pos] + ">" +  sBt[pos] + "</a>" + "<br> </li></pre>"
+        output += "<pre> <li> <a href='" + sBl[pos] + "'>" +  sBt[pos] + "</a>" + "<br> </li></pre>"
     	pos += 1
     return output
         
