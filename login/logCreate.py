@@ -56,7 +56,7 @@ def createAccount(form):
             password = md5Pass(password+user)
             f.write(user+","+password+"\n")
             f.close()
-            g = open('../users/'+user,'w')
+            os.mkdir('../users/'+user)
             os.chmod('../users/'+user, 0777)
             os.mkdir('../users/'+user+'/sites')
             os.chmod('../users/'+user+'/sites', 0777)
