@@ -180,7 +180,7 @@ listUsers = []
 for i in rp:
     listUsers += i[0]
 '''
-
+'''
 listUsers = open("dir.txt", "r")
 print listUsers
 userl = listUsers.readlines()
@@ -189,7 +189,7 @@ listUsers.close()
 
 print userl
 
-if 0 == 0:
+if key not in userl:
     xl = open("dir.txt","a")
     xl.write(key + "\n")
     xl.close()
@@ -201,6 +201,7 @@ if 0 == 0:
     os.chmod('users/'+key+'/sites/exist.txt', 0777)
     p.write("site0")
     p.close()
+'''
 
 tyruf = open("users/" + key + "/sites/exist.txt", "r'")
 tyrug = tyruf.readlines()
