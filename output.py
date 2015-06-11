@@ -165,13 +165,7 @@ final2 +='''
 '''
 
 
-f = open("users/" + key + "/sites/exist.txt", "r'")
-g = f.readlines()
-f.close()
-
-last = g[-1]
-print last
-new = "site" + str((int(last[(last.find("e")+1):])) + 1)
+\
 
 '''
 userDict = open("login/users.txt","r")
@@ -207,7 +201,14 @@ if 0 == 0:
     os.chmod('users/'+key+'/sites/exist.txt', 0777)
     p.write("site0")
     p.close()
-    
+
+tyruf = open("users/" + key + "/sites/exist.txt", "r'")
+tyrug = tyruff.readlines()
+tyruff.close()
+
+last = g[-1]
+print last
+new = "site" + str((int(last[(last.find("e")+1):])) + 1)
     
 
 f = open("users/"+ key +"/sites/exist.txt", "a")
