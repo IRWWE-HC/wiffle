@@ -170,7 +170,7 @@ f.close()
 
 last = g[-1]
 print last
-new = "site" + str((int(last[last.find("e")+1:])) + 1)
+new = "site" + str((int(last[(last.find("e")+1):])) + 1)
 
 
 

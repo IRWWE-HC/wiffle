@@ -82,7 +82,7 @@ html.t5 {
 	font-weight: bold;
 }
 
-/*Format Styles*/
+/*Website Editor*/
 
 #heading.s1, #headingText.s1 {
 	position: absolute;
@@ -167,6 +167,7 @@ html.t5 {
 	margin-right: auto;
 }
 
+/* Navigation Bar */
 .navBar{
 	position: relative;
 	width: 100%;
@@ -178,7 +179,6 @@ html.t5 {
 .navBar a{
 	position: relative;
 	text-decoration: none;
-	position: relative;
 	display: inline-block;
 	padding: 6px;
 	padding-left: 10px;
@@ -191,8 +191,9 @@ html.t5 {
 .navBarRight{
 	position: relative;
 	float: right;
-    list-style-type: none;
+	list-style-type: none;
 	right: 4%;
+	display: -webkit-box;
 }
 
 .navBarRight > li {
@@ -228,4 +229,42 @@ html.t5 {
 #home:hover{
 	background-color: #376E8A;
 }
+
+/* Modal Box */
+/* Lots of help from this website: http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/ */
+
+.modal{
+	position: fixed;
+	font-family: 'Times New Roman';
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 999999;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modal:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modal > table {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+	
+
 	
