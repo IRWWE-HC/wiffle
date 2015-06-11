@@ -164,6 +164,7 @@ final2 +='''
 </html>
 '''
 
+
 f = open("users/" + key + "/sites/exist.txt", "r'")
 g = f.readlines()
 f.close()
@@ -172,7 +173,38 @@ last = g[-1]
 print last
 new = "site" + str((int(last[(last.find("e")+1):])) + 1)
 
+'''
+userDict = open("login/users.txt","r")
+r = userDict.readlines()
+pos = 0
+rp
+while pos != len(r):
+    rp += r[pos].split(",")
+    pos += 1
 
+listUsers = []
+for i in rp:
+    listUsers += i[0]
+'''
+
+listUsers = open("dir.txt", "r")
+listUsers = listUsers.readlines()
+listUsers.close()
+
+if key not in listUsers:
+    listUsers = open("dir","w")
+    listUsers.write(key + "\n")
+    listUsers.close()
+    os.mkdir('../users/'+key)
+    os.chmod('../users/'+key, 0777)
+    os.mkdir('../users/'+key+'/sites')
+    os.chmod('../users/'+key+'/sites', 0777)
+    h = open('../users/'+key+'/sites/exist.txt',"w")
+    os.chmod('../users/'+key+'/sites/exist.txt', 0777)
+    h.write("site0")
+    h.close()
+    
+    
 
 f = open("users/"+ key +"/sites/exist.txt", "a")
 
