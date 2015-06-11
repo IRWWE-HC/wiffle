@@ -119,7 +119,7 @@ final += '''
 				<br>
 			</div>
             <!--Main body of the text. Plain text for now-->
-            <textarea name="m-text" id="m-text" class="s1"
+            <textarea name="m-text" id="m-textInput" class="s1"
                                     placeholder="Main text here"></textarea>
             <br>
 '''

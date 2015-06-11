@@ -107,7 +107,7 @@ final += sidebar
 final += '''
 			</ul></div>
             <!--Main body of the text. Plain text for now-->
-            <div id="m" class="s1">
+            <div id="m-textOutput" class="s1">
             '''
 final +="<pre>" +  output + "</pre>" #VERY BROKEN
 final += '''
@@ -153,7 +153,7 @@ final2 += sidebar
 final2 += '''
 			</ul></div>
             <!--Main body of the text. Plain text for now-->
-            <div id="m" class="s1">
+            <div id="m-textOutput" class="s1">
             '''
 final2 += output
 final2 += '''
