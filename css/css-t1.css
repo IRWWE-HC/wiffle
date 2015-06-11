@@ -3,6 +3,15 @@
 	padding: 0;
 }
 
+/* Borrowed from https://css-tricks.com/transitions-only-after-page-load/ */
+/* Fixes the preload modal box issue */
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 html{
 	height: 100%;
 	-webkit-background-size: cover;

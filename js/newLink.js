@@ -78,3 +78,8 @@ $(document).ready(function(){
 			frm.appendChild(document.createElement("br"))
 		}
 	})});
+
+//Fixes modal popup
+$("window").load(function() {
+  $("body").removeClass("preload");
+});

@@ -254,7 +254,7 @@ html.t5 {
 	pointer-events: auto;
 }
 
-.modal > div {
+.modal > table {
 	width: 400px;
 	position: relative;
 	margin: 10% auto;
