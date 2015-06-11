@@ -38,6 +38,8 @@ def fix():
         pos += 1
                     
 fix()
+print sBt
+print sBl
 '''
 stor1 = sB.keys()
 stor2 = sB.keys()[::-1]
