@@ -30,3 +30,37 @@
 6/8:
 	*Fixed semi-real time updating
 	*Started login system
+	
+6/9:
+	Richard:
+		*Added a nav bar
+		*Made css much better
+	Edward:
+		*Finalized initial login system
+		*Created a method to store sites
+
+6/10:
+	Richard:
+		*Combined login and create accounts into a single homepage
+	Edward:
+		*Bug fixed login system
+		
+		
+Explanations for Additional Areas of Code:
+
+CSS:
+	*Template Section
+		*Here, we have a bunch of different html.t<x> stylings, to be applied to different templates that the user selects. Slight gradients and the such are used. We need different webkits so it works in all browsers.
+	*Placeholder Text
+		*Here, we style the placeholder text so it isn't so drab.
+	*Format Styles
+		*Styles the editor of the website. It places the elements of the editor in the correct places, and makes them look presentable.
+	*Navbar Styles	
+		*Styles the nav bar, so it looks clean.
+
+Javascript:
+	*Sidebar Slot creator
+		*On press, the javascript creates an additional sidebar slot
+	*Semi-Real Time Update
+		*When one clicks out of the input box, the javascript changes it to html. When you click back on the text, it becomes an input box again. This allows for the real time ability to see what your website is like.
+	
