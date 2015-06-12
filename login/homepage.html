@@ -4,7 +4,11 @@
 <title>Create Account Page!</title>
 <link rel="stylesheet" href="../css/css-t1.css">
 </head>
-<body class="preload">
+
+<body>
+
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/newLink.js"></script>
 
 <!--Nav bar-->
 <nav class="navBar">
@@ -16,30 +20,35 @@
 </nav>
 
 <!--Sign Up-->
-<span id='heading'> Welcome </span>
-<table>
-<tr><td>
- <h3>Choose username and password:</h3>
- <form action="logCreate.py">
- <table>
-  <tr>
-   <td>User Name:</td>
-   <td><input type="text" name="user"></td>
-  </tr>
-  <tr>
-   <td>Password:</td>
-   <td> <input type="password" name="passC"></td>
-  </tr>
-  <tr>
-   <td>Password again:</td>
-   <td> <input type="password" name="passC2"></td>
-  </tr>
-  <tr>
-   <td></td><td><input type="submit" name="status" value="create"></td>
-  </tr>
- </table>
- If you have an account, <a href = "login.html">login here</a>.
+<h1 id='headingHP'> Welcome </h1>
+
+<div class="preload"> <!--Prevents modal window from popping up on load-->
+
+	<table>
+		<tr><td>
+		 <h3>Choose username and password:</h3>
+		 <form action="logCreate.py">
+		 <table>
+		  <tr>
+		   <td>User Name:</td>
+		   <td><input type="text" name="user"></td>
+		  </tr>
+		  <tr>
+		   <td>Password:</td>
+		   <td> <input type="password" name="passC"></td>
+		  </tr>
+		  <tr>
+		   <td>Password again:</td>
+		   <td> <input type="password" name="passC2"></td>
+		  </tr>
+		  <tr>
+		   <td></td><td><input type="submit" name="status" value="create"></td>
+		  </tr>
+	 </table>
+	 If you have an account, <a href = "login.html">login here</a>.
 </form>
+
+</div>
 </body>
 
 <!--Login-->
