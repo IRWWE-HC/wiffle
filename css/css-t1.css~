@@ -3,6 +3,15 @@
 	padding: 0;
 }
 
+/* Borrowed from https://css-tricks.com/transitions-only-after-page-load/ */
+/* Fixes the preload modal box issue */
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 html{
 	height: 100%;
 	-webkit-background-size: cover;
@@ -87,7 +96,7 @@ html.t5 {
 #heading.s1, #headingText.s1 {
 	position: absolute;
 	top: 10%;
-	left: 50%;
+	left: 48%;
 	font-size: 24px;
 	height: 50px;
 	width: 300px;
@@ -129,7 +138,7 @@ html.t5 {
 	border-width: 0px;
 }
 
-#m-text.s1{
+#m-textInput.s1{
 	resize: none;
 	margin-left: .5vw;
 	position: absolute;
@@ -142,14 +151,7 @@ html.t5 {
 	border-width: 5px;
 }
 
-#m-textText.s1{
-	top: 15%;
-	left: 23%;
-	width: 75%;
-	height: 75%;
-}
-
-#m.s1{
+#m-textOutput.s1{
 	position: absolute;
 	left: 23%;
 	width: 75%;
@@ -160,18 +162,30 @@ html.t5 {
 	border-style: groove;
 }
 
-#submit.s1{
-	position: fixed;
+#submit{
+	position: absolute;
 	bottom: 5%;
-	margin-left: auto;
-	margin-right: auto;
+	width: 6%;
+	left: 47%;
+	height: 3%;
+	font-family: 'Monserrat';
+	font-size: 16px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	border-style: none;
+	color: white;
+}
+
+#submit:hover{
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Navigation Bar */
 .navBar{
 	position: relative;
 	width: 100%;
-	padding: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background-color: #000029;
 	box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5); /* I use rgba here for transparency */
 }
@@ -203,6 +217,7 @@ html.t5 {
 
 .navBarRight a{
 	position: relative;
+	top: 5px;
 	background-color: #3D5C99;
 }
 
@@ -228,6 +243,27 @@ html.t5 {
 
 #home:hover{
 	background-color: #376E8A;
+}
+
+/*Homepage CSS */
+#headingHP {
+	text-align: center;
+	margin-top: 2%;
+	font-size: 3em;
+	font-family: 'Century Gothic';
+	
+	opacity: 0;
+	-webkit-transition: opacity 40s ease-in;
+	-moz-transition: opacity 40s ease-in;
+	-ms-transition: opacity 40s ease-in;
+	-o-transition: opacity 40s ease-in;
+	transition: opacity 40s ease-in;
+}
+
+/*This next styling was written after learning how to do the modal boxes in the followin section. May look similar due to similar elements */
+
+#headingHP h1.fadeInLoad{
+	opacity: 1;
 }
 
 /* Modal Box */

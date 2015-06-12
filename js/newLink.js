@@ -84,6 +84,6 @@ $(document).ready(function() {
   $("div").removeClass("preload");
 });
 
-$("h1").ready(function() {
-	$("h1").addClass("fadeInLoad"); 
+$(document).ready(function(){
+	$('#headingHP').fadeIn(2000);
 });

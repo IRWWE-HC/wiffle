@@ -245,25 +245,13 @@ html.t5 {
 	background-color: #376E8A;
 }
 
-/*Homepage CSS */
-#headingHP{
+/*Homepage CSS. Different type of fade-in than the modal box (written after the modal box fade in, and was written without external help*/
+#headingHP {
 	text-align: center;
 	margin-top: 2%;
 	font-size: 3em;
 	font-family: 'Century Gothic';
-	
-	opacity: 0;
-    -webkit-transition: opacity 40s ease-in;
-    -moz-transition: opacity 40s ease-in;
-    -ms-transition: opacity 40s ease-in;
-    -o-transition: opacity 40s ease-in;
-    transition: opacity 40s ease-in;
-}
-
-/*This next styling was written after learning how to do the modal boxes in the followin section. May look similar due to similar elements */
-
-#headingHP.fadeInLoad{
-	opacity: 1;
+	display: none;
 }
 
 /* Modal Box */

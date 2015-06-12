@@ -46,7 +46,7 @@ $(document).on('click', function(event) {
 				var oldChild = document.getElementById("m-text");
 				parent.removeChild(oldChild);
 				var newChild = getTextareaValue();
-				newChild.id = "m-textText";
+				newChild.id = "m-textOutput";
 				newChild.className = "s1";
 				parent.appendChild(newChild);
   }}}
@@ -78,3 +78,12 @@ $(document).ready(function(){
 			frm.appendChild(document.createElement("br"))
 		}
 	})});
+
+//Fixes modal popup
+$(document).ready(function() {
+  $("div").removeClass("preload");
+});
+
+$(document).ready(function(){
+	$('#headingHP').fadeIn();
+});
