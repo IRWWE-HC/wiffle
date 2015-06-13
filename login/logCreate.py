@@ -78,7 +78,7 @@ def mainC():
         body += notFilledIn()
     else:
         body += createAccount(form)
-    print header() + body + footer()
+    return header() + body + footer()
 
 #----------------Login Functions-----------------
 
@@ -168,16 +168,16 @@ def mainL():
         body += notLoggedIn()
     else:
         body += login(form)
-    print header() + body + footer()
+    return header() + body + footer()
 
 #-------------Wrapping it Up--------------
 
 def logCreate():
 	query = cgi.FieldStorage()
 	if 'passC' in query:
-		mainC()
-	if 'passL' in query:
-		mainL()
+		return mainC()
+	elif 'passL' in query:
+		return mainL()
 
-logCreate()
+print logCreate()
 
