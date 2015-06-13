@@ -1,6 +1,7 @@
 #!/usr/bin/python
-print "Content-Type: text/html\n"
+print "Content-type: text/html\n"
 print ""
+
 import cgi,cgitb,os,random,hashlib
 cgitb.enable()
 
@@ -176,6 +177,8 @@ def logCreate():
     elif 'passL' in query:
 	return mainL()
 
-#print cgi.FieldStorage()
+
+
+
 print logCreate()
 
