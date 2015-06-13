@@ -40,6 +40,7 @@ def headerC(x):
 """
         final += '<meta http-equiv="refresh" contents = "5;URL='
         final += "'http://www.bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"
+	final += """ " """
         final += ">"
         final += """
 </head>
