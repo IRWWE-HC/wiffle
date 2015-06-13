@@ -1,82 +1,95 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<title>Create Account Page!</title>
-<link rel="stylesheet" href="../css/css-t1.css">
-</head>
+	<head>
+		<title>Create Account Page!</title>
+		<link rel="stylesheet" href="../css/css-t1.css">
+	</head>
 
-<body>
+	<body>
 
-<script src="../js/jquery-2.1.1.min.js"></script>
-<script src="../js/newLink.js"></script>
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/newLink.js"></script>
 
-<!--Nav bar-->
-<nav class="navBar">
-	<a href="selector.py" id="home"> Website Editor </a>
-	<ul class="navBarRight">
-		<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>		
-		<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
-	</ul>
-</nav>
+	<!--Nav bar-->
+		<nav id="HP" class="navBar">
+			<a href="homepage.html" id="home"> Website Editor </a>
+			<ul class="navBarRight">
+				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>		
+				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
+			</ul>
+		</nav>
 
-<!--Sign Up-->
-<h1 id='headingHP'> Welcome </h1>
+	<!--Sign Up-->
+		<h1 id='headingHP'> Welcome </h1>
 
-<div class="preload"> <!--Prevents modal window from popping up on load-->
+		<div class="preload"> <!--Prevents modal window from popping up on load-->
 
-	<table>
-		<tr><td>
-		 <h3>Choose username and password:</h3>
-		 <form action="logCreate.py">
-		 <table>
-		  <tr>
-		   <td>User Name:</td>
-		   <td><input type="text" name="user"></td>
-		  </tr>
-		  <tr>
-		   <td>Password:</td>
-		   <td> <input type="password" name="passC"></td>
-		  </tr>
-		  <tr>
-		   <td>Password again:</td>
-		   <td> <input type="password" name="passC2"></td>
-		  </tr>
-		  <tr>
-		   <td></td><td><input type="submit" name="status" value="create"></td>
-		  </tr>
-	 </table>
-	 If you have an account, <a href = "login.html">login here</a>.
-</form>
+			<table class="signUp">
+				<tr><td>
+					<h3>Create Account</h3>
+					<br>
+					
+					<form action="logCreate.py">
+						<table id="signUpForm">
+							<tr>
+								<td>User Name:</td>
+								<td><input type="text" name="user"></td>
+							</tr>
+							
+							<tr>
+								<td>Enter Password:</td>
+								<td> <input type="password" name="passC"></td>
+							</tr>
+							
+							<tr>
+								<td>Confirm Password:</td>
+								<td> <input type="password" name="passC2"></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><input type="submit" name="status" value="Create" class="prettyButton"></td>
+							</tr>
+						</table>
+					</form>
 
-</div>
-</body>
+		</div>
 
-<!--Login-->
+	<!--Login-->
 
-<a href="#modalWindow">Open Modal</a>
+		<p class="signUp"> Already have an account? </p>
+		
+		<button type="button" id="signInOpen" class="prettyButton"> Click here! </button>
 
-<div id="modalWindow" class="modal">
-	<a href="#close" title="Close" class="close">X</a>
-	<h1>This is my login page!</h1>
-	<table>
-	<tr><td>
-	 <h3>Login</h3>
-	 <form action="logCreate.py" method="POST">
-	 <table>
-	  <tr>
-	   <td>User Name:</td>
-	   <td><input type="text" name="user"></td>
-	  </tr>
-	  <tr>
-	   <td>Password:</td>
-	   <td> <input type="password" name="passL"></td>
-	  </tr>
-	  <tr>
-	   <td></td><td><input type="submit" name="status" value="login"></td>
-	  </tr>
-	 </table>
-	 </form>
-</div>
+		<div class="signIn">
+			
+			<table>
+				<tr><td>
+					<h3>Login</h3>
+					<br>
+					<form action="logCreate.py" method="POST">
+						<table>
+							<tr>
+								<td>User Name:</td>
+								<td><input type="text" name="user"></td>
+							</tr>
+							
+							<tr>
+								<td>Password:</td>
+								<td> <input type="password" name="passL"></td>
+							</tr>
+							
+							<tr>
+								<td></td><td><input type="submit" name="status" class="prettyButton" value="Login"></td>
+							</tr>
+							
+							<tr>
+								<td><button type="button" id="signInClose"class="prettyButton">X</button></td>
+							</tr>
+						</table>
+					</form>
+					
+		</div>
 	
+	</body>
 	
 </html>

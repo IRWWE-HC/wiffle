@@ -77,13 +77,28 @@ $(document).ready(function(){
 			frm.appendChild(txtLink);
 			frm.appendChild(document.createElement("br"))
 		}
-	})});
+	})
 
-//Fixes modal popup
-$(document).ready(function() {
-  $("div").removeClass("preload");
-});
-
-$(document).ready(function(){
+	$("div").removeClass("preload");
+	
+	$('#HP.navBar').slideDown(400);
+	
 	$('#headingHP').fadeIn(2000);
+	$('#headingHP').delay(1000).fadeOut(function() {
+		$('#headingHP').text('Please Login or Create an Account to Proceed');
+		$('#headingHP').css('font-size', '3em');
+	}).fadeIn(2000); //Not sure if this is proper syntax, cause it looks weird. But it works.... 
+	
+	$('.signUp').fadeIn(2000);
+	
+	$('#signInOpen').click(function(){
+		$('.signIn').fadeIn(500);
+	});
+	
+	$('#signInClose').click(function(){
+		$('.signIn').fadeOut(500);
+	});
+	
 });
+
+
