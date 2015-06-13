@@ -81,12 +81,12 @@ final += '''
 final += newDict["template"] + ">"
 final += '''
     <head>
-        <link rel="stylesheet" href="../../../../css/css-t1.css">
+        <link rel="stylesheet" href="../../../../css/template.css">
         <title> Website (Fix later) </title>
     </head>
     <body>
         <script src="../../../../js/jquery-2.1.1.min.js"></script>
-		<script src="../../../../js/newLink.js"></script>
+		<script src="../../../../js/master.js"></script>
                 <nav class="navBar">
 			<a href="../../../../selector.py" id="home"> Website Editor </a>
 			<ul class="navBarRight">
@@ -126,12 +126,12 @@ final2 += '''
 final2 += newDict["template"] + ">"
 final2 += '''
     <head>
-        <link rel="stylesheet" href="css/css-t1.css">
+        <link rel="stylesheet" href="template/.css">
         <title> Website (Fix later) </title>
     </head>
     <body>
         <script src="js/jquery-2.1.1.min.js"></script>
-		<script src="js/newLink.js"></script>
+		<script src="js/master.js"></script>
 		<nav class="navBar">
 			<a href="selector.py" id="home"> Website Editor </a>
 			<ul class="navBarRight">
@@ -170,7 +170,7 @@ final2 +='''
 '''
 
 
-\
+
 
 '''
 userDict = open("login/users.txt","r")
@@ -185,14 +185,14 @@ listUsers = []
 for i in rp:
     listUsers += i[0]
 '''
-'''
+
 listUsers = open("dir.txt", "r")
 print listUsers
 userl = listUsers.readlines()
 print userl
 listUsers.close()
 
-print userl
+
 
 if key not in userl:
     xl = open("dir.txt","a")
@@ -206,7 +206,7 @@ if key not in userl:
     os.chmod('users/'+key+'/sites/exist.txt', 0777)
     p.write("site0")
     p.close()
-'''
+
 
 tyruf = open("users/" + key + "/sites/exist.txt", "r'")
 tyrug = tyruf.readlines()

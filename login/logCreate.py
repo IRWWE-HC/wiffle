@@ -64,6 +64,9 @@ def createAccount(form):
             os.chmod('../users/'+user+'/sites/exist.txt', 0777)
             p.write("site0")
             p.close()
+            x = open("../dir.txt", "a")
+            x.write(user + "\n")
+            x.close()
     else:
         result+="<h1>Invalid form submission, please fill in all fields</h1>"
     return result
@@ -174,10 +177,10 @@ def mainL():
 
 def logCreate():
 	query = cgi.FieldStorage()
-	if 'passC' in query:
-		return mainC()
-	elif 'passL' in query:
-		return mainL()
+	#if 'passC' in query:
+	return mainC()
+	#elif 'passL' in query:
+		#return mainL()
 
 print logCreate()
 
