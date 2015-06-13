@@ -30,6 +30,13 @@ def headerC(x):
                     <meta http-equiv="refresh" content = "0;URL='http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"/>
                     </head>
                     <body>
+                    <nav class="navBar">
+			<a href="homepage.html" id="home"> Website Editor </a>
+			<ul class="navBarRight">
+				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
+				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
+			</ul>
+		</nav>
                 """
     if x == 1: # If it works
         final = ""
@@ -45,6 +52,13 @@ def headerC(x):
         final += """
 </head>
 <body>
+<nav class="navBar">
+			<a href="homepage.html" id="home"> Website Editor </a>
+			<ul class="navBarRight">
+				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
+				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
+			</ul>
+		</nav>
 """
         return final
 
@@ -71,7 +85,7 @@ def createAccount(form):
         elif not valid(user):
             result += "username contains invalid characters<br>"
         else:
-            result += "account "+user+' created! login here: <a href="homepage.html">login page</a><br>'
+            result += "account "+user+' created! login here if you are not automatically redirected: <a href="homepage.html">login page</a><br>'
             f = open('users.txt','a')
             password = md5Pass(password+user)
             f.write(user+","+password+"\n")
@@ -122,6 +136,13 @@ def headerL(x,user,magicNumber):
     <META http-equiv="refresh" content = "5;URL='http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"/>
     </head>
     <body>
+    <nav class="navBar">
+			<a href="homepage.html" id="home"> Website Editor </a>
+			<ul class="navBarRight">
+				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
+				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
+			</ul>
+		</nav>
     Checking your login status...<br>
     """
     if x == 1: # If it works
@@ -136,6 +157,13 @@ def headerL(x,user,magicNumber):
         final += """
 </head>
 <body>
+<nav class="navBar">
+			<a href="homepage.html" id="home"> Website Editor </a>
+			<ul class="navBarRight">
+				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
+				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
+			</ul>
+		</nav>
 Checking your login status...<br>
 """
         return final
@@ -202,7 +230,7 @@ def login(form):
         result += "Success!<br>\n"
         #add user to logged in status
         magicNumber = logInUser(user)
-        result += '<a href="../theme.py?user='+user+'&magicnumber='+str(magicNumber)+'">Click here to go to the main site!</a>'
+        result += '<a href="../theme.py?user='+user+'&magicnumber='+str(magicNumber)+'">If you are not automatically redirected, click here to go to the theme selector!</a>'
     else:
         result += "Failed to log in, authentication failure"
     return result
@@ -222,14 +250,25 @@ def mainL():
 
 #-------------Wrapping it Up--------------
 
+broken = """
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="refresh" content = "0;URL='homepage.html'"/>
+        <title> Oh no! </title>
+    </head>
+    <body>
+        You left fields blank! Go back <a href="homepage.html"> here </a> to fix it.
+    </body>
+</html>        
+"""
 def logCreate():
     if 'passC' in query:
 	   return mainC()
     elif 'passL' in query:
 	   return mainL()
     else:
-	   return 'You left fields blank! Go back <a href="homepage.html"> here </a> to fix it.'
-
+	   return broken
 
 
 print logCreate()

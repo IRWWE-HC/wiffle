@@ -88,7 +88,7 @@ final += '''
         <script src="../../../../js/jquery-2.1.1.min.js"></script>
 		<script src="../../../../js/master.js"></script>
                 <nav class="navBar">
-			<a href="../../../../selector.py" id="home"> Website Editor </a>
+			<a href="../../../../login/homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
 				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
@@ -133,7 +133,7 @@ final2 += '''
         <script src="js/jquery-2.1.1.min.js"></script>
 		<script src="js/master.js"></script>
 		<nav class="navBar">
-			<a href="selector.py" id="home"> Website Editor </a>
+			<a href="homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
 				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>

@@ -18,6 +18,13 @@ def header():
     <title>page of my website...</title>
     </head>
     <body>
+    <nav class="navBar">
+			<a href="login/homepage.html" id="home"> Website Editor </a>
+			<ul class="navBarRight">
+				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
+				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
+			</ul>
+		</nav>
     """
 
 
@@ -89,10 +96,7 @@ html += '''\
 
 def main():
     body = ""
-    #use this to add stuff to the page that anyone can see.
 
-
-    #determine if the user is properly logged in once. 
     isLoggedIn = authenticate()
 
     #use this to determine if you want to show "logged in " stuff, or regular stuff
@@ -100,10 +104,6 @@ def main():
         body += loggedIn()
     else:
         body += notLoggedIn()
-
-    #anyone can see this
-    body += "<hr>other stuff can go here<hr>\n"
-    
     #attach a logout link only if logged in
     if isLoggedIn:
         body+= makeLink("login/logout.py","Click here to log out")+"<br>"
