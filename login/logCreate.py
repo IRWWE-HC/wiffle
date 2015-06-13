@@ -21,11 +21,25 @@ def checkIfNameExists(user):
     return False
 
 #----------------Create Profile Functions-----------------
-def headerC():
-    return """ <!DOCTYPE HTML>
+def headerC(x):
+    if x == 0: #If it fails
+        return """ <!DOCTYPE HTML>
+                    <html>
+                    <head>
+                    <title>Create account</title>
+                    <META http-equiv="refresh" contents = "5;homepage.html">
+                    </head>
+                    <body>
+                """
+    if x == 1: # If it works
+        final = ""
+        final += """ <!DOCTYPE HTML>
 <html>
 <head>
 <title>Create account</title>
+"""
+        final += '<META http-equiv="refresh" contents = "5;../theme.py?user='+user+'&magicnumber='+str(magicNumber)+'">' 
+        final += """
 </head>
 <body>
 """
