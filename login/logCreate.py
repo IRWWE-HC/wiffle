@@ -1,4 +1,6 @@
 #!/usr/bin/python
+print "Content-Type: text/html\n"
+print ""
 import cgi,cgitb,os,random,hashlib
 cgitb.enable()
 
@@ -18,9 +20,7 @@ def checkIfNameExists(user):
 
 #----------------Create Profile Functions-----------------
 def headerC():
-    return """content-type: text/html
-
-<!DOCTYPE HTML>
+    return """ <!DOCTYPE HTML>
 <html>
 <head>
 <title>Create account</title>
@@ -78,13 +78,12 @@ def mainC():
         body += notFilledIn()
     else:
         body += createAccount(form)
-    return header() + body + footer()
+    return headerC() + body + footerC()
 
 #----------------Login Functions-----------------
 
 def headerL():
-        return """
-    <!DOCTYPE HTML>
+        return """ <!DOCTYPE HTML>
     <html>
     <head>
     <title>login checker</title>
@@ -144,10 +143,10 @@ def logInUser(username):
             
 def login(form):
     result = ""
-    if not ('user' in form and 'pass' in form):
+    if not ('user' in form and 'passL' in form):
         return "Username or password not provided"
     user = form['user'].value
-    password = form['pass'].value
+    password = form['passL'].value
     if authenticate(user,password):
         result += "Success!<br>\n"
         #add user to logged in status
@@ -168,7 +167,7 @@ def mainL():
         body += notLoggedIn()
     else:
         body += login(form)
-    return header() + body + footer()
+    return headerL() + body + footerL()
 
 #-------------Wrapping it Up--------------
 
@@ -178,6 +177,7 @@ def logCreate():
 		return mainC()
 	elif 'passL' in query:
 		return mainL()
+
 
 print logCreate()
 
