@@ -27,7 +27,7 @@ def headerC(x):
                     <html>
                     <head>
                     <title>Create account</title>
-                    <META http-equiv="refresh" contents = "5;homepage.html">
+                    <META http-equiv="refresh" contents = "5;URL=http://www.bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html">
                     </head>
                     <body>
                 """
@@ -38,7 +38,7 @@ def headerC(x):
 <head>
 <title>Create account</title>
 """
-        final += '<META http-equiv="refresh" contents = "5;homepage.html">' 
+        final += '<META http-equiv="refresh" contents = "5;URL=http://www.bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html">' 
         final += """
 </head>
 <body>
@@ -108,7 +108,7 @@ def headerL(x,user,magicNumber):
     <html>
     <head>
     <title>login checker</title>
-    <META http-equiv="refresh" contents = "5;homepage.html">
+    <META http-equiv="refresh" contents = "5;URL=http://www.bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html">
     </head>
     <body>
     Checking your login status...<br>
@@ -120,7 +120,7 @@ def headerL(x,user,magicNumber):
 <head>
 <title>Login Chcker</title>
 """
-        final += '<META http-equiv="refresh" contents = "5;../theme.py?user='+user+'&magicnumber='+str(magicNumber)+'">' 
+        final += '<META http-equiv="refresh" contents = "5;URL=http://www.bart.stuy.edu/~edward.tsang/wiffle/theme.py?user='+user+'&magicnumber='+str(magicNumber)+'">' 
         final += """
 </head>
 <body>
@@ -202,10 +202,10 @@ def mainL():
     body = ""
     if len(query)==0:
         body += notLoggedIn()
-        return headerL(0.form['user'].value,mag) + body +footerL()
+        return headerL(0,form['user'].value,mag) + body +footerL()
     else:
         body += login(query)
-        return headerL(1.form['user'].value,mag) + body + footerL()
+        return headerL(1,form['user'].value,mag) + body + footerL()
 
 #-------------Wrapping it Up--------------
 
