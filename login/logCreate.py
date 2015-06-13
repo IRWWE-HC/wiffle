@@ -1,7 +1,11 @@
 #!/usr/bin/python
+print "Content-type: text/html\n"
+print ""
+
 import cgi,cgitb,os,random,hashlib
 cgitb.enable()
 
+query = cgi.FieldStorage()
 #----------------General Stuff---------------------
 
 def md5Pass(password):
@@ -18,9 +22,7 @@ def checkIfNameExists(user):
 
 #----------------Create Profile Functions-----------------
 def headerC():
-    return """content-type: text/html
-
-<!DOCTYPE HTML>
+    return """ <!DOCTYPE HTML>
 <html>
 <head>
 <title>Create account</title>
@@ -51,7 +53,7 @@ def createAccount(form):
         elif not valid(user):
             result += "username contains invalid characters<br>"
         else:
-            result += "account "+user+' created! login here: <a href="login.html">login page</a><br>'
+            result += "account "+user+' created! login here: <a href="homepage.html">login page</a><br>'
             f = open('users.txt','a')
             password = md5Pass(password+user)
             f.write(user+","+password+"\n")
@@ -75,19 +77,17 @@ def notFilledIn():
     return '''You need to create an account using the form found <a href="create.html">here</a>\n'''
 
 def mainC():
-    form = cgi.FieldStorage()
     body = ""
-    if len(form)==0:
+    if len(query)==0:
         body += notFilledIn()
     else:
-        body += createAccount(form)
-    return header() + body + footer()
+        body += createAccount(query)
+    return headerC() + body + footerC()
 
 #----------------Login Functions-----------------
 
 def headerL():
-        return """
-    <!DOCTYPE HTML>
+        return """ <!DOCTYPE HTML>
     <html>
     <head>
     <title>login checker</title>
@@ -147,10 +147,10 @@ def logInUser(username):
             
 def login(form):
     result = ""
-    if not ('user' in form and 'pass' in form):
+    if not ('user' in form and 'passL' in form):
         return "Username or password not provided"
     user = form['user'].value
-    password = form['pass'].value
+    password = form['passL'].value
     if authenticate(user,password):
         result += "Success!<br>\n"
         #add user to logged in status
@@ -162,25 +162,25 @@ def login(form):
 
 
 def notLoggedIn():
-    return '''You need to login, <a href="login.html">here</a>\n'''
+    return '''You need to login, <a href="homepage.html">here</a>\n'''
 
 def mainL():
-    form = cgi.FieldStorage()
     body = ""
-    if len(form)==0:
+    if len(query)==0:
         body += notLoggedIn()
     else:
-        body += login(form)
-    return header() + body + footer()
+        body += login(query)
+    return headerL() + body + footerL()
 
 #-------------Wrapping it Up--------------
 
 def logCreate():
-	query = cgi.FieldStorage()
-	#if 'passC' in query:
-	return mainC()
-	#elif 'passL' in query:
-		#return mainL()
+    if 'passC' in query:
+	   return mainC()
+    elif 'passL' in query:
+	   return mainL()
+
+
 
 print logCreate()
 
