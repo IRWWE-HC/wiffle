@@ -94,13 +94,15 @@ def mainC():
     body = ""
     if len(query)==0:
         body += notFilledIn()
+        return headerC(0) + body + footerC()
     else:
         body += createAccount(query)
-    return headerC() + body + footerC()
+        return headerC(1) + body + footerC()
 
 #----------------Login Functions-----------------
 
-def headerL():
+def headerL(x):
+    if x == 0: #If it fails
         return """ <!DOCTYPE HTML>
     <html>
     <head>
@@ -109,6 +111,19 @@ def headerL():
     <body>
     Checking your login status...<br>
     """
+    if x == 1: # If it works
+        final = ""
+        final += """ <!DOCTYPE HTML>
+<html>
+<head>
+<title>Login Chcker</title>
+"""
+        final += '<META http-equiv="refresh" contents = "5;../theme.py?user='+user+'&magicnumber='+str(magicNumber)+'">' 
+        final += """
+</head>
+<body>
+Checking your login status...<br>
+"""
     
 def footerL():
     return """</body>
@@ -182,9 +197,10 @@ def mainL():
     body = ""
     if len(query)==0:
         body += notLoggedIn()
+        return headerL(0) + body +footerL()
     else:
         body += login(query)
-    return headerL() + body + footerL()
+        return headerL(1) + body + footerL()
 
 #-------------Wrapping it Up--------------
 
