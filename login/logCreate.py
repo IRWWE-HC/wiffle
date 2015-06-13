@@ -27,7 +27,7 @@ def headerC(x):
                     <html>
                     <head>
                     <title>Create account</title>
-                    <meta http-equiv="refresh" contents = "0;URL='http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'">
+                    <meta http-equiv="refresh" content = "0;URL='http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"/>
                     </head>
                     <body>
                 """
@@ -38,10 +38,10 @@ def headerC(x):
 <head>
 <title>Create account</title>
 """
-        final += '<meta http-equiv="refresh" contents = "5;URL='
+        final += '<meta http-equiv="refresh" content = "5;URL='
         final += "'http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"
 	final += """ " """
-        final += ">"
+        final += "/>"
         final += """
 </head>
 <body>
@@ -87,21 +87,29 @@ def createAccount(form):
             x = open("../dir.txt", "a")
             x.write(user + "\n")
             x.close()
+    #elif "passC" == "passC2":
+	#result+="<h1> Invalid form submission, please fill in all fields</h1>"
     else:
         result+="<h1>Invalid form submission, please fill in all fields</h1>"
     return result
 
 def notFilledIn():
-    return '''You need to create an account using the form found <a href="create.html">here</a>\n'''
+    return '''You need to create an account using the form found <a href="homepage.html">here</a>\n'''
 
 def mainC():
     body = ""
     if len(query)==0:
         body += notFilledIn()
-        return headerC(0) + body + footerC()
+        #print "I don't work"
+	#print "<br>"
+	#print query
+	return headerC(0) + body + footerC()
     else:
         body += createAccount(query)
-        return headerC(1) + body + footerC()
+        #print "I work"
+	#print "<br>"
+	#print query
+	return headerC(1) + body + footerC()
 
 #----------------Login Functions-----------------
 
@@ -110,8 +118,8 @@ def headerL(x,user,magicNumber):
         return """ <!DOCTYPE HTML>
     <html>
     <head>
-    <title>login checker</title>
-    <META http-equiv="refresh" contents = "5;URL='http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'">
+    <title>Login Checker</title>
+    <META http-equiv="refresh" content = "5;URL='http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"/>
     </head>
     <body>
     Checking your login status...<br>
@@ -121,10 +129,10 @@ def headerL(x,user,magicNumber):
         final += """ <!DOCTYPE HTML>
 <html>
 <head>
-<title>Login Chcker</title>
+<title>Login Checker</title>
 """
-        final += '<META http-equiv="refresh" contents = "5;URL='
-        final += 'http://bart.stuy.edu/~edward.tsang/wiffle/theme.py?user='+user+'&magicnumber='+str(magicNumber)+'">' 
+        final += '<META http-equiv="refresh" content = "0;URL='
+        final += 'http://bart.stuy.edu/~edward.tsang/wiffle/theme.py?user='+user+'&magicnumber='+str(magicNumber)+'"/>' 
         final += """
 </head>
 <body>
@@ -180,8 +188,9 @@ def logInUser(username):
         IP = os.environ["REMOTE_ADDR"]
     outfile.write(username+","+magicNumber+","+IP+"\n")
     outfile.close()
-    mag[:] = magicNumber
+    mag.append(magicNumber)
     return magicNumber
+
             
 def login(form):
     result = ""
@@ -206,10 +215,10 @@ def mainL():
     body = ""
     if len(query)==0:
         body += notLoggedIn()
-        return headerL(0,form['user'].value,mag) + body +footerL()
+        return headerL(0,query['user'].value,mag[0]) + body +footerL()
     else:
         body += login(query)
-        return headerL(1,form['user'].value,mag) + body + footerL()
+        return headerL(1,query['user'].value,mag[0]) + body + footerL()
 
 #-------------Wrapping it Up--------------
 
@@ -218,6 +227,8 @@ def logCreate():
 	   return mainC()
     elif 'passL' in query:
 	   return mainL()
+    else:
+	   return 'You left fields blank! Go back <a href="homepage.html"> here </a> to fix it.'
 
 
 
