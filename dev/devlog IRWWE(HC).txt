@@ -45,6 +45,22 @@
 	Edward:
 		*Bug fixed login system
 		
+6/11:
+	Richard:
+		*Formatted homepage.html and editing page
+	Edward:
+		*Bug fixed output.py
+
+6/12:
+	<Break Day>
+	
+6/13:
+	Richard:
+		*Finalized the homepage.html look.
+			*Added fade-ins, smooth transitions, and made modal box prettier
+	Edward:
+		*
+		
 		
 Explanations for Additional Areas of Code:
 

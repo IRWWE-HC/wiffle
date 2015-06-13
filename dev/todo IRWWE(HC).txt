@@ -39,3 +39,28 @@
 		*Fix up/complete login system
 	*Fix naming conventions
 	*Add comments
+	
+6/10:
+	*Merge login and create account systems
+		*Both on front-end and back-end
+
+6/11:
+	*Add formatting to homepage.html
+	*Fix the bugs in output.py
+	
+6/12:	
+	<Break Day>
+
+6/13:
+	Richard: 
+		*Finalize homepage.html look
+		*Finalize editing page look
+		*Finalize output page look
+		*Finalize navbar look
+		*Format site directory page
+	Edward:
+		*Reconnect homepage.html to login/account creation system
+		*Start on site directory page creation (back-end)
+	*RENAME FILES SO THAT THEY AREN'T SO DUMB SOUNDING
+	
+	

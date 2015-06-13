@@ -9,4 +9,11 @@
 6/8:
 	*tab.js is now newLink.js
 		*Additional javascript functionality
+
+6/9:
+	*Finialized login systems
+
+6/11:
+	*homepage.html created
+		*Merged login and create account systems
 	
