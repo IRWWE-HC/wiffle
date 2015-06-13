@@ -126,7 +126,7 @@ final2 += '''
 final2 += newDict["template"] + ">"
 final2 += '''
     <head>
-        <link rel="stylesheet" href="template/.css">
+        <link rel="stylesheet" href="css/template.css">
         <title> Website (Fix later) </title>
     </head>
     <body>
@@ -185,7 +185,7 @@ listUsers = []
 for i in rp:
     listUsers += i[0]
 '''
-
+'''
 listUsers = open("dir.txt", "r")
 print listUsers
 userl = listUsers.readlines()
@@ -207,7 +207,7 @@ if key not in userl:
     p.write("site0")
     p.close()
 
-
+'''
 tyruf = open("users/" + key + "/sites/exist.txt", "r'")
 tyrug = tyruf.readlines()
 tyruf.close()
