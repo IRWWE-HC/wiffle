@@ -40,10 +40,10 @@ def valid(s):
 
 def createAccount(form):
     result = "attempting to create an account...<br>"
-    if "user" in form and "pass" in form and "pass2" in form:
+    if "user" in form and "passC" in form and "passC2" in form:
         user = form['user'].value
-        password = form['pass'].value
-        password2 = form['pass2'].value
+        password = form['passC'].value
+        password2 = form['passC2'].value
         if checkIfNameExists(user):
             result += "user exists: "+ user +"<br>"
         elif password != password2:
