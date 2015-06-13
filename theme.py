@@ -15,10 +15,13 @@ def header():
     <!DOCTYPE HTML>
     <html>
     <head>
-    <title>page of my website...</title>
+    <link rel="stylesheet" href="css/template.css">
+        <title> Theme Selector </title>
     </head>
     <body>
-    <nav class="navBar">
+        <script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/master.js"></script>
+		  <nav class="navBar">
 			<a href="login/homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>

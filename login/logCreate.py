@@ -28,9 +28,12 @@ def headerC(x):
                     <head>
                     <title>Create account</title>
                     <meta http-equiv="refresh" content = "0;URL='http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"/>
-                    </head>
-                    <body>
-                    <nav class="navBar">
+                    <link rel="stylesheet" href="css/template.css">
+    </head>
+    <body>
+        <script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/master.js"></script>
+		  <nav class="navBar">
 			<a href="homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
@@ -50,15 +53,17 @@ def headerC(x):
 	final += """ " """
         final += "/>"
         final += """
-</head>
-<body>
-<nav class="navBar">
+                    <link rel="stylesheet" href="css/template.css">
+    </head>
+    <body>
+        <script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/master.js"></script>
+		  <nav class="navBar">
 			<a href="homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
 				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
 			</ul>
-		</nav>
 """
         return final
 
@@ -134,15 +139,17 @@ def headerL(x,user,magicNumber):
     <head>
     <title>Login Checker</title>
     <META http-equiv="refresh" content = "5;URL='http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"/>
+                    <link rel="stylesheet" href="css/template.css">
     </head>
     <body>
-    <nav class="navBar">
+        <script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/master.js"></script>
+		  <nav class="navBar">
 			<a href="homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
 				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
 			</ul>
-		</nav>
     Checking your login status...<br>
     """
     if x == 1: # If it works
@@ -155,15 +162,17 @@ def headerL(x,user,magicNumber):
         final += '<META http-equiv="refresh" content = "0;URL='
         final += 'http://bart.stuy.edu/~edward.tsang/wiffle/theme.py?user='+user+'&magicnumber='+str(magicNumber)+'"/>' 
         final += """
-</head>
-<body>
-<nav class="navBar">
+                    <link rel="stylesheet" href="css/template.css">
+    </head>
+    <body>
+        <script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/master.js"></script>
+		  <nav class="navBar">
 			<a href="homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
 				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
 			</ul>
-		</nav>
 Checking your login status...<br>
 """
         return final
@@ -256,8 +265,17 @@ broken = """
     <head>
     <meta http-equiv="refresh" content = "0;URL='homepage.html'"/>
         <title> Oh no! </title>
+                    <link rel="stylesheet" href="css/template.css">
     </head>
     <body>
+        <script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/master.js"></script>
+		  <nav class="navBar">
+			<a href="homepage.html" id="home"> Website Editor </a>
+			<ul class="navBarRight">
+				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
+				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
+			</ul>
         You left fields blank! Go back <a href="homepage.html"> here </a> to fix it.
     </body>
 </html>        
