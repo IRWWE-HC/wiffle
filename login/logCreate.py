@@ -28,11 +28,11 @@ def headerC(x):
                     <head>
                     <title>Create account</title>
                     <meta http-equiv="refresh" content = "0;URL='http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"/>
-                    <link rel="stylesheet" href="css/template.css">
+                    <link rel="stylesheet" href="../css/template.css">
     </head>
     <body>
-        <script src="js/jquery-2.1.1.min.js"></script>
-		<script src="js/master.js"></script>
+        <script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/master.js"></script>
 		  <nav class="navBar">
 			<a href="homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
@@ -53,11 +53,11 @@ def headerC(x):
 	final += """ " """
         final += "/>"
         final += """
-                    <link rel="stylesheet" href="css/template.css">
+                    <link rel="stylesheet" href="../css/template.css">
     </head>
     <body>
-        <script src="js/jquery-2.1.1.min.js"></script>
-		<script src="js/master.js"></script>
+        <script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/master.js"></script>
 		  <nav class="navBar">
 			<a href="homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
@@ -139,11 +139,11 @@ def headerL(x,user,magicNumber):
     <head>
     <title>Login Checker</title>
     <META http-equiv="refresh" content = "5;URL='http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"/>
-                    <link rel="stylesheet" href="css/template.css">
+                    <link rel="stylesheet" href="../css/template.css">
     </head>
     <body>
-        <script src="js/jquery-2.1.1.min.js"></script>
-		<script src="js/master.js"></script>
+        <script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/master.js"></script>
 		  <nav class="navBar">
 			<a href="homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
@@ -162,11 +162,11 @@ def headerL(x,user,magicNumber):
         final += '<META http-equiv="refresh" content = "0;URL='
         final += 'http://bart.stuy.edu/~edward.tsang/wiffle/theme.py?user='+user+'&magicnumber='+str(magicNumber)+'"/>' 
         final += """
-                    <link rel="stylesheet" href="css/template.css">
+                    <link rel="stylesheet" href="../css/template.css">
     </head>
     <body>
-        <script src="js/jquery-2.1.1.min.js"></script>
-		<script src="js/master.js"></script>
+        <script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/master.js"></script>
 		  <nav class="navBar">
 			<a href="homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
