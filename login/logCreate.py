@@ -27,7 +27,7 @@ def headerC(x):
                     <html>
                     <head>
                     <title>Create account</title>
-                    <meta http-equiv="refresh" contents = "0;URL='http://www.bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'">
+                    <meta http-equiv="refresh" contents = "0;URL='http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'">
                     </head>
                     <body>
                 """
@@ -39,7 +39,7 @@ def headerC(x):
 <title>Create account</title>
 """
         final += '<meta http-equiv="refresh" contents = "5;URL='
-        final += "'http://www.bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"
+        final += "'http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"
 	final += """ " """
         final += ">"
         final += """
@@ -111,7 +111,7 @@ def headerL(x,user,magicNumber):
     <html>
     <head>
     <title>login checker</title>
-    <META http-equiv="refresh" contents = "5;URL='http://www.bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'">
+    <META http-equiv="refresh" contents = "5;URL='http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'">
     </head>
     <body>
     Checking your login status...<br>
@@ -124,7 +124,7 @@ def headerL(x,user,magicNumber):
 <title>Login Chcker</title>
 """
         final += '<META http-equiv="refresh" contents = "5;URL='
-        final += 'http://www.bart.stuy.edu/~edward.tsang/wiffle/theme.py?user='+user+'&magicnumber='+str(magicNumber)+'">' 
+        final += 'http://bart.stuy.edu/~edward.tsang/wiffle/theme.py?user='+user+'&magicnumber='+str(magicNumber)+'">' 
         final += """
 </head>
 <body>
