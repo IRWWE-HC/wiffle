@@ -38,11 +38,12 @@ def headerC(x):
 <head>
 <title>Create account</title>
 """
-        final += '<META http-equiv="refresh" contents = "5;../theme.py?user='+user+'&magicnumber='+str(magicNumber)+'">' 
+        final += '<META http-equiv="refresh" contents = "5;homepage.html">' 
         final += """
 </head>
 <body>
 """
+        return final
 
 def footerC():
     return """</body>
@@ -101,12 +102,13 @@ def mainC():
 
 #----------------Login Functions-----------------
 
-def headerL(x):
+def headerL(x,user,magicNumber):
     if x == 0: #If it fails
         return """ <!DOCTYPE HTML>
     <html>
     <head>
     <title>login checker</title>
+    <META http-equiv="refresh" contents = "5;homepage.html">
     </head>
     <body>
     Checking your login status...<br>
@@ -124,6 +126,7 @@ def headerL(x):
 <body>
 Checking your login status...<br>
 """
+        return final
     
 def footerL():
     return """</body>
@@ -163,6 +166,7 @@ def remove(user):
 
 #only meant to be run after password authentication passes.
 #uses call to remove(user) that will remove them no matter what.
+mag = []
 def logInUser(username):
     magicNumber = str(random.randint(1000000,9999999))
     remove(username)
@@ -172,6 +176,7 @@ def logInUser(username):
         IP = os.environ["REMOTE_ADDR"]
     outfile.write(username+","+magicNumber+","+IP+"\n")
     outfile.close()
+    mag[:] = magicNumber
     return magicNumber
             
 def login(form):
@@ -197,10 +202,10 @@ def mainL():
     body = ""
     if len(query)==0:
         body += notLoggedIn()
-        return headerL(0) + body +footerL()
+        return headerL(0.form['user'].value,mag) + body +footerL()
     else:
         body += login(query)
-        return headerL(1) + body + footerL()
+        return headerL(1.form['user'].value,mag) + body + footerL()
 
 #-------------Wrapping it Up--------------
 
