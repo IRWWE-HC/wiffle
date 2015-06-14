@@ -173,7 +173,7 @@ def headerL(x,user,magicNumber):
 <head>
 <title>Login Checker</title>
 """
-        final += '<meta http-equiv="refresh" content = "0;URL='
+        final += '<meta http-equiv="refresh" content = "2;URL='
         final += 'http://bart.stuy.edu/~edward.tsang/wiffle/theme.py?user='+user+'&magicnumber='+str(magicNumber)+'"/>' 
         final += """
                     <link rel="stylesheet" href="../css/template.css">
@@ -273,8 +273,10 @@ def mainL():
         return headerL(0,query['user'].value,mag[0]) + body +footerL()
     else:
         body += login(query)
-        return headerL(1,query['user'].value,mag[0]) + body + footerL()
-
+        if mag[0] != 0:
+	    return headerL(1,query['user'].value,mag[0]) + body + footerL()
+	else:
+	    return headerL(0,query['user'].value,mag[0]) + body + footerL()
 #-------------Wrapping it Up--------------
 
 broken = """
