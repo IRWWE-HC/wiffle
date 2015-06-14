@@ -545,4 +545,33 @@ html.t5 {
 	display: none;
 }
 
+/* Template Selector Stylings */
+
+.templateIMG {
+	position: fixed;
+	top: 20%;
+	margin-left: 25%;
+	width: 50%;
+	height: auto;
+	display: none;
+}
+
+.templateChoice {
+	margin-left: 2%;
+}
+
+.templateRadio {
+	margin-left: 2%;
+	list-style-type: none;
+	visibility: hidden;
+}
+
+#submitButton {
+	margin-left: 3%;
+}
+
+.templateRadio:checked + label {
+	color: red;
+}
+
 

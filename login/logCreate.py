@@ -51,7 +51,7 @@ def headerC(x):
 <head>
 <title>Create account</title>
 """
-        final += '<meta http-equiv="refresh" content = "2;URL='
+        final += '<meta http-equiv="refresh" content = "3;URL='
         final += "'http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"
 	final += """ " """
         final += "/>"
@@ -85,7 +85,7 @@ def valid(s):
     return True
 
 def createAccount(form):
-    result = "attempting to create an account...<br>"
+    result = "Attempting to create an account...<br>"
     if "user" in form and "passC" in form and "passC2" in form:
         user = form['user'].value
         password = form['passC'].value
@@ -170,7 +170,7 @@ def headerL(x,user,magicNumber):
 <head>
 <title>Login Checker</title>
 """
-        final += '<META http-equiv="refresh" content = "0;URL='
+        final += '<meta http-equiv="refresh" content = "0;URL='
         final += 'http://bart.stuy.edu/~edward.tsang/wiffle/theme.py?user='+user+'&magicnumber='+str(magicNumber)+'"/>' 
         final += """
                     <link rel="stylesheet" href="../css/template.css">
