@@ -127,13 +127,13 @@ $(document).ready(function(){
 		$('#titleContainer').delay(2800).fadeOut(500);
 	});
 	
-	//Prevents User from clicking Enter to Submit. Borrowed from http://stackoverflow.com/questions/895171/prevent-users-from-submitting-form-by-hitting-enter
+	//Prevents User from clicking Enter to Submit. Borrowed from http://stackoverflow.com/questions/895171/prevent-users-from-submitting-form-by-hitting-enter and a stipulation was added by me (for textarea)
 	$(window).keydown(function(event){
-		if(event.keyCode == 13) {
-		event.preventDefault();
-		return false;
-		}
-	});
+        if(event.keyCode == 13 && event.target.nodeName!='TEXTAREA') {
+          event.preventDefault();
+          return false;
+        }
+    });
 	
 	//Selection menu code
 	$('#optionCarousel').hover(function(){
