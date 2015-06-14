@@ -14,7 +14,7 @@ def listsites(x):
     stor.close()
     output = "<ol>"
     for i in y:
-        output += "<li> <a href='users" + x + "/sites/" + i + "'>"  + i + "</a> </li>"
+        output += "<li> <a href='users/" + x + "/sites/" + i + "'>"  + i + "</a> </li>"
     return output + "</ol>"
 
 for i in y[:-1]:
@@ -27,13 +27,13 @@ final = '''
 	<html>
 		<head>
 			<title> Users </title>
-<link rel="stylesheet" href="../css/template.css">
+<link rel="stylesheet" href="css/template.css">
     </head>
     <body>
-        <script src="../js/jquery-2.1.1.min.js"></script>
-		<script src="../js/master.js"></script>
+        <script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/master.js"></script>
 		  <nav class="navBar">
-			<a href="homepage.html" id="home"> Website Editor </a>
+			<a href="login/homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
 				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>

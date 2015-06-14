@@ -160,9 +160,9 @@ final2 += '''
 			
 			</div>
             <br>
-            Sites created by: <a href ='users/
+            Sites created by: <a href ='usersites.py?user=
 '''
-final2 += key + "/sites"
+final2 += key 
 final2 += "'>" + key + "</a>"
 final2 +='''
     </body>
@@ -213,7 +213,7 @@ tyrug = tyruf.readlines()
 tyruf.close()
 
 last = tyrug[-1]
-print last
+#print last
 new = "site" + str((int(last[(last.find("e")+1):])) + 1)
     
 

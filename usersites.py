@@ -7,8 +7,8 @@ import cgi
 final = ""
 
 x = open("dir.txt","r")
-y = x.read()
-y = y.split("\n")
+f = x.read()
+f = f.split("\n")
 
 d = cgi.FieldStorage()
 
@@ -20,10 +20,11 @@ else:
 
 def listsites(x):
     output = ""
-    if key not in y or 'user' not in d:
+    if key not in f or 'user' not in d:
         output += "Playing with the URL is bad"
+	return output
     else:
-        stor = open("users/" + x "/sites/exist.txt","r")
+        stor = open("users/" + x + "/sites/exist.txt","r")
         y = stor.readlines()[1:]
         stor.close()
         output += "<ol>"
@@ -42,13 +43,13 @@ final += '''
 '''
 final += key + "'s sites"
 final += '''</title>
-<link rel="stylesheet" href="../css/template.css">
+<link rel="stylesheet" href="css/template.css">
     </head>
     <body>
-        <script src="../js/jquery-2.1.1.min.js"></script>
-		<script src="../js/master.js"></script>
+        <script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/master.js"></script>
 		  <nav class="navBar">
-			<a href="homepage.html" id="home"> Website Editor </a>
+			<a href="login/homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
 				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
