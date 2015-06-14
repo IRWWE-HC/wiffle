@@ -251,7 +251,7 @@ if key not in userl:
     os.chmod('users/'+key+'/sites', 0777)
     p = open('users/'+key+'/sites/exist.txt',"w")
     os.chmod('users/'+key+'/sites/exist.txt', 0777)
-    p.write("site0")
+    p.write("site0;site0")
     p.close()
 
 '''
@@ -261,7 +261,7 @@ tyruf.close()
 
 last = tyrug[-1]
 #print last
-new = "site" + str((int(last[(last.find("e")+1):])) + 1)
+new = "site" + str((int(last[(last.find("e")+1):last.find(";")])) + 1)
 newK = new +  ";"+newDict['title']
     
 
