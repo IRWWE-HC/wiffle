@@ -273,20 +273,22 @@ html.t5 {
 
 #sB-text.s1{
 	position: relative;
-	width: 35%;
+	width: 50%;
 	margin: 1px;
-	background-color: transparent;
-	border-style: double;
-	border-width: 3px;
+	background-color: white;
+	border-style: solid;
+	border-width: single;
+	border-radius: 5px;
 }
 
 #sB-link.s1{
 	position: relative;
-	width: 35%;
+	width: 50%;
 	margin: 1px;
-	background-color: transparent;
-	border-style: double;
-	border-width: 3px;
+	background-color: white;
+	border-style: solid;
+	border-width: single;
+	border-radius: 5px;
 }
 
 #alert{
