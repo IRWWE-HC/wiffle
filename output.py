@@ -20,6 +20,7 @@ if 'user' in newDict.keys():
 
 
 
+
 sBt = []
 sBl = []
 '''
@@ -90,6 +91,8 @@ if "heading" not in newDict.keys():
     newDict["heading"] =  ""
 if "sB-name" not in newDict.keys():
     newDict["sB-name"] = ""
+if "title" not in newDict.keys():
+    newDict["title"] = ""
 
 final = ''
 final += '''
@@ -100,7 +103,9 @@ final += newDict["template"] + ">"
 final += '''
     <head>
         <link rel="stylesheet" href="../../../../css/template.css">
-        <title> Website </title>
+        <title>'''
+final += newDict['title'] + "</title>"
+final += '''
     </head>
     <body>
 		<nav class="navBar">
@@ -129,7 +134,7 @@ final += '''
 			<div id="sBO">
 				<h1 id="sB-nameO">
 '''
-final += newDict['sB-name'] + "<br>" #GET RID OF THIS EVENTUALLY
+final += newDict['sB-name'] + "<br>"
 final += '''</h1>
 				
 				<br><br>
@@ -140,7 +145,7 @@ final += '''
             <!--Main body of the text. Plain text for now-->
             <div id="m-textO" class="s1">
             '''
-final +="<pre>" +  output + "</pre>" #VERY BROKEN
+final +="<pre>" +  output + "</pre>" 
 final += '''
 			
 			</div>
@@ -158,7 +163,9 @@ final2 += newDict["template"] + ">"
 final2 += '''
     <head>
         <link rel="stylesheet" href="css/template.css">
-        <title> Website (Fix later) </title>
+        <title>'''
+final2 += newDict['title'] + "</title>"
+final2 += '''
     </head>
     <body>
 		<nav class="navBar">
@@ -255,6 +262,7 @@ tyruf.close()
 last = tyrug[-1]
 #print last
 new = "site" + str((int(last[(last.find("e")+1):])) + 1)
+new += ";"+newDict['title']
     
 
 f = open("users/"+ key +"/sites/exist.txt", "a")

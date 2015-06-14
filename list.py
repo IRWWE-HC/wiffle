@@ -12,9 +12,11 @@ def listsites(x):
     stor = open("users/" + x + "/sites/exist.txt","r")
     y = stor.readlines()[1:]
     stor.close()
+    for i in y:
+        i.split(";")
     output = '<ul class="siteDir">'
     for i in y:
-        output += "<li> <a href='users/" + x + "/sites/" + i + "'>"  + i + "</a> </li>"
+        output += "<li> <a href='users/" + x + "/sites/" + i[0] + "'>"  + i[1] + "</a> </li>"
     return output + "</ul>"
 
 for i in y[:-1]:
