@@ -81,27 +81,6 @@ def loggedIn():
 def notLoggedIn():
     return '''You need to login to see more. You can log in here: <a href="login/homepage.html">here</a>\n'''
 
-def checkLogMainValues():
-    #determine if the user is properly logged in once. 
-    isLoggedIn = authenticate()
-    optionCarousel = ""
-
-    #use this to determine if you want to show "logged in " stuff, or regular stuff
-    if isLoggedIn:
-        optionCarousel += html
-    else:
-        optionCarousel += notLoggedIn()
-    #attach a logout link only if logged in
-    return optionCarousel
-
-def checkLogSignOut():
-    isLoggedIn = authenticate()
-    logOutLink = ""
-    if isLoggedIn:
-        logOutLink+= makeLink("login/logout.py","Click here to log out")
-    else:
-        logOutLink+= '<a href="login/homepage.html"> Sign In </a>'
-    return logOutLink
 
 
 html = '''		<h1 class="USdirHeading"> Please Choose Your Theme </h1>
@@ -140,6 +119,28 @@ html += '''\
 			<img id="img5" class="templateIMG" src="../templates/template5.png">
 		</form>
 '''
+
+def checkLogMainValues():
+    #determine if the user is properly logged in once. 
+    isLoggedIn = authenticate()
+    optionCarousel = ""
+
+    #use this to determine if you want to show "logged in " stuff, or regular stuff
+    if isLoggedIn:
+        optionCarousel += html
+    else:
+        optionCarousel += notLoggedIn()
+    #attach a logout link only if logged in
+    return optionCarousel
+
+def checkLogSignOut():
+    isLoggedIn = authenticate()
+    logOutLink = ""
+    if isLoggedIn:
+        logOutLink+= makeLink("login/logout.py","Click here to log out")
+    else:
+        logOutLink+= '<a href="login/homepage.html"> Sign In </a>'
+    return logOutLink
 
 def main():
     body = ""
