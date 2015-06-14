@@ -161,16 +161,22 @@ html.t5 {
 	z-index: 9001;
 }
 
-#otherInstruc {
+.otherInstruc {
 	position: fixed;
-	top: 50%;
 	width: 30%;
 	left: 35%;
 	text-align: center;
 	z-index: 9001;
 	display: none;
 }
-	
+
+#oI1 {
+	top:50%;
+}
+
+#oI2 {
+	top:55%;
+}
 
 /*Heading Stylings */
 #headingDisplay.s1{

@@ -129,7 +129,8 @@ final += '''
 				<h1 id="titleInstruc"> Please Name Your Website </h1>
 				<input type="text" name="title" id="title" class="s1" placeholder="Website Name Here">
 				<button type="button" value="finish" id="finish"> Done! </button>
-				<h2 id="otherInstruc"> Hover over the + Button to Begin </h2>
+				<h2 id="oI1" class="otherInstruc"> Hover over the + Button to Begin </h2>
+				<h2 id="oI2" class="otherInstruc"> All fields except sidebar links can take HTML tags! </h2>
 			</div>
             <input type="hidden" name ="template"  value =
 '''
