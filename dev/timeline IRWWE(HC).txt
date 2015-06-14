@@ -16,4 +16,8 @@
 6/11:
 	*homepage.html created
 		*Merged login and create account systems
+
+6/13:
+	*Renamed html-t1, css-t1 and newLinks.js to editTesting.html, template.css, and master.js
+	*Create usersites.py and list.py
 	

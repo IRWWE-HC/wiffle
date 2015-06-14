@@ -61,8 +61,18 @@
 		*Added options menu to website editor
 		*Added a sidebar name area
 		*Altered way the website is to be edited
+			*Added an element selector
+			*Changed semi-real time functionality (based off different concept now)
+			*Created way to prevent users from not inputting a link and corresponding text for the sidebar
+		*Added and modified navigation bar
 	Edward:
-		*
+		*Wrote usersites.py, lists.py
+		*Create redirect pages for logins
+		*Linked homepage.html to logCreate.py
+		*Implemented navbar into most pages
+		*Update output.py, selector.py, theme.py, logout.py and logCreate.py
+	*RENAMED FILES! :D
+	
 		
 		
 Explanations for Additional Areas of Code:
