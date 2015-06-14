@@ -19,6 +19,7 @@ if 'user' in newDict.keys():
     key = newDict['user']
 
 
+
 sBt = []
 sBl = []
 
@@ -33,6 +34,7 @@ def fix():
         except:
             break
         pos += 1
+
                     
 fix()
 #print sBt
@@ -81,7 +83,7 @@ final += '''
 final += newDict["template"] + ">"
 final += '''
     <head>
-        <link rel="stylesheet" href="../css/template.css">
+        <link rel="stylesheet" href="../../../../css/template.css">
         <title> Website </title>
     </head>
     <body>
@@ -93,8 +95,8 @@ final += '''
 			</ul>
 		</nav>
 		
-        <script src="../js/jquery-2.1.1.min.js"></script>
-		<script src="../js//master.js"></script>
+        <script src="../../../../js/jquery-2.1.1.min.js"></script>
+		<script src="../../../../js/master.js"></script>
 		
             <h1 id="headingO" class="s1">
 '''
