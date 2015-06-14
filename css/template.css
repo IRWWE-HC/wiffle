@@ -152,7 +152,6 @@ html.t5 {
 	height: 50px;
 	width: 300px;
 	z-index: 9001;
-	z-index: 9001;
 }
 
 /*Sidebar Stylings */
@@ -311,6 +310,50 @@ html.t5 {
 .optionButton:hover{
 	background-color: rgba(0, 0, 0, 0.8);
 }
+
+/* Output Display */
+#headingO{
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	margin-left: -150px;
+	text-align: center;
+	font-size: 24px;
+	height: 50px;
+	width: 300px;
+	z-index: 9001;
+}
+
+#sBO{
+	position: absolute;
+	top: 15%;
+	left: 1%;
+	width: 30%
+}
+
+#sB-nameO{
+	display: inline;
+	font-size: 20px;
+}
+
+#sBInputO{
+	display: inline;
+	height: 20px;
+	width: 20px;
+	border-radius: 25px;
+	border-style: none;
+}
+
+#m-textO{
+	position: absolute;
+	left: 23%;
+	width: 75%;
+	height: 75%;
+	top: 15%;
+	background-color: #FFFFFF;
+	border-width: 2px;
+	border-style: groove;
+}	
 
 /* Navigation Bar */
 .navBar{
