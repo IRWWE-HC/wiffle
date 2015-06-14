@@ -8,15 +8,19 @@ def header():
 <html>
 <head>
 <title>logout</title>
-</head>
-<body>
-<nav class="navBar">
+<link rel="stylesheet" href="../css/template.css">
+    </head>
+    <body>
+        <script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/master.js"></script>
+		  <nav class="navBar">
 			<a href="homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
 				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
 			</ul>
 		</nav>
+
 Attempting to log you out...<br>
 
 """
