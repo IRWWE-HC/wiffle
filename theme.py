@@ -13,7 +13,7 @@ cgitb.enable()
 form = cgi.FieldStorage()
 
 def header():
-        return """content-type: text/html
+        return """
     <!DOCTYPE HTML>
     <html>
     <head>
