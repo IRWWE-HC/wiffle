@@ -27,7 +27,7 @@ def headerC(x):
                     <html>
                     <head>
                     <title>Create account</title>
-                    <meta http-equiv="refresh" content = "0;URL='http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"/>
+                    <meta http-equiv="refresh" content = "2;URL='http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"/>
                     <link rel="stylesheet" href="../css/template.css">
     </head>
     <body>
@@ -48,7 +48,7 @@ def headerC(x):
 <head>
 <title>Create account</title>
 """
-        final += '<meta http-equiv="refresh" content = "5;URL='
+        final += '<meta http-equiv="refresh" content = "2;URL='
         final += "'http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"
 	final += """ " """
         final += "/>"
@@ -64,6 +64,7 @@ def headerC(x):
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
 				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
 			</ul>
+		</nav>
 """
         return final
 
@@ -84,11 +85,11 @@ def createAccount(form):
         password = form['passC'].value
         password2 = form['passC2'].value
         if checkIfNameExists(user):
-            result += "user exists: "+ user +"<br>"
+            result += "User Exists: "+ user + ". You will be redirected momentarily. "+"<br>"
         elif password != password2:
-            result += "passwords do not match!<br>"
+            result += "Passwords do not match!" + " You will be redirected momentarily." + "<br>" 
         elif not valid(user):
-            result += "username contains invalid characters<br>"
+            result += "Username contains invalid characters." + " You will be redirected momentarily." + "<br>"
         else:
             result += "account "+user+' created! login here if you are not automatically redirected: <a href="homepage.html">login page</a><br>'
             f = open('users.txt','a')
@@ -138,7 +139,7 @@ def headerL(x,user,magicNumber):
     <html>
     <head>
     <title>Login Checker</title>
-    <META http-equiv="refresh" content = "5;URL='http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"/>
+    <META http-equiv="refresh" content = "2;URL='http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"/>
                     <link rel="stylesheet" href="../css/template.css">
     </head>
     <body>
@@ -150,6 +151,7 @@ def headerL(x,user,magicNumber):
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
 				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
 			</ul>
+			</nav>
     Checking your login status...<br>
     """
     if x == 1: # If it works
@@ -173,6 +175,7 @@ def headerL(x,user,magicNumber):
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
 				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
 			</ul>
+			</nav>
 Checking your login status...<br>
 """
         return final
@@ -241,7 +244,7 @@ def login(form):
         magicNumber = logInUser(user)
         result += '<a href="../theme.py?user='+user+'&magicnumber='+str(magicNumber)+'">If you are not automatically redirected, click here to go to the theme selector!</a>'
     else:
-        result += "Failed to log in, authentication failure"
+        result += "Failed to log in, authentication failure." + " You will be redirected momentarily."
     return result
 
 
@@ -263,13 +266,13 @@ broken = """
 <!DOCTYPE html>
 <html>
     <head>
-    <meta http-equiv="refresh" content = "0;URL='homepage.html'"/>
+    <meta http-equiv="refresh" content = "2;URL='homepage.html'"/>
         <title> Oh no! </title>
-                    <link rel="stylesheet" href="css/template.css">
+                    <link rel="stylesheet" href="../css/template.css">
     </head>
     <body>
-        <script src="js/jquery-2.1.1.min.js"></script>
-		<script src="js/master.js"></script>
+        <script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/master.js"></script>
 		  <nav class="navBar">
 			<a href="homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
