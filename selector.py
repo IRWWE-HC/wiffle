@@ -88,7 +88,7 @@ def checkLogSignOut():
     isLoggedIn = authenticate()
     logOutLink = ""
     if isLoggedIn:
-        logOutLink+= makeLink("login/logout.py","Click here to log out")
+        logOutLink+= makeLink("login/logout.py","Sign Out")
     else:
         logOutLink+= '<a href="login/homepage.html"> Sign In </a>'
     return logOutLink
@@ -112,7 +112,7 @@ final += '''
         <script src="js/jquery-2.1.1.min.js"></script>
 		<script src="js/master.js"></script>
 		  <nav class="navBar">
-			<a href="login/homepage.html" id="home"> Website Editor </a>
+			<a href="login/homepage.html" id="home"> Wiffle </a>
 			<ul class="navBarRight">
 				<li> <a href="list.py"> Sites Directory
 				</a> </li>
@@ -125,14 +125,12 @@ final += '''
 			</ul>
 		</nav>
         <form id="form" action="output.py" method="POST">
-        
 			<div id="titleContainer">
 				<h1 id="titleInstruc"> Please Name Your Website </h1>
 				<input type="text" name="title" id="title" class="s1" placeholder="Website Name Here">
 				<button type="button" value="finish" id="finish"> Done! </button>
 				<h2 id="otherInstruc"> Hover over the + Button to Begin </h2>
 			</div>
-			
             <input type="hidden" name ="template"  value =
 '''
 final += newDict["template"]
@@ -166,8 +164,10 @@ final += '''
 					<div id="val0" class="sBInputVal">
 						<div id= "sBInputOutside" class="outside"></div>
 						<input type="text" name="sB-text0" id="sB-text" class="s1" placeholder="Text">
-						<input type="text" name="sB-link0" id="sB-link" class="s1" placeholder="Link. <alt> to add line.">
+						<input type="text" name="sB-link0" id="sB-link" class="s1" placeholder="Link">
 					</div>
+
+					<span id="alert"> Please Fill Out Both Fields! </span>
 					
 				</div>
 				<br>
