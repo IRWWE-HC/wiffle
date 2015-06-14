@@ -136,6 +136,7 @@ html.t5 {
 
 #titleInstruc{
 	position: fixed;
+	text-align: center;
 	top: 30%;
 	width: 30%;
 	margin-left: 35%;
@@ -569,10 +570,13 @@ html.t5 {
 }
 
 .userDir li{
-	text-decoration:none;
 	list-style-type: none;
 }
 
+.userDir a{
+	text-decoration:none;
+}
+	
 .userDir > li{
 	padding-left: 200px;
 	padding-right: 200px;
@@ -589,7 +593,7 @@ html.t5 {
 }
 
 
-.siteDir  li:hover{
+.siteDir  a:hover{
 	color: green;
 }
 
