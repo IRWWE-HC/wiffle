@@ -49,12 +49,11 @@ final += '''</title>
         <script src="js/jquery-2.1.1.min.js"></script>
 		<script src="js/master.js"></script>
 		  <nav class="navBar">
-			<a href="login/homepage.html" id="home"> Website Editor </a>
+			<a href="login/homepage.html" id="home"> IRWWE-HC </a>
 			<ul class="navBarRight">
 				<li> <a href="list.py"> Sites Directory
 				</a> </li>
 				<li> <a href="about.html"> About Us </a> </li>
-				<li> <a href="login/logout.py"> Sign Out
 				</a> </li>
 			</ul>
 		</nav>

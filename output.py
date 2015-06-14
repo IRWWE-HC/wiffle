@@ -104,7 +104,7 @@ final += '''
     </head>
     <body>
 		<nav class="navBar">
-			<a href="../../../../login/homepage.html" id="home"> Website Editor </a>
+			<a href="../../../../login/homepage.html" id="home"> IRWWE-HC </a>
 			<ul class="navBarRight">
 				<li> <a href="../../../../list.py"> Sites Directory
 				</a> </li>
@@ -158,7 +158,7 @@ final2 += '''
     </head>
     <body>
 		<nav class="navBar">
-			<a href="login/homepage.html" id="home"> Website Editor </a>
+			<a href="login/homepage.html" id="home"> IRWWE-HC </a>
 			<ul class="navBarRight">
 				<li> <a href="list.py"> Sites Directory
 				</a> </li>

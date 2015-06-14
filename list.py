@@ -38,7 +38,6 @@ final = '''
 				<li> <a href="list.py"> Sites Directory
 				</a> </li>
 				<li> <a href="about.html"> About Us </a> </li>
-				<li> <a href="login/logout.py"> Sign Out
 				</a> </li>
 			</ul>
 		</nav>

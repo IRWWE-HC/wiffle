@@ -12,8 +12,8 @@ cgitb.enable()
 #just acccess it from anywhere in the program.
 form = cgi.FieldStorage()
 
-def header():
-        return """
+def header(user,magicnumber):
+        final += """
     <!DOCTYPE HTML>
     <html>
     <head>
@@ -24,16 +24,20 @@ def header():
         <script src="js/jquery-2.1.1.min.js"></script>
 		<script src="js/master.js"></script>
 		  <nav class="navBar">
-			<a href="login/homepage.html" id="home"> Website Editor </a>
+			<a href="login/homepage.html" id="home"> IRWWE-HC </a>
 			<ul class="navBarRight">
 				<li> <a href="list.py"> Sites Directory
 				</a> </li>
 				<li> <a href="about.html"> About Us </a> </li>
-				<li> <a href="login/logout.py"> Sign Out
+				<li> <a href="login/logout.py?"""
+        final += "user=" + user +"&magicnumber=" + magicnumber
+        final += """
+        "> Sign Out
 				</a> </li>
 			</ul>
 		</nav>
     """
+        return final
 
 
 def footer():
@@ -128,12 +132,10 @@ def main():
         body += loggedIn()
     else:
         body += notLoggedIn()
+        print header("","") +body + footer()
     #attach a logout link only if logged in
     if isLoggedIn:
         body+= makeLink("login/logout.py","Click here to log out")+"<br>"
-
-    #make links that include logged in status when the user is logged in
-    #finally print the entire page.
-    print header() + body + footer()
+        print header(form['user'].value, form['magicnumber'].value) + body + footer()
 
 main()
