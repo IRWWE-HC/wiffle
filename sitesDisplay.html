@@ -2,13 +2,35 @@
 	<html>
 		<head>
 			<title> Stuff </title>
+			<link rel="stylesheet" href="css/template.css">
 		</head>
 		
 		<body>
-		<h1> Users Sites and Stuff </h1>
+		
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/master.js"></script>
+		
+        <nav class="navBar">
+			<a href="login/homepage.html" id="home"> Website Editor </a>
+			<ul class="navBarRight">
+				<li> <a href="list.py"> Sites Directory
+				</a> </li>
+				<li> <a href="about.html"> About Us </a> </li>
+				<li> <a href="login/logout.py"> Sign Out
+				</a> </li>
+			</ul>
+		</nav>
+		
+		<h1 class="USdirHeading"> Users Sites and Stuff </h1>
 			<ul class="userDir">
-			
+		
 				<li> User One
+					<ul class="siteDir">
+						<li> Site One </li>
+					</ul>
+				</li>
+				
+				<li> User Two
 					<ul class="siteDir">
 						<li> Site One </li>
 					</ul>

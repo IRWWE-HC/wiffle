@@ -279,6 +279,11 @@ $(document).ready(function(){
 		}
 	});
 	
+	//Slides down user sites menu
+	$('.userDir li').hover(function(){
+		$(this).children('ul').slideToggle(200);
+	});
+	
 	//Add slot button says +slot
 	
 	$('#addSidebarInstruction').hover(function(){
@@ -288,8 +293,9 @@ $(document).ready(function(){
 			$(this).animate({width:'20px'}, 200);
 			$(this).text('+');
 		}
-	)
-		
+	);
+	
+	
 });
 
 

@@ -12,13 +12,13 @@ def listsites(x):
     stor = open("users/" + x + "/sites/exist.txt","r")
     y = stor.readlines()[1:]
     stor.close()
-    output = "<ol>"
+    output = '<ul class="siteDir">'
     for i in y:
         output += "<li> <a href='users/" + x + "/sites/" + i + "'>"  + i + "</a> </li>"
-    return output + "</ol>"
+    return output + "</ul>"
 
 for i in y[:-1]:
-    output += "<li class='siteDir'>" + i + "'" + "s sites:"
+    output += "<li>" + i
     output += listsites(i)
     output += "</li>"
 
@@ -26,7 +26,7 @@ final = '''
 <!DOCTYPE html>
 	<html>
 		<head>
-			<title> Users </title>
+			<title> Users and Sites Directory </title>
 <link rel="stylesheet" href="css/template.css">
     </head>
     <body>
@@ -44,7 +44,7 @@ final = '''
 		</nav>
 
 		<body>
-		<h1> Users Sites and Stuff </h1>
+		<h1 class="USdirHeading"> Users and Sites Directory </h1>
 			<ul class="userDir">
 '''
 final += output
