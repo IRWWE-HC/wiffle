@@ -122,9 +122,9 @@ $(document).ready(function(){
 	$('#finish').click(function(){
 		$('#oI1').fadeIn(500);
 		$('#oI2').delay(200).fadeIn(500);
-		$('#oI1').delay(2200).fadeOut(500);
-		$('#oI2').delay(2200).fadeOut(500);
-		$('#titleContainer').delay(2200).fadeOut(500);
+		$('#oI1').delay(2800).fadeOut(500);
+		$('#oI2').delay(2800).fadeOut(500);
+		$('#titleContainer').delay(2800).fadeOut(500);
 	});
 	
 	//Prevents User from clicking Enter to Submit. Borrowed from http://stackoverflow.com/questions/895171/prevent-users-from-submitting-form-by-hitting-enter
