@@ -53,8 +53,8 @@ def fix():
 
                     
 fix()
-print sBt
-print sBl
+#print sBt
+#print sBl
 '''
 stor1 = sB.keys()
 stor2 = sB.keys()[::-1]
