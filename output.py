@@ -262,14 +262,14 @@ tyruf.close()
 last = tyrug[-1]
 #print last
 new = "site" + str((int(last[(last.find("e")+1):])) + 1)
-new += ";"+newDict['title']
+newK = new +  ";"+newDict['title']
     
 
 f = open("users/"+ key +"/sites/exist.txt", "a")
 
 if new == "site1":
     f.write("\n")
-f.write(new +"\n")
+f.write(newK +"\n")
 f.close()
 
 os.mkdir("users/"+ key +"/sites/"+new)
