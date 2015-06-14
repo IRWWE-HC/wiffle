@@ -63,4 +63,12 @@
 		*Start on site directory page creation (back-end)
 	*RENAME FILES SO THAT THEY AREN'T SO DUMB SOUNDING
 	
+6/14:
+	Finish.
+	
+	Richard:
+		*Add css to all the little tidbit static web pages.
+	Edward:
+		*Assist Richard in doing that.
+	
 	
