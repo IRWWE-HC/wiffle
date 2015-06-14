@@ -7,7 +7,7 @@ def header():
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>logout</title>
+<title>Logout</title>
 <link rel="stylesheet" href="../css/template.css">
     </head>
     <body>

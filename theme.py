@@ -135,7 +135,7 @@ def main():
         print header("","") +body + footer()
     #attach a logout link only if logged in
     if isLoggedIn:
-        body+= makeLink("login/logout.py","Click here to log out")+"<br>"
+       # body+= makeLink("login/logout.py","Click here to log out")+"<br>"
         print header(form['user'].value, form['magicnumber'].value) + body + footer()
 
 main()
