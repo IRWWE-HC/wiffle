@@ -115,6 +115,16 @@ $(document).ready(function(){
 	});
 	
 	//EDITING SITE JS
+	
+	//First instructions code
+	$('#titleContainer').fadeIn(500);
+	
+	$('#finish').click(function(){
+		$('#otherInstruc').fadeIn(500);
+		$('#otherInstruc').delay(1500).fadeOut(500);
+		$('#titleContainer').delay(1500).fadeOut(500);
+	});
+	
 	//Selection menu code
 	$('#optionCarousel').hover(function(){
 		$('.optionButton').slideToggle();

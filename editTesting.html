@@ -20,12 +20,19 @@
 		</nav>
 		
 		<form id="formId" action="test.py" method="GET">
-                <!--The title input is just the title.-->
-				<h1 id="headingDisplay" class="s1"> Title Here </h1>
-				<div id="headingDIV" class="s1">
-					<div id="outsideHeading" class="outside"></div>
-					<input type="text" name="heading" id="heading" class="s1" placeholder="Title here">
-				</div>
+            
+			<div id="titleContainer">
+				<h1 id="titleInstruc"> Please Name Your Website </h1>
+				<input type="text" name="title" id="title" class="s1" placeholder="Website Name Here">
+				<button type="button" value="finish" id="finish"> Done! </button>
+				<h2 id="otherInstruc"> Hover over the + Button to Begin </h2>
+			</div>
+			
+			<h1 id="headingDisplay" class="s1"> Title Here </h1>
+			<div id="headingDIV" class="s1">
+				<div id="outsideHeading" class="outside"></div>
+				<input type="text" name="heading" id="heading" class="s1" placeholder="Title here">
+			</div>
 
 			
 			<div id="insertSB">

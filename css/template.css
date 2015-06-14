@@ -121,6 +121,56 @@ html.t5 {
 
 /*Website Editor*/
 
+/*First Instructions*/
+
+#titleContainer{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgb(128, 128, 128, 0.2);
+	z-index: 9000;
+	display: none;
+}
+
+#titleInstruc{
+	position: fixed;
+	top: 30%;
+	width: 30%;
+	margin-left: 35%;
+	z-index: 9001;
+}
+
+#title{
+	position: fixed;
+	top: 35%;
+	height: 5%;
+	width: 20%;
+	left: 40%;
+	z-index: 9001;
+	font-size: 20px;
+}
+
+#finish {
+	position: fixed;
+	top: 42%;
+	width: 10%;
+	left: 45%;
+	z-index: 9001;
+}
+
+#otherInstruc {
+	position: fixed;
+	top: 50%;
+	width: 30%;
+	left: 35%;
+	text-align: center;
+	z-index: 9001;
+	display: none;
+}
+	
+
 /*Heading Stylings */
 #headingDisplay.s1{
 	position: absolute;
