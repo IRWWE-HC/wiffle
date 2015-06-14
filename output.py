@@ -22,7 +22,23 @@ if 'user' in newDict.keys():
 
 sBt = []
 sBl = []
+'''
+textMax = ""
+linkMax = ""
+while textMax in newDict.keys():
+	textpos = 0
+	textMax  = "sB-text" + str(pos)
+	textpos += 1
+	print textMax
+while linkMax in newDict.keys():
+	linkpos = 0
+	linkMax = "sB-link" + str(pos)
+	linkpos += 1
+	print linkMax
 
+print textMax
+print linkMax
+'''
 def fix():
     pos = 0
     while True:
@@ -37,8 +53,8 @@ def fix():
 
                     
 fix()
-#print sBt
-#print sBl
+print sBt
+print sBl
 '''
 stor1 = sB.keys()
 stor2 = sB.keys()[::-1]
@@ -88,7 +104,7 @@ final += '''
     </head>
     <body>
 		<nav class="navBar">
-			<a href="selector.py" id="home"> Website Editor </a>
+			<a href="../../../../login/homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
 				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
@@ -140,7 +156,7 @@ final2 += '''
     </head>
     <body>
 		<nav class="navBar">
-			<a href="selector.py" id="home"> Website Editor </a>
+			<a href="login/homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
 				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
