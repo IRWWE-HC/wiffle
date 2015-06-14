@@ -132,7 +132,7 @@ final += '''
 </div>
 			</div>
             <!--Main body of the text. Plain text for now-->
-            <div id="m-textOutput" class="s1">
+            <div id="m-textO" class="s1">
             '''
 final +="<pre>" +  output + "</pre>" #VERY BROKEN
 final += '''
@@ -185,7 +185,7 @@ final2 += '''
 </div>
 			</div>
             <!--Main body of the text. Plain text for now-->
-            <div id="m-textOutput" class="s1">
+            <div id="m-textO" class="s1">
             '''
 final2 +="<pre>" +  output + "</pre>" #VERY BROKEN
 final2 += '''
