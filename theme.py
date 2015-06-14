@@ -1,4 +1,7 @@
 #!/usr/bin/python
+print "Content-type: text/html\n"
+print ""
+
 import random
 import cgi,cgitb,os
 
