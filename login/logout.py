@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import cgi,cgitb,os
-cgitb.enable()
+#cgitb.enable()
 def header():
     return """content-type: text/html
 

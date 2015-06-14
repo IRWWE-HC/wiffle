@@ -6,7 +6,7 @@ import cgi
 import cgitb
 import os
 
-cgitb.enable()
+#cgitb.enable()
 d=cgi.FieldStorage()
 sidebar = ""
 

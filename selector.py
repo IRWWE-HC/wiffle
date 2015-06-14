@@ -7,7 +7,7 @@ import random
 import cgitb
 import os
 
-cgitb.enable()
+#cgitb.enable()
 d=cgi.FieldStorage()
 
 

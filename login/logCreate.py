@@ -3,7 +3,7 @@ print "Content-type: text/html\n"
 print ""
 
 import cgi,cgitb,os,random,hashlib
-cgitb.enable()
+#cgitb.enable()
 
 query = cgi.FieldStorage()
 #----------------General Stuff---------------------

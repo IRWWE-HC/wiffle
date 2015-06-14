@@ -5,7 +5,7 @@ print ""
 import random
 import cgi,cgitb,os
 
-cgitb.enable()
+#cgitb.enable()
 
 #the field storage is a global variable.
 #Since your page has exactly one, you can
