@@ -91,7 +91,7 @@ def createAccount(form):
         elif not valid(user):
             result += "Username contains invalid characters." + " You will be redirected momentarily." + "<br>"
         else:
-            result += "account "+user+' created! login here if you are not automatically redirected: <a href="homepage.html">login page</a><br>'
+            result += "Account "+user+' created! Login here if you are not automatically redirected: <a href="homepage.html">Homepage</a><br>'
             f = open('users.txt','a')
             password = md5Pass(password+user)
             f.write(user+","+password+"\n")
