@@ -172,14 +172,14 @@ $(document).ready(function(){
 		textChild.name = "sB-text" + ctr;
 		textChild.id = "sB-text";
 		textChild.className = "s1";
-		textChild.placeholder = "Sidebar Text Here.";
+		textChild.placeholder = "Text.";
 		
 		var linkChild = document.createElement('input');
 		linkChild.type = "text";
 		linkChild.name = "sB-link" + ctr;
 		linkChild.id = "sB-link";
 		linkChild.className = "s1";
-		linkChild.placeholder = "Sidebar Link Here.";
+		linkChild.placeholder = "Link";
 		
 		newChildInput.appendChild(outsideChild);
 		newChildInput.appendChild(textChild);
@@ -260,6 +260,15 @@ $(document).ready(function(){
 			$('#headingDisplay').text(textLength);
 		}
 		$('#headingDIV').fadeOut();
+	});
+	
+	//Submit Button with Empty Fields
+	$(document).on('blur', '.sBInputVal input', function(){
+		$('.sBInputVal input').each(function() {
+			if ($(this).val().length == 0) {
+				alert('Please Fill Out Both Fields'); //make into modal
+			}
+		})
 	});
 });
 
