@@ -94,10 +94,14 @@ $(document).ready(function(){
 	
 	//The welcome text fade in
 	$('#headingHP').fadeIn(2000);
+	$('#headingHP').delay(500).fadeOut(function() {
+		$('#headingHP').text("This is Team IRWWE-HC's website creator");
+		$('#headingHP').css('font-size', '3em');
+	}).fadeIn(2000); //Not sure if this is proper syntax, cause it looks weird. But it works.... 
 	$('#headingHP').delay(1000).fadeOut(function() {
 		$('#headingHP').text('Please Login or Create an Account to Proceed');
 		$('#headingHP').css('font-size', '3em');
-	}).fadeIn(2000); //Not sure if this is proper syntax, cause it looks weird. But it works.... 
+	}).fadeIn(2000);
 	
 	//Sign up fade in
 	$('.signUp').fadeIn(2000);
@@ -318,6 +322,14 @@ $(document).ready(function(){
 		$('img').fadeOut();
 		$('#img5').fadeIn();
 	});
+	
+	//Changes the home button on navBar to show our Team Name
+	$('#home').hover(function(){
+			$(this).text('by IRWWE-HC');
+		}, function(){
+			$(this).text('Wiffle');
+		}
+	);
 });
 
 

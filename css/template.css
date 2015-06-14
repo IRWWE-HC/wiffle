@@ -431,13 +431,14 @@ html.t5 {
 
 #home{
 	background-color: #3D7A99;
+	text-align: center;
 	left: 10%;
 	font-size: 25px; 
 	border-radius: 25px;
 }
 
 #home:hover{
-	background-color: #376E8A;
+	background-color: #5CE68A;
 }
 
 /*Homepage CSS. Different type of fade-in than the modal box (written after the modal box fade in, and was written without external help*/
