@@ -510,7 +510,7 @@ html.t5 {
 	margin-left: 45%;
 }
 
-/*user-site directory stylings */
+/* General user-site directory stylings */
 .USdirHeading {
 	margin-top: 5%;
 	text-align: center;
@@ -545,6 +545,31 @@ html.t5 {
 	display: none;
 }
 
+/* User specific site directory stylings*/
+.uS li{
+	list-style-type: none;
+	padding-left: 200px;
+	padding-right: 200px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-style: none;
+	border-width: 1px;
+	border-bottom-style: solid;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 40%;
+	text-align: center;
+}
+
+.uS  a:hover{
+	color: green;
+}
+
+.uS a{
+	text-decoration:none;
+	color: black;
+}
 /* Template Selector Stylings */
 
 .templateIMG {
