@@ -20,8 +20,8 @@ else:
 
 def listsites(x):
     output = ""
-    if key not in f or 'user' not in d:
-        output += "Playing with the URL is bad"
+    if key not in f and key != "" or 'user' not in d:
+        output += "User not found"
 	return output
     else:
         stor = open("users/" + x + "/sites/exist.txt","r")
