@@ -3,6 +3,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	font-family: 'Century Gothic';
 }
 
 /* Borrowed from https://css-tricks.com/transitions-only-after-page-load/ */
@@ -27,6 +28,16 @@
 
 .prettyButton:hover {
 	background-color: #B8B8B8;
+}
+
+.outside{
+	position: fixed;
+	background-color: rgba(128, 128, 128, 0.2);
+	z-index: 9000;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 html{
@@ -110,24 +121,103 @@ html.t5 {
 
 /*Website Editor*/
 
-#heading.s1, #headingText.s1 {
+/*Heading Stylings */
+#headingDisplay.s1{
 	position: absolute;
 	top: 10%;
-	left: 48%;
+	left: 50%;
+	margin-left: -150px;
+	text-align: center;
 	font-size: 24px;
 	height: 50px;
 	width: 300px;
 	margin-bottom: 40px;
 	background-color: transparent;
 	border: 0px;
+	display: none;
 }
 
+#headingDIV{
+	display: none;
+	z-index: 9001;
+}
+
+#heading{
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	margin-left: -150px;
+	text-align: center;
+	font-size: 24px;
+	height: 50px;
+	width: 300px;
+	z-index: 9001;
+	z-index: 9001;
+}
+
+/*Sidebar Stylings */
 #insertSB {
 	position: absolute;
 	top: 15%;
 	left: 1%;
 	width: 30%;
+	display: none;
 }
+
+#sB-nameDisplay{
+	display: inline;
+	font-size: 20px;
+}
+
+#sB-nameDisplay:hover{
+	font-size: 20px;
+	opacity: .75;
+}
+
+#sB-name{
+	display: none;
+}
+
+#sB-name input{
+	position: fixed;
+	left: 1%;
+	z-index: 9001;
+	top: 15%;
+	width: 16%;
+	height: 4%;
+	font-size: 20px;
+}
+
+#addSidebarInstruction {
+	display: inline;
+	height: 20px;
+	width: 20px;
+	border-radius: 25px;
+	border-style: none;
+}
+
+#addSidebarInstruction:hover{
+	background-color: #808080;
+}
+
+.sBInputVal{
+	display: none;
+	position: fixed;
+}
+
+.sBInputVal input{
+	z-index: 9001;
+}
+
+#sBInput h1{
+	font-size: 15px;
+}
+
+#sBInput h1:hover{
+	font-size: 15px;
+	opacity: .75;
+}
+
 
 #sB-text.s1{
 	position: relative;
@@ -155,17 +245,18 @@ html.t5 {
 	border-width: 0px;
 }
 
+/*Main Text Stylings */
+/*Though the input and output are very similar, they are split to make the javascript a bit easier to write. Otherwise, I would have to provide child tags */
 #m-textInput.s1{
-	resize: none;
-	margin-left: .5vw;
-	position: absolute;
+	position: fixed;
 	left: 23%;
 	width: 75%;
 	height: 75%;
 	top: 15%;
 	background-color: #FFFFFF;
 	border-style: groove;
-	border-width: 5px;
+	border-width: 2px;
+	z-index: 9001;
 }
 
 #m-textOutput.s1{
@@ -177,24 +268,48 @@ html.t5 {
 	background-color: #FFFFFF;
 	border-width: 2px;
 	border-style: groove;
+	display: none;
 }
 
-#submit{
+#m-text{
 	position: absolute;
-	bottom: 5%;
-	width: 6%;
-	left: 47%;
-	height: 3%;
-	font-family: 'Monserrat';
-	font-size: 16px;
+	display: none;
+	z-index: 9001;
+}
+
+
+#optionCarousel {
+	position: absolute;
+	bottom: 3%;
+	left: 2%;
+}
+
+#optionList { /*Button style inspired by Google Inbox's Create new email button */
+	width: 1.5em;
+	height: 1.5em;
+	font-size: 2em;
 	background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 20px;
+	border-radius: 25px;
 	border-style: none;
 	color: white;
 }
 
-#submit:hover{
-	background-color: rgba(0, 0, 0, 0.7);
+#optionList:hover{
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.optionButton {
+	font-size: 18px;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 25px;
+	border-style: none;
+	color: white;
+	display: none;
+}
+
+.optionButton:hover{
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Navigation Bar */

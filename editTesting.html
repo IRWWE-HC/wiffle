@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="t1">
+    <head>
+        <link rel="stylesheet" href="css/template.css">
+        <title> Website Editor </title>
+    </head>
+    <body>
+        <script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/master.js"></script>
+		
+        <nav class="navBar">
+			<a href="selector.py" id="home"> Website Editor </a>
+			<ul class="navBarRight">
+				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
+				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
+			</ul>
+		</nav>
+		
+		<form id="formId" action="test.py" method="POST">
+                <!--The title input is just the title.-->
+				<h1 id="headingDisplay" class="s1"> Title Here </h1>
+				<div id="headingDIV" class="s1">
+					<div id="outsideHeading" class="outside"></div>
+					<input type="text" name="heading" id="heading" class="s1" placeholder="Title here">
+				</div>
+
+			
+			<div id="insertSB">
+				<h1 id="sB-nameDisplay"> Sidebar Name Here </h1><!--
+				--><button type="button" value="addSidebarInstruction" id="addSidebarInstruction" class="s1"> + </button>
+					<div id="sB-name">
+						<div class="outside"></div>
+						<input type="text" name="sB-name" placeholder="Put name here">
+					</div>
+				<br>
+				<br>
+				<div id="sBInput">
+				
+					<div id="sBInputInstruction">
+						<h1 id="instruction0"> Click to Add New Sidebar Link </h1>
+					</div>
+					
+					<div id="val0" class="sBInputVal">
+						<div id= "sBInputOutside" class="outside"></div>
+						<input type="text" name="sB-text0" id="sB-text" class="s1" placeholder="Text">
+						<input type="text" name="sB-link0" id="sB-link" class="s1" placeholder="Link. <alt> to add line.">
+					</div>
+					
+				</div>
+				<br>
+			</div>
+            <!--Main body of the text. Plain text for now-->
+			
+			<div id="m-textOutput" class="s1"><p id="removePlease">Click to load editor</p></div>
+			
+			<div id="m-text">
+				<div id="m-textOutside" class="outside"></div>
+			
+				<textarea name="m-text" id="m-textInput" class="s1"
+                                    placeholder="Main text here"></textarea>
+			</div>
+            <br>
+				
+			<div id="optionCarousel">
+				<button type="button" value="optionList" id="optionList"> + </button>
+				
+                <input type="submit" value="Submit" id="submit" class="optionButton">
+
+				<button type="button" value="optionTitle" id="optionTitleAdd" class="optionButton"> Title </button>
+				
+				<button type="button" value="optionMT" id="optionMTAdd" class="optionButton"> Main Text </button>
+				
+				<button type="button" value="optionSB" id="optionSBAdd"  class="optionButton"> Sidebar </button>
+			</div>
+				
+        </form>
+		
+    </body>
+</html>
+

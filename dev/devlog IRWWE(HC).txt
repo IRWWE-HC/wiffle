@@ -58,6 +58,9 @@
 	Richard:
 		*Finalized the homepage.html look.
 			*Added fade-ins, smooth transitions, and made modal box prettier
+		*Added options menu to website editor
+		*Added a sidebar name area
+		*Altered way the website is to be edited
 	Edward:
 		*
 		
