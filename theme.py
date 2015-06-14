@@ -9,9 +9,8 @@ cgitb.enable()
 #just acccess it from anywhere in the program.
 form = cgi.FieldStorage()
 
-def header1():
+def header():
         return """content-type: text/html
-
     <!DOCTYPE HTML>
     <html>
     <head>
@@ -27,14 +26,12 @@ def header1():
 				<li> <a href="list.py"> Sites Directory
 				</a> </li>
 				<li> <a href="about.html"> About Us </a> </li>
-				<li>
-				"""
-
-def header2(): """
-				</li>
+				<li> <a href="login/logout.py"> Sign Out
+				</a> </li>
 			</ul>
 		</nav>
-"""
+    """
+
 
 def footer():
     return """</body>
@@ -81,29 +78,6 @@ def loggedIn():
 def notLoggedIn():
     return '''You need to login to see more. You can log in here: <a href="login/homepage.html">here</a>\n'''
 
-def checkLogMainValues():
-    #determine if the user is properly logged in once. 
-    isLoggedIn = authenticate()
-    optionCarousel = ""
-
-    #use this to determine if you want to show "logged in " stuff, or regular stuff
-    if isLoggedIn:
-        optionCarousel += html
-    else:
-        optionCarousel += notLoggedIn()
-    #attach a logout link only if logged in
-    return optionCarousel
-
-def checkLogSignOut():
-    isLoggedIn = authenticate()
-    logOutLink = ""
-    if isLoggedIn:
-        logOutLink+= makeLink("login/logout.py","Click here to log out")
-    else:
-        logOutLink+= '<a href="login/homepage.html"> Sign In </a>'
-    return logOutLink
-
-
 html = '''		<h1 class="USdirHeading"> Please Choose Your Theme </h1>
 		<h2 class="templateChoice"> Choose a template! </h1>
 		<form 
@@ -131,7 +105,7 @@ html += "'"+form['user'].value+"'>"
 html += '<input type="hidden" name="magicnumber" value='
 html += "'"+form['magicnumber'].value+"'>"
 html += '''\
-						<input type="submit" value="To Next Process" id="submitButton"> <br>
+			<input type="submit" value="To Next Process" id="submitButton"> <br>
 			
 			<img id="img1" class="templateIMG" src="../templates/template1.png">
 			<img id="img2" class="templateIMG" src="../templates/template2.png">
@@ -143,11 +117,20 @@ html += '''\
 
 def main():
     body = ""
-    header = header1()
-    header += checkLogSignOut()
-    header += header2()
-    htmlPrint = checkLogMainValues()
-    print header + htmlPrint + footer()
+
+    isLoggedIn = authenticate()
+
+    #use this to determine if you want to show "logged in " stuff, or regular stuff
+    if isLoggedIn:
+        body += loggedIn()
+    else:
+        body += notLoggedIn()
+    #attach a logout link only if logged in
+    if isLoggedIn:
+        body+= makeLink("login/logout.py","Click here to log out")+"<br>"
+
+    #make links that include logged in status when the user is logged in
+    #finally print the entire page.
+    print header() + body + footer()
 
 main()
- 
