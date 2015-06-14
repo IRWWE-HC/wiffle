@@ -218,7 +218,7 @@ def remove(user):
 
 #only meant to be run after password authentication passes.
 #uses call to remove(user) that will remove them no matter what.
-mag = []
+mag = [0]
 def logInUser(username):
     magicNumber = str(random.randint(1000000,9999999))
     remove(username)
@@ -228,7 +228,7 @@ def logInUser(username):
         IP = os.environ["REMOTE_ADDR"]
     outfile.write(username+","+magicNumber+","+IP+"\n")
     outfile.close()
-    mag.append(magicNumber)
+    mag[0] = magicNumber
     return magicNumber
 
             
@@ -279,6 +279,7 @@ broken = """
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
 				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
 			</ul>
+		</nav>
         You left fields blank! Go back <a href="homepage.html"> here </a> to fix it.
     </body>
 </html>        

@@ -74,7 +74,7 @@ def loggedIn():
     return html
 
 def notLoggedIn():
-    return '''You need to login to see more. You can log in here: <a href="login/login.html">here</a>\n'''
+    return '''You need to login to see more. You can log in here: <a href="login/homepage.html">here</a>\n'''
 
 html = '''		<h1> Welcome to IRWWE-HC's Final Project! </h1>
 		<h2> Choose a template! </h1>

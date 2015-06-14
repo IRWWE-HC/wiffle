@@ -66,7 +66,7 @@ My secret? I hate fleas... even at flea markets.<br>
 
 def notLoggedIn():
     return '''  </form>
-		You must login to submit. You can login <a href="login/login.py"> here </a>.
+		You must login to submit. You can login <a href="login/homepage.html"> here </a>.
     </body>
 </html>
 '''
