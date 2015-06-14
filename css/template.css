@@ -500,7 +500,11 @@ html.t5 {
 }
 
 #userSite {
-	background-color: #75FF75;
+	background-color: #3D6629;
+}
+
+#userSite:hover {
+	background-color: #2E4C1F;
 }
 
 /*Homepage CSS. Different type of fade-in than the modal box (written after the modal box fade in, and was written without external help*/
