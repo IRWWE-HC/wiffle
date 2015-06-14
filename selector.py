@@ -163,8 +163,8 @@ final += '''
 					
 					<div id="val0" class="sBInputVal">
 						<div id= "sBInputOutside" class="outside"></div>
-						<input type="text" name="sB-text0" id="sB-text" class="s1" placeholder="Text">
-						<input type="text" name="sB-link0" id="sB-link" class="s1" placeholder="Link">
+						<input type="text" name="sB-text0" id="sB-text" class="s1" placeholder="Text.">
+						<input type="text" name="sB-link0" id="sB-link" class="s1" placeholder="Link. Include http://">
 					</div>
 
 					<span id="alert"> Friendly Reminder: Fill Out Both Fields! </span>

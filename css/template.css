@@ -412,6 +412,12 @@ html.t5 {
 	border-style: none;
 }
 
+#sBInputO a:hover{
+	font-size: 15px;
+	color: #3D3D5C;
+	opacity: .75;
+}
+
 #m-textO{
 	position: fixed;
 	left: 23%;
@@ -491,6 +497,10 @@ html.t5 {
 
 #home:hover{
 	background-color: #5CE68A;
+}
+
+#userSite {
+	background-color: #75FF75;
 }
 
 /*Homepage CSS. Different type of fade-in than the modal box (written after the modal box fade in, and was written without external help*/
@@ -574,6 +584,7 @@ html.t5 {
 }
 
 .userDir a{
+	color: black;
 	text-decoration:none;
 }
 	

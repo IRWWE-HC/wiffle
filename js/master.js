@@ -193,7 +193,7 @@ $(document).ready(function(){
 		linkChild.name = "sB-link" + ctr;
 		linkChild.id = "sB-link";
 		linkChild.className = "s1";
-		linkChild.placeholder = "Link";
+		linkChild.placeholder = "Link. Include http://";
 		
 		newChildInput.appendChild(outsideChild);
 		newChildInput.appendChild(textChild);

@@ -115,7 +115,7 @@ final += '''
 				</a> </li>
 				<li> <a href="about.html"> About Us </a> </li>
 '''
-final += "<li> <a href='../../../../usersites.py?user="
+final += "<li> <a id='userSite' href='../../../../usersites.py?user="
 final += key
 final += "'>" + key + "'s sites"
 final += '''
@@ -175,7 +175,7 @@ final2 += '''
 				</a> </li>
 				<li> <a href="about.html"> About Us </a> </li>
 '''
-final2 += "<li> <a href='usersites.py?user="
+final2 += "<li> <a id='userSite' href='usersites.py?user="
 final2 += key
 final2 += "'>" + key +"'s sites"
 final2 +='''
