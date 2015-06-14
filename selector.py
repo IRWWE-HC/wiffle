@@ -161,6 +161,8 @@ final += '''
 						<input type="text" name="sB-text0" id="sB-text" class="s1" placeholder="Text">
 						<input type="text" name="sB-link0" id="sB-link" class="s1" placeholder="Link. <alt> to add line.">
 					</div>
+
+					<span id="alert"> Please Fill Out Both Fields! </span>
 					
 				</div>
 				<br>
