@@ -167,7 +167,7 @@ final += '''
 						<input type="text" name="sB-link0" id="sB-link" class="s1" placeholder="Link">
 					</div>
 
-					<span id="alert"> Please Fill Out Both Fields! </span>
+					<span id="alert"> Friendly Reminder: Fill Out Both Fields! </span>
 					
 				</div>
 				<br>

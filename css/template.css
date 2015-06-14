@@ -321,6 +321,7 @@ html.t5 {
 	background-color: #FFFFFF;
 	border-style: groove;
 	border-width: 2px;
+	resize: none;
 	z-index: 9001;
 }
 
@@ -650,4 +651,15 @@ html.t5 {
 	color: red;
 }
 
+/* About Us Formatting */
+.centerText {
+	width: 50%;
+	text-indent: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
+#bordered {
+	border-bottom-style: solid;
+	border-width: 1px;
+}
