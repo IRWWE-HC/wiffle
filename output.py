@@ -17,10 +17,7 @@ for i in d.keys():
 
 if 'user' in newDict.keys():
     key = newDict['user']
-# title
 
-
-# sB-text
 
 sBt = []
 sBl = []
@@ -66,12 +63,15 @@ if 'm-text' in newDict.keys():
     output += newDict['m-text']
 
 output = output.replace("\n", "<br>")
+output = output.replace("&nbsp"," ")
 output = output.replace("\r","")
 
 
 
 if "heading" not in newDict.keys():
     newDict["heading"] =  ""
+if "sB-name" not in newDict.keys():
+    newDict["sB-name"] = ""
 
 final = ''
 final += '''
@@ -103,6 +103,7 @@ final += '''
 			<div id="insertSB" class="s1">
 			<ul id="sB" class="s1">
 '''
+final += newDict['sB-name'] + "<br>" #GET RID OF THIS EVENTUALLY
 final += sidebar
 final += '''
 			</ul></div>

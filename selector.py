@@ -106,30 +106,67 @@ final += "<input type='hidden' name ='user' value ="
 final += newDict['user']
 final += ">"
 final += '''
-             <center id="titleCenter">
-                <!--The title input is just the title.-->
-                <input type="text" name="heading" id="heading" class="s1" placeholder="Title here">
-            </center>
+				<h1 id="headingDisplay" class="s1"> Title Here </h1>
+				<div id="headingDIV" class="s1">
+					<div id="outsideHeading" class="outside"></div>
+					<input type="text" name="heading" id="heading" class="s1" placeholder="Title here">
+				</div>
+
 			
 			<div id="insertSB">
-				<!--Sidebar text. Every new line represents a new sidebar element. Check for those new lines in your python code-->
-				<input type="text" name="sB-text0" id="sB-text" class="s1" placeholder="Text"><!--
-				Sidebar links. Each element of the sidebar should link to something, which is what the links will do. I suggest playing around with parallel lists, and checking if they match up. Also this comment serves as a way to make the input be on one line. By doing so, I can get rid of a pesky space between the two inputs
-				--><input type="text" name="sB-link0" id="sB-link" class="s1" placeholder="Link. <alt> to add line.">
+				<h1 id="sB-nameDisplay"> Sidebar Name Here </h1><!--
+				--><button type="button" value="addSidebarInstruction" id="addSidebarInstruction" class="s1"> + </button>
+					<div id="sB-name">
+						<div class="outside"></div>
+						<input type="text" name="sB-name" placeholder="Put name here">
+					</div>
+				<br>
+				<br>
+				<div id="sBInput">
+				
+					<div id="sBInputInstruction">
+						<h1 id="instruction0"> Click to Add New Sidebar Link </h1>
+					</div>
+					
+					<div id="val0" class="sBInputVal">
+						<div id= "sBInputOutside" class="outside"></div>
+						<input type="text" name="sB-text0" id="sB-text" class="s1" placeholder="Text">
+						<input type="text" name="sB-link0" id="sB-link" class="s1" placeholder="Link. <alt> to add line.">
+					</div>
+					
+				</div>
 				<br>
 			</div>
             <!--Main body of the text. Plain text for now-->
-            <textarea name="m-text" id="m-textInput" class="s1"
+			
+			<div id="m-textOutput" class="s1"><p id="removePlease">Click to load editor</p></div>
+			
+			<div id="m-text">
+				<div id="m-textOutside" class="outside"></div>
+			
+				<textarea name="m-text" id="m-textInput" class="s1"
                                     placeholder="Main text here"></textarea>
+			</div>
             <br>
 '''
 endstring = '''
-                <input type="submit" value="Submit" id="submit" class="s1">
+			<div id="optionCarousel">
+				<button type="button" value="optionList" id="optionList"> + </button>
+				
+                <input type="submit" value="Submit" id="submit" class="optionButton">
 
+				<button type="button" value="optionTitle" id="optionTitleAdd" class="optionButton"> Title </button>
+				
+				<button type="button" value="optionMT" id="optionMTAdd" class="optionButton"> Main Text </button>
+				
+				<button type="button" value="optionSB" id="optionSBAdd"  class="optionButton"> Sidebar </button>
+			</div>
+				
         </form>
 		
     </body>
 </html>
+
 '''
 
 def main():
