@@ -170,6 +170,7 @@ html.t5 {
 
 #sB-nameDisplay:hover{
 	font-size: 20px;
+	color: #3D3D5C;
 	opacity: .75;
 }
 
@@ -214,6 +215,7 @@ html.t5 {
 
 #sBInput h1:hover{
 	font-size: 15px;
+	color: #3D3D5C;
 	opacity: .75;
 }
 
@@ -236,6 +238,19 @@ html.t5 {
 	border-width: 3px;
 }
 
+#alert{
+	position: fixed;
+	top: 10%;
+	margin: 1px;
+	background-color: white;
+	border-style: single;
+	border-width: 1px;
+	border-radius: 7px;
+	padding: 3px;
+	font-size: 20px;
+	display: none;
+}
+/*Deprecated
 #sB.s1{
 	position: relative;
 	list-style-type: none;
@@ -243,6 +258,7 @@ html.t5 {
 	background-color: transparent;
 	border-width: 0px;
 }
+*/
 
 /*Main Text Stylings */
 /*Though the input and output are very similar, they are split to make the javascript a bit easier to write. Otherwise, I would have to provide child tags */
@@ -336,11 +352,11 @@ html.t5 {
 	font-size: 20px;
 }
 
-#sBInputO{
+#sBInputO a{
 	display: inline;
-	height: 20px;
-	width: 20px;
-	border-radius: 25px;
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
 	border-style: none;
 }
 

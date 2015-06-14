@@ -263,13 +263,33 @@ $(document).ready(function(){
 	});
 	
 	//Submit Button with Empty Fields
-	$(document).on('blur', '.sBInputVal input', function(){
-		$('.sBInputVal input').each(function() {
-			if ($(this).val().length == 0) {
-				alert('Please Fill Out Both Fields'); //make into modal
-			}
-		})
+	$(document).on('blur', '#sB-text', function(){
+		var sib = $(this).siblings('input');
+		if (sib.val().length == 0) {
+			$('#alert').fadeIn();
+			$('#alert').delay(1000).fadeOut();
+		}
 	});
+	
+	$(document).on('blur', '#sB-link', function(){
+		var sib = $(this).siblings('input');
+		if (sib.val().length == 0) {
+			$('#alert').fadeIn();
+			$('#alert').delay(1000).fadeOut();
+		}
+	});
+	
+	//Add slot button says +slot
+	
+	$('#addSidebarInstruction').hover(function(){
+			$(this).animate({width:'40px'}, 200);
+			$(this).text('+slot');
+		}, function() {
+			$(this).animate({width:'20px'}, 200);
+			$(this).text('+');
+		}
+	)
+		
 });
 
 

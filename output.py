@@ -71,9 +71,9 @@ def sidebarify():
     output = ""
     pos = 0
     while pos != len(sBt):
-        output += "<li> <a href='" + sBl[pos] + "'>" +  sBt[pos] + "</a>" + "<br> </li>"
+        output += "<a href='" + sBl[pos] + "'>" +  sBt[pos] + "<br>"
     	pos += 1
-    return "<ul>" + output + "<ul>"
+    return output
         
 sidebar += sidebarify()
 output = ""
@@ -132,7 +132,6 @@ final += '''</h1>
 				<div id="sBInputO">'''
 final += sidebar
 final += '''
-</div>
 			</div>
             <!--Main body of the text. Plain text for now-->
             <div id="m-textO" class="s1">
@@ -188,7 +187,6 @@ final2 += '''</h1>
 
 final2 += sidebar
 final2 += '''
-</div>
 			</div>
             <!--Main body of the text. Plain text for now-->
             <div id="m-textO" class="s1">

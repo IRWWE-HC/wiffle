@@ -71,6 +71,28 @@ def notLoggedIn():
 </html>
 '''
 
+def checkLogCarousel():
+    #determine if the user is properly logged in once. 
+    isLoggedIn = authenticate()
+    optionCarousel = ""
+
+    #use this to determine if you want to show "logged in " stuff, or regular stuff
+    if isLoggedIn:
+        optionCarousel += endstring
+    else:
+        optionCarousel += notLoggedIn()
+    #attach a logout link only if logged in
+    return optionCarousel
+
+def checkLogSignOut():
+    isLoggedIn = authenticate()
+    logOutLink = ""
+    if isLoggedIn:
+        logOutLink+= makeLink("login/logout.py","Click here to log out")
+    else:
+        logOutLink+= '<a href="login/homepage.html"> Sign In </a>'
+    return logOutLink
+
 if 'user' not in newDict.keys():
     newDict['user']=""
 final = '''
@@ -95,8 +117,11 @@ final += '''
 				<li> <a href="list.py"> Sites Directory
 				</a> </li>
 				<li> <a href="about.html"> About Us </a> </li>
-				<li> <a href="login/logout.py"> Sign Out
-				</a> </li>
+				<li>
+'''
+final += checkLogSignOut()
+final += '''
+				 </li>
 			</ul>
 		</nav>
         <form id="form" action="output.py" method="POST">
@@ -172,24 +197,13 @@ endstring = '''
 
 '''
 
+    
 def main():
     body = ""
     #use this to add stuff to the page that anyone can see.
     body += final
-
-    #determine if the user is properly logged in once. 
-    isLoggedIn = authenticate()
-
-    #use this to determine if you want to show "logged in " stuff, or regular stuff
-    if isLoggedIn:
-        body += endstring
-    else:
-        body += notLoggedIn()
-    #attach a logout link only if logged in
-
-    if isLoggedIn:
-        body+= makeLink("login/logout.py","Click here to log out")+"<br>"
-
+    body += checkLogCarousel()
     print body
+
 
 main()
