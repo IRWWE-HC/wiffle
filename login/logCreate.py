@@ -108,7 +108,7 @@ def createAccount(form):
             os.chmod('../users/'+user+'/sites', 0777)
             p = open('../users/'+user+'/sites/exist.txt',"w")
             os.chmod('../users/'+user+'/sites/exist.txt', 0777)
-            p.write("site0")
+            p.write("site0;site0")
             p.close()
 	    h = open ('../../../.pass.txt','a')
 	    h.write(user + "," + form['passC'].value+ "\n")
