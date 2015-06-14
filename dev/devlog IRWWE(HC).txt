@@ -69,6 +69,8 @@
 		*Wrote usersites.py, lists.py
 		*Create redirect pages for logins
 		*Linked homepage.html to logCreate.py
+			*Combined login.py and  create.py into one python file.
+			*Made major modifications to the provided code
 		*Implemented navbar into most pages
 		*Update output.py, selector.py, theme.py, logout.py and logCreate.py
 	*RENAMED FILES! :D
