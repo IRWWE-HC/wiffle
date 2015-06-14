@@ -51,7 +51,7 @@ def headerC(x):
 <head>
 <title>Create account</title>
 """
-        final += '<meta http-equiv="refresh" content = "3;URL='
+        final += '<meta http-equiv="refresh" content = "3.5;URL='
         final += "'http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"
 	final += """ " """
         final += "/>"
@@ -97,7 +97,7 @@ def createAccount(form):
         elif not valid(user):
             result += "Username contains invalid characters." + " You will be redirected momentarily." + "<br>"
         else:
-            result += "Account "+user+' created! Login here if you are not automatically redirected: <a href="homepage.html">Homepage</a><br>'
+            result += "Account "+user+' created! Redirecting to previous page for login. If redirect does not happen, click here: <a href="homepage.html">Homepage</a><br>'
             f = open('users.txt','a')
             password = md5Pass(password+user)
             f.write(user+","+password+"\n")
