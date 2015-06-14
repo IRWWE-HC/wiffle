@@ -107,35 +107,13 @@ html += "'"+form['magicnumber'].value+"'>"
 html += '''\
 			<input type="submit" value="To Next Process" id="submitButton"> <br>
 			
-			<img id="img1" class="templateIMG" src="../templates/template1.png">
-			<img id="img2" class="templateIMG" src="../templates/template2.png">
-			<img id="img3" class="templateIMG" src="../templates/template3.png">
-			<img id="img4" class="templateIMG" src="../templates/template4.png">
-			<img id="img5" class="templateIMG" src="../templates/template5.png">
+			<img id="img1" class="templateIMG" src="templates/template1.png">
+			<img id="img2" class="templateIMG" src="templates/template2.png">
+			<img id="img3" class="templateIMG" src="templates/template3.png">
+			<img id="img4" class="templateIMG" src="templates/template4.png">
+			<img id="img5" class="templateIMG" src="templates/template5.png">
 		</form>
 '''
-
-def checkLogMainValues():
-    #determine if the user is properly logged in once. 
-    isLoggedIn = authenticate()
-    optionCarousel = ""
-
-    #use this to determine if you want to show "logged in " stuff, or regular stuff
-    if isLoggedIn:
-        optionCarousel += loggedIn()
-    else:
-        optionCarousel += notLoggedIn()
-    #attach a logout link only if logged in
-    return optionCarousel
-
-def checkLogSignOut():
-    isLoggedIn = authenticate()
-    logOutLink = ""
-    if isLoggedIn:
-        logOutLink+= makeLink("login/logout.py","Click here to log out")
-    else:
-        logOutLink+= '<a href="login/homepage.html"> Sign In </a>'
-    return logOutLink
 
 def main():
     body = ""
