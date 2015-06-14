@@ -295,7 +295,29 @@ $(document).ready(function(){
 		}
 	);
 	
+	//Function to preview the templates. Not optimized, but I'm tired.
+	$('#img1').fadeIn();
 	
+	$('#t1').click(function(){
+		$('img').fadeOut();
+		$('#img1').fadeIn();
+	});
+	$('#t2').click(function(){
+		$('img').fadeOut();
+		$('#img2').fadeIn();
+	});
+	$('#t3').click(function(){
+		$('img').fadeOut();
+		$('#img3').fadeIn();
+	});
+	$('#t4').click(function(){
+		$('img').fadeOut();
+		$('#img4').fadeIn();
+	});
+	$('#t5').click(function(){
+		$('img').fadeOut();
+		$('#img5').fadeIn();
+	});
 });
 
 
