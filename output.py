@@ -106,8 +106,11 @@ final += '''
 		<nav class="navBar">
 			<a href="../../../../login/homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
-				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
-				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
+				<li> <a href="../../../../list.py"> Sites Directory
+				</a> </li>
+				<li> <a href="about.html"> About Us </a> </li>
+				<li> <a href="../../../../login/logout.py"> Sign Out
+				</a> </li>
 			</ul>
 		</nav>
 		
@@ -132,7 +135,7 @@ final += '''
 </div>
 			</div>
             <!--Main body of the text. Plain text for now-->
-            <div id="m-textO" class="s1">
+            <div id="m-textOutput" class="s1">
             '''
 final +="<pre>" +  output + "</pre>" #VERY BROKEN
 final += '''
@@ -158,8 +161,11 @@ final2 += '''
 		<nav class="navBar">
 			<a href="login/homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
-				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
-				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
+				<li> <a href="list.py"> Sites Directory
+				</a> </li>
+				<li> <a href="about.html"> About Us </a> </li>
+				<li> <a href="login/logout.py"> Sign Out
+				</a> </li>
 			</ul>
 		</nav>
 		
@@ -185,7 +191,7 @@ final2 += '''
 </div>
 			</div>
             <!--Main body of the text. Plain text for now-->
-            <div id="m-textO" class="s1">
+            <div id="m-textOutput" class="s1">
             '''
 final2 +="<pre>" +  output + "</pre>" #VERY BROKEN
 final2 += '''

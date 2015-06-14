@@ -36,8 +36,11 @@ def headerC(x):
 		  <nav class="navBar">
 			<a href="homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
-				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
-				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
+				<li> <a href="../list.py"> Sites Directory
+				</a> </li>
+				<li> <a href="../about.html"> About Us </a> </li>
+				<li> <a href="logout.py"> Sign Out
+				</a> </li>
 			</ul>
 		</nav>
                 """
@@ -61,8 +64,11 @@ def headerC(x):
 		  <nav class="navBar">
 			<a href="homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
-				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
-				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
+				<li> <a href="../list.py"> Sites Directory
+				</a> </li>
+				<li> <a href="../about.html"> About Us </a> </li>
+				<li> <a href="logout.py"> Sign Out
+				</a> </li>
 			</ul>
 		</nav>
 """
@@ -148,8 +154,11 @@ def headerL(x,user,magicNumber):
 		  <nav class="navBar">
 			<a href="homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
-				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
-				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
+				<li> <a href="../list.py"> Sites Directory
+				</a> </li>
+				<li> <a href="../about.html"> About Us </a> </li>
+				<li> <a href="logout.py"> Sign Out
+				</a> </li>
 			</ul>
 			</nav>
     Checking your login status...<br>
@@ -172,8 +181,11 @@ def headerL(x,user,magicNumber):
 		  <nav class="navBar">
 			<a href="homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
-				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
-				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
+				<li> <a href="../list.py"> Sites Directory
+				</a> </li>
+				<li> <a href="../about.html"> About Us </a> </li>
+				<li> <a href="logout.py"> Sign Out
+				</a> </li>
 			</ul>
 			</nav>
 Checking your login status...<br>
@@ -276,8 +288,11 @@ broken = """
 		  <nav class="navBar">
 			<a href="homepage.html" id="home"> Website Editor </a>
 			<ul class="navBarRight">
-				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
-				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
+				<li> <a href="../list.py"> Sites Directory
+				</a> </li>
+				<li> <a href="../about.html"> About Us </a> </li>
+				<li> <a href="logout.py"> Sign Out
+				</a> </li>
 			</ul>
 		</nav>
         You left fields blank! Go back <a href="homepage.html"> here </a> to fix it.
