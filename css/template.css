@@ -361,7 +361,7 @@ html.t5 {
 }
 
 #m-textO{
-	position: absolute;
+	position: fixed;
 	left: 23%;
 	width: 75%;
 	height: 75%;
