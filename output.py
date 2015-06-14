@@ -104,12 +104,16 @@ final += '''
     </head>
     <body>
 		<nav class="navBar">
-			<a href="../../../../login/homepage.html" id="home"> IRWWE-HC </a>
+			<a href="../../../../login/homepage.html" id="home"> Wiffle </a>
 			<ul class="navBarRight">
 				<li> <a href="../../../../list.py"> Sites Directory
 				</a> </li>
 				<li> <a href="about.html"> About Us </a> </li>
-				<li> <a href="../../../../login/logout.py"> Sign Out
+'''
+final += "<li> <a href='../../../../usersites.py?user="
+final += key
+final += "'>" + key
+final += '''
 				</a> </li>
 			</ul>
 		</nav>
@@ -158,12 +162,16 @@ final2 += '''
     </head>
     <body>
 		<nav class="navBar">
-			<a href="login/homepage.html" id="home"> IRWWE-HC </a>
+			<a href="login/homepage.html" id="home"> Wiffle </a>
 			<ul class="navBarRight">
 				<li> <a href="list.py"> Sites Directory
 				</a> </li>
 				<li> <a href="about.html"> About Us </a> </li>
-				<li> <a href="login/logout.py"> Sign Out
+'''
+final2 += "<li> <a href='usersites.py?user="
+final2 += key
+final2 += "'>" + key 
+final2 +='''
 				</a> </li>
 			</ul>
 		</nav>
@@ -179,7 +187,7 @@ final2 += '''
 			<div id="sBO">
 				<h1 id="sB-nameO">
 '''
-final2 += newDict['sB-name'] + "<br>" #GET RID OF THIS EVENTUALLY
+final2 += newDict['sB-name'] + "<br>" 
 final2 += '''</h1>
 				
 				<br><br>
@@ -191,15 +199,11 @@ final2 += '''
             <!--Main body of the text. Plain text for now-->
             <div id="m-textO" class="s1">
             '''
-final2 +="<pre>" +  output + "</pre>" #VERY BROKEN
+final2 +="<pre>" +  output + "</pre>" 
 final2 += '''
 			
 			</div>
-            <br>
-            Sites created by: <a href ='usersites.py?user=
 '''
-final2 += key 
-final2 += "'>" + key + "</a>"
 final2 +='''
     </body>
 </html>

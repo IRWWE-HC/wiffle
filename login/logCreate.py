@@ -34,7 +34,7 @@ def headerC(x):
         <script src="../js/jquery-2.1.1.min.js"></script>
 		<script src="../js/master.js"></script>
 		  <nav class="navBar">
-			<a href="homepage.html" id="home"> IRWWE-HC </a>
+			<a href="homepage.html" id="home"> Wiffle </a>
 			<ul class="navBarRight">
 				<li> <a href="../list.py"> Sites Directory
 				</a> </li>
