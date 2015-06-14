@@ -55,7 +55,7 @@ def sidebarify():
     while pos != len(sBt):
         output += "<li> <a href='" + sBl[pos] + "'>" +  sBt[pos] + "</a>" + "<br> </li>"
     	pos += 1
-    return output
+    return "<ul>" + output + "<ul>"
         
 sidebar += sidebarify()
 output = ""
@@ -81,32 +81,38 @@ final += '''
 final += newDict["template"] + ">"
 final += '''
     <head>
-        <link rel="stylesheet" href="../../../../css/template.css">
-        <title> Website (Fix later) </title>
+        <link rel="stylesheet" href="../css/template.css">
+        <title> Website </title>
     </head>
     <body>
-        <script src="../../../../js/jquery-2.1.1.min.js"></script>
-		<script src="../../../../js/master.js"></script>
-                <nav class="navBar">
-			<a href="../../../../login/homepage.html" id="home"> Website Editor </a>
+		<nav class="navBar">
+			<a href="selector.py" id="home"> Website Editor </a>
 			<ul class="navBarRight">
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
 				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
 			</ul>
 		</nav>
-                <span id="heading" class="s1">
+		
+        <script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js//master.js"></script>
+		
+            <h1 id="headingO" class="s1">
 '''
 final += newDict["heading"]
 final += '''
-                </span>
-			
-			<div id="insertSB" class="s1">
-			<ul id="sB" class="s1">
+</h1>
+			<div id="sBO">
+				<h1 id="sB-nameO">
 '''
 final += newDict['sB-name'] + "<br>" #GET RID OF THIS EVENTUALLY
+final += '''</h1>
+				
+				<br><br>
+				<div id="sBInputO">'''
 final += sidebar
 final += '''
-			</ul></div>
+</div>
+			</div>
             <!--Main body of the text. Plain text for now-->
             <div id="m-textOutput" class="s1">
             '''
@@ -131,32 +137,39 @@ final2 += '''
         <title> Website (Fix later) </title>
     </head>
     <body>
-        <script src="js/jquery-2.1.1.min.js"></script>
-		<script src="js/master.js"></script>
 		<nav class="navBar">
-			<a href="login/homepage.html" id="home"> Website Editor </a>
+			<a href="selector.py" id="home"> Website Editor </a>
 			<ul class="navBarRight">
 				<li> <a href="http://bart.stuy.edu/~richard.lin"> Richard </a> </li>
 				<li> <a href="http://bart.stuy.edu/~edward.tsang"> Edward </a> </li>
 			</ul>
 		</nav>
-                <span id="heading" class="s1">
+		
+        <script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js//master.js"></script>
+		
+            <h1 id="headingO" class="s1">
 '''
 final2 += newDict["heading"]
 final2 += '''
-                </span>
-            </center>
-			
-			<div id="insertSB" class="s1">
-			<ul id="sB" class="s1">
+</h1>
+			<div id="sBO">
+				<h1 id="sB-nameO">
 '''
+final2 += newDict['sB-name'] + "<br>" #GET RID OF THIS EVENTUALLY
+final2 += '''</h1>
+				
+				<br><br>
+				<div id="sBInputO">'''
+
 final2 += sidebar
 final2 += '''
-			</ul></div>
+</div>
+			</div>
             <!--Main body of the text. Plain text for now-->
             <div id="m-textOutput" class="s1">
             '''
-final2 += output
+final2 +="<pre>" +  output + "</pre>" #VERY BROKEN
 final2 += '''
 			
 			</div>
