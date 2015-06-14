@@ -127,7 +127,7 @@ def checkLogMainValues():
 
     #use this to determine if you want to show "logged in " stuff, or regular stuff
     if isLoggedIn:
-        optionCarousel += html
+        optionCarousel += loggedIn()
     else:
         optionCarousel += notLoggedIn()
     #attach a logout link only if logged in
@@ -143,7 +143,6 @@ def checkLogSignOut():
     return logOutLink
 
 def main():
-    body = ""
     header = header1()
     header += checkLogSignOut()
     header += header2()
