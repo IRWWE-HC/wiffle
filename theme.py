@@ -13,7 +13,7 @@ cgitb.enable()
 form = cgi.FieldStorage()
 
 def header(user,magicnumber):
-        final += """
+        final = """
     <!DOCTYPE HTML>
     <html>
     <head>
