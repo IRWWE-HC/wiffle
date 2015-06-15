@@ -21,3 +21,9 @@
 	*Renamed html-t1, css-t1 and newLinks.js to editTesting.html, template.css, and master.js
 	*Create usersites.py and list.py
 	
+6/14:
+	*Added index.html to pages where people shouldn't be
+	*Moved everything to correct directories
+	*Finalized directories and files
+	*Finalized website
+	*Website officially published

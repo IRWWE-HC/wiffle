@@ -68,7 +68,8 @@
 	
 	Richard:
 		*Add css to all the little tidbit static web pages.
+		*Finalize page looks
 	Edward:
-		*Assist Richard in doing that.
+		*Assist Richard in doing that. Bug fix python code.
 	
 	
