@@ -17,6 +17,10 @@ def listsites(x):
 	y[pos] = y[pos].split(";")
 	pos += 1
     output = '<ul class="siteDir">'
+    #print y
+    #for i in y:
+	#if i[1] == "<table>":
+	 #   i[1] = ""
     for i in y:
         output += "<li> <a href='users/" + x + "/sites/" + i[0] + "'>"  + i[1] + "</a> </li>"
     return output + "</ul>"
