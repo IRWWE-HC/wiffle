@@ -124,7 +124,7 @@ html.t5 {
 /*First Instructions*/
 
 #titleContainer{
-	position: absolute;
+	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -135,17 +135,18 @@ html.t5 {
 }
 
 #titleInstruc{
-	position: fixed;
+	position: relative;
 	text-align: center;
-	top: 30%;
+	margin-top: 15%;
 	width: 30%;
-	margin-left: 35%;
+	margin-left: auto;
+	margin-right: auto;
 	z-index: 9001;
 }
 
 #title{
-	position: fixed;
-	top: 35%;
+	position: relative;
+	margin-top: 2%;
 	height: 5%;
 	width: 20%;
 	left: 40%;
@@ -154,8 +155,9 @@ html.t5 {
 }
 
 #finish {
-	position: fixed;
-	top: 42%;
+	position: relative;
+	display: block;
+	margin-top: 2%;
 	width: 10%;
 	left: 45%;
 	z-index: 9001;

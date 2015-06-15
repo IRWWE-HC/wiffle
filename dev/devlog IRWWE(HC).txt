@@ -75,7 +75,20 @@
 		*Update output.py, selector.py, theme.py, logout.py and logCreate.py
 	*RENAMED FILES! :D
 	
-		
+6/14:
+	Richard:
+		*Finalized the editing and output page looks
+		*Changed the sidebar style just a bit
+		*Added instructions on edited
+		*Altered the color of some navBar elements to make them more unique
+		*Finalized the css/js on all the little tidbit pages
+		*Set up the method to name the website (the title on the tab bar, not the heading seen on page)
+	Edward:
+		*Robustified all the python 
+		*Integrated the website name into the actual tab bar
+		*Posted open beta for testing
+	*ALL THE BUG FIXES. HOURS OF BUG FIXES. MOSTLY PYTHON BUGS. ALSO LOTS OF JAVASCRIPT BUGS.
+		*ALSO PYTHON BUGS ARE THE WORLD'S MOST ANNOYING THINGS TO FIX BECAUSE YOU CAN ONLY RUN THEM ON SERVERS AND YOU HAVE TO UPDATE THE SERVER TO CHECK IF THERE IS A BUG WE HATE THIS RUN ON SENTENCE BUT WE HAVE TO VENT THIS
 		
 Explanations for Additional Areas of Code:
 
@@ -84,14 +97,25 @@ CSS:
 		*Here, we have a bunch of different html.t<x> stylings, to be applied to different templates that the user selects. Slight gradients and the such are used. We need different webkits so it works in all browsers.
 	*Placeholder Text
 		*Here, we style the placeholder text so it isn't so drab.
-	*Format Styles
+	*Editor Styles
 		*Styles the editor of the website. It places the elements of the editor in the correct places, and makes them look presentable.
 	*Navbar Styles	
 		*Styles the nav bar, so it looks clean.
+	*Output Styles	
+		*Styles the viewing page of the website. Very similar to editor styles
+	*Homepage Styles
+		*Styles the homepage and transitions within the homepage.
 
 Javascript:
 	*Sidebar Slot creator
-		*On press, the javascript creates an additional sidebar slot
+		*On press of a + button, the javascript creates an additional sidebar slot
 	*Semi-Real Time Update
 		*When one clicks out of the input box, the javascript changes it to html. When you click back on the text, it becomes an input box again. This allows for the real time ability to see what your website is like.
+	*Transitions
+		*On clicks, hovers or page loads (depending on the circumstance), elements will fade in, fade out, slide up and slide down. Wheeee!
+		
+Python:
+	*User storage
+		*Grabs hidden forms within the HTML to remember the user names, and thus allow the website to store the files for permanent viewing
+		
 	
