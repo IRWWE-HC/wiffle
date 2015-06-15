@@ -113,7 +113,7 @@ final += '''
 			<ul class="navBarRight">
 				<li> <a href="../../../../list.py"> Sites Directory
 				</a> </li>
-				<li> <a href="about.html"> About Us </a> </li>
+				<li> <a href="../../../../about.html"> About Us </a> </li>
 '''
 final += "<li> <a id='userSite' href='../../../../usersites.py?user="
 final += key
