@@ -86,6 +86,7 @@ def notLoggedIn():
     return '''You need to login to see more. You can log in here: <a href="login/homepage.html">here</a>\n'''
 
 html = '''		<h1 class="USdirHeading"> Please Choose Your Theme </h1>
+        `       <div>
                         <img id="img1" class="templateIMG" src="templates/template1.png">
 			<img id="img2" class="templateIMG" src="templates/template2.png">
 			<img id="img3" class="templateIMG" src="templates/template3.png">
@@ -121,6 +122,7 @@ html += '''\
 			
 			
 		</form>
+                </div>
 '''
 
 def main():
