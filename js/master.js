@@ -1,10 +1,8 @@
-//Following function courtesy of https://css-tricks.com/dangers-stopping-event-propagation/
-
 $(document).ready(function(){
 	var ctr = 0
 	idValTemp = -1
 	
-	/*
+	/* Following code deprecated
 	$(document).keydown(function(press){
 		var key = press.which;
 		var frm = document.getElementById("insertSB");
@@ -153,7 +151,7 @@ $(document).ready(function(){
 		$(this).attr('id', 'optionSBSub');
 	});
 	
-	/* Removes elements if selected
+	/* Removes elements if selected (Deprecated)
 	$('#optionList').on('click', (function(e){
 		if ($(this).text() === '+') {
 			alert('chicken');
@@ -249,7 +247,7 @@ $(document).ready(function(){
 		idValTemp = -1;
 	});
 	
-	/*
+	/* Deprecated. Used to add sidebar links
 	$('#addSidebarLink').click(function(){
 		var parent = document.getElementById("sBInputInstruction");
 		var appendVal = document.createElement("h1"); 

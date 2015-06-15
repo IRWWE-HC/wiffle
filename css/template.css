@@ -322,7 +322,7 @@ html.t5 {
 */
 
 /*Main Text Stylings */
-/*Though the input and output are very similar, they are split to make the javascript a bit easier to write. Otherwise, I would have to provide child tags */
+/*Though the m-text input and output are very similar, they are split to make the javascript a bit easier to write. Otherwise, I would have to provide child tags */
 #m-textInput.s1{
 	position: fixed;
 	left: 23%;
