@@ -102,6 +102,7 @@ final += '''
 final += newDict["template"] + ">"
 final += '''
     <head>
+        <link href="favicon.ico" rel="icon" type="image/x-icon" />
         <link rel="stylesheet" href="../../../../css/template.css">
         <title>'''
 final += newDict['title'] + "</title>"
@@ -162,6 +163,7 @@ final2 += '''
 final2 += newDict["template"] + ">"
 final2 += '''
     <head>
+        <link href="favicon.ico" rel="icon" type="image/x-icon" />
         <link rel="stylesheet" href="css/template.css">
         <title>'''
 final2 += newDict['title'] + "</title>"

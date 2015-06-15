@@ -26,6 +26,7 @@ def headerC(x):
         return """ <!DOCTYPE HTML>
                     <html>
                     <head>
+                    <link href="../favicon.ico" rel="icon" type="image/x-icon" />
                     <title>Create account</title>
                     <meta http-equiv="refresh" content = "2;URL='http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"/>
                     <link rel="stylesheet" href="../css/template.css">
@@ -49,6 +50,7 @@ def headerC(x):
         final += """ <!DOCTYPE HTML>
 <html>
 <head>
+<link href="../favicon.ico" rel="icon" type="image/x-icon" />
 <title>Create account</title>
 """
         final += '<meta http-equiv="refresh" content = "3.5;URL='
@@ -148,6 +150,7 @@ def headerL(x,user,magicNumber):
     <html>
     <head>
     <title>Login Checker</title>
+    <link href="../favicon.ico" rel="icon" type="image/x-icon" />
     <META http-equiv="refresh" content = "2;URL='http://bart.stuy.edu/~edward.tsang/wiffle/login/homepage.html'"/>
                     <link rel="stylesheet" href="../css/template.css">
     </head>
@@ -171,6 +174,7 @@ def headerL(x,user,magicNumber):
         final += """ <!DOCTYPE HTML>
 <html>
 <head>
+<link href="../favicon.ico" rel="icon" type="image/x-icon" />
 <title>Login Checker</title>
 """
         final += '<meta http-equiv="refresh" content = "2;URL='
@@ -283,6 +287,7 @@ broken = """
 <!DOCTYPE html>
 <html>
     <head>
+    <link href="../favicon.ico" rel="icon" type="image/x-icon" />
     <meta http-equiv="refresh" content = "2;URL='homepage.html'"/>
         <title> Oh no! </title>
                     <link rel="stylesheet" href="../css/template.css">
@@ -296,7 +301,6 @@ broken = """
 				<li> <a href="../list.py"> Sites Directory
 				</a> </li>
 				<li> <a href="../about.html"> About Us </a> </li>
-				<li> <a href="logout.py"> Sign Out
 				</a> </li>
 			</ul>
 		</nav>

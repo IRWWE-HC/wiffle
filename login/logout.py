@@ -7,6 +7,7 @@ def header():
 <!DOCTYPE HTML>
 <html>
 <head>
+<link href="../favicon.ico" rel="icon" type="image/x-icon" />
 <title>Logout</title>
 <link rel="stylesheet" href="../css/template.css">
     </head>

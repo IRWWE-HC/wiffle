@@ -30,6 +30,7 @@ final = '''
 <!DOCTYPE html>
 	<html>
 		<head>
+		<link href="favicon.ico" rel="icon" type="image/x-icon" />
 			<title> Users and Sites Directory </title>
 <link rel="stylesheet" href="css/template.css">
     </head>

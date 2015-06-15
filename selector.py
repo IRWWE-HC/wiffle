@@ -105,6 +105,7 @@ if "template" in newDict.keys():
 final += '''
 ">
     <head>
+        <link href="favicon.ico" rel="icon" type="image/x-icon" />
         <link rel="stylesheet" href="css/template.css">
         <title> Website Editor </title>
     </head>

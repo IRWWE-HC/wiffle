@@ -43,6 +43,7 @@ final += '''
 <!DOCTYPE html>
 	<html>
 		<head>
+                    <link href="favicon.ico" rel="icon" type="image/x-icon" />
 			<title>
 '''
 final += key + "'s sites"

@@ -19,6 +19,7 @@ def header(user,magicnumber):
     <head>
     <link rel="stylesheet" href="css/template.css">
         <title> Theme Selector </title>
+        <link href="favicon.ico" rel="icon" type="image/x-icon" />
     </head>
     <body>
         <script src="js/jquery-2.1.1.min.js"></script>
