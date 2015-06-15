@@ -164,8 +164,8 @@ html.t5 {
 }
 
 .otherInstruc {
-	position: fixed;
-	width: 30%;
+	position: relative;
+	margin-top: 2%;
 	left: 35%;
 	text-align: center;
 	z-index: 9001;
