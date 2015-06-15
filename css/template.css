@@ -515,6 +515,14 @@ html.t5 {
 	background-color: #2E4C1F;
 }
 
+#gitLink {
+	background-color: #804C80;
+}
+
+#gitLink:hover{
+	background-color: #663D66;
+}
+
 /*Homepage CSS. Different type of fade-in than the modal box (written after the modal box fade in, and was written without external help*/
 #headingHP {
 	text-align: center;
