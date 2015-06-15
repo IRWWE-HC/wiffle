@@ -415,7 +415,7 @@ html.t5 {
 }
 
 #sBInputO a{
-	display: inline;
+	display: block;
 	text-decoration: none;
 	color: black;
 	font-size: 15px;
