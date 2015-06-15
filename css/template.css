@@ -665,9 +665,10 @@ html.t5 {
 /* Template Selector Stylings */
 
 .templateIMG {
-	position: fixed;
+	position: relative;
 	top: 20%;
-	margin-left: 25%;
+	float: right;
+	margin-right: 25%;
 	width: 50%;
 	height: auto;
 	display: none;
