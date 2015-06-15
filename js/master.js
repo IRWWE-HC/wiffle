@@ -321,24 +321,24 @@ $(document).ready(function(){
 	$('#img1').fadeIn();
 	
 	$('#t1').click(function(){
-		$('img').fadeOut(100);
-		$('#img1').delay(100).fadeIn(100);
+		$('img').fadeOut(500);
+		$('#img1').delay(500).fadeIn(500);
 	});
 	$('#t2').click(function(){
-		$('img').fadeOut(100);
-		$('#img2').delay(100).fadeIn(100);
+		$('img').fadeOut(500);
+		$('#img2').delay(500).fadeIn(500);
 	});
 	$('#t3').click(function(){
-		$('img').fadeOut();
-		$('#img3').delay(100).fadeIn(100);
+		$('img').fadeOut(500);
+		$('#img3').delay(500).fadeIn(500);
 	});
 	$('#t4').click(function(){
-		$('img').fadeOut();
-		$('#img4').delay(100).fadeIn(100);
+		$('img').fadeOut(500);
+		$('#img4').delay(500).fadeIn(500);
 	});
 	$('#t5').click(function(){
 		$('img').fadeOut();
-		$('#img5').delay(100).fadeIn(100);
+		$('#img5').delay(500).fadeIn(500);
 	});
 	
 	//Changes the home button on navBar to show our Team Name
