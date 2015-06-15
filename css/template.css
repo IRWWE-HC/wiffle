@@ -268,6 +268,7 @@ html.t5 {
 
 #sBInput h1{
 	font-size: 15px;
+	width: 300px;
 }
 
 #sBInput h1:hover{
